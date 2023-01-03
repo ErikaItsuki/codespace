@@ -5,7 +5,7 @@
 # sign: str-> str
 def to_snake_case(string):
     # add underscore (comes before tolower cuz the cap letter is the sign to add space)
-
+    if 
     # change into lower
 
 
