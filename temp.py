@@ -1,16 +1,9 @@
-import sys
-
-# sys.exit -> after printing the exit arg, prog exits right away
-# generally good to sep the exception handling part and the "print
-# name tags"
+#PyPI : python package index : download, store in folder...like IDLEs
+#but py has its own package managing system : pip
+# doesn't come with python itself
 
 
-# multiple arguments:
-if len(sys.argv) < 2 :
-    sys.exit("Too few arguments")
-for arg in sys.argv[1:]:
 
-    print("Hello, my name is ", arg) # will print hello..temp.py
 
 
 
