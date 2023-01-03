@@ -7,9 +7,9 @@ print(chars)
 
 for char in chars:
     if char.isupper() == True:
-        char.lower()
+        char = "_"+char.lower()
+    print(char, end = "")
 
-print(chars)
 
 
 """
