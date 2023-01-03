@@ -1,6 +1,12 @@
 string = "firstName"
 # chars = string.split() # change into a list
-chars = string.list()
+chars = list(string)
+print(chars)
+
+for char in chars:
+    if char.istitle():
+        char = "_"+char.lower()
+
 print(chars)
 """
 for char in chars:
