@@ -8,10 +8,12 @@ for char in chars:
                                # difference bwn these two:
 
         char = "_"+char.lower()
-        
+    print(char, end ="")
+    
+""" not working
 for char in chars:
     print(char, end = "")
-
+"""
 
 """
 for char in chars:
