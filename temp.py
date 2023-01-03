@@ -11,15 +11,16 @@ def get_name():
         elif len(sys.argv) < 2:
             print("Too few arguments")
         else:
-           x = "Hello, my name is " + sys.argv[1]
+           x = "Hello, my name is " + sys.argv[1] # just like a var but its value
+                                                  # is obtained on the command-line
            return x
-            # valid but not very good
-            # better = def main(): print(get_name), than call main()
-            # OR simply print inside else, and break
+           
 def main():
-    get_name()
+    print(get_name())
 
 main()
+
+
 
 
 
