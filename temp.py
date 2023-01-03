@@ -1,9 +1,13 @@
+string = "firstName"
+chars = string.split() # change into a list
+
+print(chars)
 """
-str.istitle()
-Return True if the string is a titlecased string and
-there is at least one character, for example uppercase
-characters may only follow uncased characters and lowercase
-characters only cased ones. Return False otherwise.
+for char in chars:
+    if char.isupper():
+        char = "_" + char.lower()
+
+for char in chars:
+    print(char)
+
 """
-string = "banaNA"
-print(string.isupper())
