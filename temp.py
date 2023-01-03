@@ -6,7 +6,7 @@ def median(x, y, z):
         return y
     # if x < z < y or y < z < x:  # if all numbers are the same -> returns None
     # else: # if 3 3 5 -> returns 5
-    
+
         return z
 
 def main():
@@ -19,3 +19,4 @@ def main():
     print(median(x, y, z))
 
 main()
+
