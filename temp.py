@@ -1,6 +1,5 @@
 def hypotenuse(x, y):
-    
-    retrun z
+    retrun x*x + y*y
 
 # float x, and y -> float z
 # calculate z (use pyth.thm)
