@@ -2,8 +2,9 @@ def median(x, y, z):
     # think about it: how many cases of results? How many conditions for each result?
     if y < x < z or z < x < y:
         return x
-    elif z < y < x or x < y < z:
+    if z < y < x or x < y < z:
         return y
+    # if x < z < y or y < z < x:  # if all numbers are the same -> returns None
     else:
         return z
 
