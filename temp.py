@@ -6,7 +6,12 @@ print(chars)
 # change char to lower
 
 for char in chars:
-    if char.isupper() == True:
+    if char.istitle() == True: # both is titla and isupper()are ok
+                               # difference bwn these two:
+
+
+
+                               
         char = "_"+char.lower()
     print(char, end = "")
 
