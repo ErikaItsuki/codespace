@@ -1,1 +1,1 @@
-x = input("What is the answer...? ").strip().title()
+x = input("What is the answer...? ").strip().lower()
