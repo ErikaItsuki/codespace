@@ -1,0 +1,1 @@
+x = input("What is the answer...? ").strip().title()
