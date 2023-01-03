@@ -1,5 +1,6 @@
 def median(x, y, z):
-    if 
+    # think about it: how many cases of results? How many conditions for each result?
+    
 
 def main():
     # reads 3 values as args
