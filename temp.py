@@ -2,16 +2,19 @@ string = "firstName"
 chars = list(string)
 
 # change char to lower
+############## it works ####################
+#for char in chars:
+#    if char.istitle() == True: # both is titla and isupper()are ok
+#                               # difference bwn these two:
+#
+#        char = "_"+char.lower()
+#    print(char, end ="")
+#
+############################################
 
-for char in chars:
-    if char.istitle() == True: # both is titla and isupper()are ok
-                               # difference bwn these two:
 
-        char = "_"+char.lower()
-    print(char, end ="")
-    
-""" not working
-for char in chars:
+for  in (len(chars)):
+
     print(char, end = "")
 """
 
