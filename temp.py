@@ -1,7 +1,5 @@
-import statistics
+import sys
 
-# learnt mean only in the lecture
+print("hello, my name is" ,sys.argv[1])
 
-print(statistics.mean([100, 90]))
-# .mean(a list (of initalised elmnts))
 
