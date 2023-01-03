@@ -4,8 +4,8 @@
 # purpose: consume a camelCase for a snake case version
 # sign: str-> str
 def to_snake_case(string):
-    # add whitespace (comes before tolower cuz the cap letter is the sign to add space)
-    
+    # add underscore (comes before tolower cuz the cap letter is the sign to add space)
+
     # change into lower
 
 
