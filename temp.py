@@ -6,4 +6,4 @@ characters may only follow uncased characters and lowercase
 characters only cased ones. Return False otherwise.
 """
 
-print("banana".istitle())
+print("BaNAnA".istitle())
