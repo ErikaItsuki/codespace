@@ -1,8 +1,7 @@
-import random
+import statistics
 
-dice = random.choice(["1", "2", "3", "4", "5", "6"])
-print(dice)
+# learnt mean only in the lecture
 
-# random.choice : ([inside square brackets: 'initalize the elmnts'])
-#                 take care of probi of each elmnt by comma
+print(statistics.mean([100, 90]))
+# .mean(a list (of initalised elmnts))
 
