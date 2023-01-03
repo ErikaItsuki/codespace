@@ -5,7 +5,7 @@ import cowsay
 import sys
 
 if len(sys.argv) == 2:  # only if the human gives you 1 name, it will cont.
-    cowsay.cow("hello, " , sys.argv[1])
+    cowsay.("hello, " , sys.argv[1])
 
 
 
