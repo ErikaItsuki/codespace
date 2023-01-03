@@ -5,5 +5,5 @@ there is at least one character, for example uppercase
 characters may only follow uncased characters and lowercase
 characters only cased ones. Return False otherwise.
 """
-
-print("BaNAnA".istitle())
+string = "banAna"
+print(string.istitle())
