@@ -3,9 +3,13 @@ string = "firstName"
 chars = list(string)
 print(chars)
 
-for char in chars:
-    if char.
+# change char to lower
 
+for char in chars:
+    if char.isupper() == True:
+        char.lower()
+
+print(chars)
 
 
 """
