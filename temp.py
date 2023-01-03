@@ -5,4 +5,5 @@
 
 # pip install requests
 
+# javascript object notation (JSON) -> to exchange data bwn CPs
 
