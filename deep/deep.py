@@ -5,3 +5,7 @@ if x == "42" or "forty-two" or "forty two":
     print("Yes")
 else:
     print("No")
+
+# all 3 test passed
+
+# exception handling: all with whitespace, different cases converted into 2 conditions
