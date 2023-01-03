@@ -7,7 +7,7 @@ def hypotenuse(x, y):
 def main():
     x = int(input("What's x? "))
     y = int(input("What's y? "))
-    print("The Hypotenuse is ",hypotenuse(x, y))
+    print("The Hypotenuse is",hypotenuse(x, y))
 
 main()
 # float x, and y -> float z
