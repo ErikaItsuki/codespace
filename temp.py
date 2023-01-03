@@ -3,6 +3,9 @@ string = "firstName"
 chars = list(string)
 print(chars)
 
+for char in chars:
+    if char.
+
 
 
 """
