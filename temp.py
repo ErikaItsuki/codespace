@@ -13,10 +13,11 @@ chars = list(string)
 ############################################
 
 
-for  in (len(chars)):
+for char, i in (len(chars)):
+    if char.istitle() == True:
+        chars[i] = "_" + char.lower()
+    print(chars[i], end = "")
 
-    print(char, end = "")
-"""
 
 """
 for char in chars:
