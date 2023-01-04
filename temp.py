@@ -5,13 +5,15 @@ def main():
 
 def to_snake_case(camels):
     snake = [] # syntax ok
-    for i in range(len(camels)):
+    while True:
+        i = 0
         if (camels[i].istitle()): # both is titla and isupper()are ok
                                 # difference bwn these two:
 
-            snake[i] = "_" + camels[i].lower() # 
+            snake[i] = "_" + camels[i].lower() #
         else:
             snake[i] = camels[i]
+        i++
     return snake
 
 main()
