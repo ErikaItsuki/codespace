@@ -1,3 +1,4 @@
+
 string = "firstName"
 chars = list(string)
 
@@ -12,7 +13,7 @@ for char in chars:
 
 
 
-"""
+
 for char in chars:
     if char.istitle() == True:
         char = "_"+char.lower()
