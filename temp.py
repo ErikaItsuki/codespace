@@ -1,13 +1,12 @@
 def main():
-    chars = list(input("camelCase: "))
-    for char in chars:
-        print(char, end = "")
+    camels = list(input("camelCase: "))
+
 
 # string = "firstName"
 # chars = list(string)
 
-def convert(chars):
-    for char in chars:
+def to_snake_case(chars):
+    for  in :
         if (char.istitle()): # both is titla and isupper()are ok
                                 # difference bwn these two:
 
