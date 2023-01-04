@@ -10,3 +10,8 @@
 #pip install pylint -> noisy
 #pycodestyle -> reformat the code for you if it's a bit messy
 #pip install black -> more popular now
+
+students = {"Hermione" : "Griffindor", "Harry" : "Griffindor", "Ron" : "Griffindor", "Draco" = "Slytherin", "Padma" = "Ravenclow"}
+
+for student in students:
+    print(student, students[student])
