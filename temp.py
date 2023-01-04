@@ -1,6 +1,7 @@
 def main():
-    camels = list(input("camelCase: "))
-    to_snake_case(camels)
+    string = input("camelCase: ") #ok
+    camels = list(string) # ok
+    to_snake_case(camels) 
 
 def to_snake_case(camels):
     snake = []
