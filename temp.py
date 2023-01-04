@@ -8,7 +8,6 @@ def to_snake_case(camels):
     snake = [] # syntax ok # len = 0 -> list assignment index out of range -> use append instead
     for camel in camels:
         if (camel.istitle()): # ok to take numeric characters
-
             snake.append("_" + camel.lower())
         else:
             snake.append(camel)
