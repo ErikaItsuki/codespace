@@ -2,7 +2,7 @@ def main():
     camels = list(input("camelCase: "))
     to_snake_case(camels)
 
-def to_snake_case(camel_case):
+def to_snake_case(camels):
     snake = []
     for i in camels:
         if (camels[i].istitle()): # both is titla and isupper()are ok
