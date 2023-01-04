@@ -4,7 +4,7 @@ def main():
     to_snake_case(camels)
 
 def to_snake_case(camels):
-    snake = []
+    snake = [] # syntax ok
     for i in len(camels):
         if (camels[i].istitle()): # both is titla and isupper()are ok
                                 # difference bwn these two:
