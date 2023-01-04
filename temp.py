@@ -1,19 +1,16 @@
 def main():
     camels = list(input("camelCase: "))
+    to_snake_case(camels)
 
-
-# string = "firstName"
-# chars = list(string)
-
-def to_snake_case(chars):
-    for  in :
-        if (char.istitle()): # both is titla and isupper()are ok
+def to_snake_case(camel_case):
+    snake = []
+    for i in camels:
+        if (camels[i].istitle()): # both is titla and isupper()are ok
                                 # difference bwn these two:
 
-            char = "_"+char.lower()
-        return chars
+            snake[i] = "_" + camels.lower()
+        else:
+            snake[i] = camels[i]
+    return snake
 
 main()
-
-# scope
-# if else principles
