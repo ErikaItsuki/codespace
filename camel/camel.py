@@ -7,7 +7,7 @@ def main():
 def to_snake_case(camels):
     snake = []
     for camel in camels:
-        if (camel.istitle()): 
+        if (camel.istitle()):
             snake.append("_" + camel.lower())
         else:
             snake.append(camel)
