@@ -9,7 +9,7 @@ def to_snake_case(camels):
         if (camels[i].istitle()): # both is titla and isupper()are ok
                                 # difference bwn these two:
 
-            snake[i] = "_" + camels[i].lower()
+            snake[i] = "_" + camels[i].lower() # 
         else:
             snake[i] = camels[i]
     return snake
