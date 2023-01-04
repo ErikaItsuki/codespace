@@ -9,5 +9,5 @@ for char in chars:
         char = "_"+char.lower()
     print(char, end ="")
 
-
-
+# scope
+# if else principles
