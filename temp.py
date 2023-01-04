@@ -15,3 +15,7 @@ def to_snake_case(camels):
     return snake
 
 main()
+
+
+# insert()
+# replace()
