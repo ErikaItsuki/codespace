@@ -21,6 +21,3 @@ for char in chars:
 print(chars) # scope?? WHY NOT WORKING OUTSIDE
 """
 
-
-# .split(sep=None, maxsplit=- 1) : change str -> list, and separate the elmnts into chunks
-# if you need to sep by char, use .list()
