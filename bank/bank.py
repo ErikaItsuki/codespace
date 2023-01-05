@@ -7,7 +7,7 @@ def main():
     greet_for_money(greet)
 
 def greet_for_money(greet):
-    print(greet.split())
+    if greet == ""
 
 main()
 
