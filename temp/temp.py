@@ -1,2 +1,2 @@
-emoji = input()
+emoji = input().replace()
 #🙂🙁 from emojipedia
