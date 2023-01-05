@@ -1,3 +1,4 @@
 #{:.1f}
 # z cannot be 0
-image.png
+
+x, y, z = expression.split(" ")
