@@ -8,10 +8,13 @@ elif strings[last_index] == "jpg":
 elif strings[last_index] == "pdf":
     print(f"application/{strings[last_index]}")
 elif strings[last_index] == "txt":
-    print(f"text/{strings[last_index]}")
+    print(f"application/{strings[last_index]}")
 elif strings[last_index] == "zip":
-    print(f"zip/{strings[last_index]}")
+    print(f"application/{strings[last_index]}")
 
 else:
     # if one word: append sth for it # or if len(string) != 2: print sth
     print("application/octet-stream")
+
+# normally multiple dots are invalid , but the prog allows multiple dots as delimiters
+# What to do???
