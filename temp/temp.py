@@ -7,7 +7,7 @@ class Student:
         # the funciton will always be called, by definition of how py classes work
         #
         # then what is for self : gives to access to the obj u have currently created
-        
+        # "self" is the convention: u can call anything
 
 
 
