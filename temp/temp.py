@@ -1,0 +1,2 @@
+emoji = input()
+#🙂🙁 from emojipedia
