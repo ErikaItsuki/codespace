@@ -1,6 +1,1 @@
-with open("names.txt", "r") as file:
-    #for line in file.readlines():
-    #for line in file:
-    
-        print("hello, ", line.rstrip())
-
+# what if you want ot add in hourses or patronus?
