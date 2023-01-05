@@ -1,9 +1,6 @@
-name = input("What's your name")
+name = input("What's your name? ")
 
-file = open("names.txt", "a", )
-file.write(f"{name}\n") # if input("What's your name: ") inside {} -> 3 probs:
-                        # "(" was not closed
-                        # Unterminated expression in f-string; missing close brace
-                        # "(" was not closed
-                        # ????????? WHY ??????????
-file.close()
+with open("names.txt", "a") as file:
+    for _ in range(3):
+        file.write(f"{name}\n")
+
