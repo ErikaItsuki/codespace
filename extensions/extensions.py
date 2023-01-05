@@ -1,15 +1,15 @@
-string = (input("File name: ")).strip().lower().split('.')
-last_index = len(string) - 1
+strings = (input("File name: ")).strip().lower().split('.')
+last_index = len(strings) - 1
 
-if string[last_index] == "gif" or string[last_index] == "jpg" or string[last_index] == "jpg"
-    print("image/gif")
-elif string[last_index] == "jpg" or "jpeg":
-    print("image/jpeg")
-elif string[last_index] == "png":
-    print
-elif string[last_index] == "pdf":
-elif string[last_index] == "txt":
-elif string[last_index] == "zip":
+if strings[last_index] == "gif" or strings[last_index] == "jpg" or strings[last_index] == "jpeg" or strings[last_index] == "png":
+    print(f"image/{strings[last_index]}")
+
+elif strings[last_index] == "pdf":
+    print(f"application/{strings[last_index]}")
+elif strings[last_index] == "txt":
+    print(f"text/{strings[last_index]}")
+elif strings[last_index] == "zip":
+    print(f"zip/{strings[last_index]}")
 
 else:
     # if one word: append sth for it # or if len(string) != 2: print sth
