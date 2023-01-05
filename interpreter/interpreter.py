@@ -20,5 +20,7 @@ def math_interpreter(strings):
     elif y == '/' and z != 0:
         print(f"{x / z:.1f}")
 
-main()
+main() # math_interpreter has no return value:
+       # when exit and just before main is called,
+       # (return) main: None
 
