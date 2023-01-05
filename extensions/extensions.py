@@ -1,31 +1,26 @@
-def main():
-    strings = (input("File name: ")).strip().lower().split('.')
-    print(media_type(strings))
+strings = (input("File name: ")).strip().lower().split('.')
+last_index = len(strings) - 1
 
 # image
-def media_type(strings):
 
-    last_index = len(strings) - 1
+if strings[last_index] == "gif" or strings[last_index] == "png":
+    print(f"image/{strings[last_index]}")
 
-    if strings[last_index] == "gif" or strings[last_index] == "png":
-        return f"image/{strings[last_index]}"
-
-    elif strings[last_index] == "jpg" or strings[last_index] == "jpeg":
-        return "image/jpeg"
+elif strings[last_index] == "jpg" or strings[last_index] == "jpeg":
+    print("image/jpeg")
 
 
-    # application
+# application
 
-    elif strings[last_index] == "pdf" or strings[last_index] == "zip":
-        return f"application/{strings[last_index]}"
+elif strings[last_index] == "pdf" or strings[last_index] == "zip":
+    print(f"application/{strings[last_index]}")
 
 
-    # text
+# text
 
-    elif strings[last_index] == "txt":
-        return f"text/plain"
+elif strings[last_index] == "txt":
+    print("text/plain")
 
-    else:
-        return "application/octet-stream"
+else:
+    print("application/octet-stream")
 
-main()
