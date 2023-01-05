@@ -25,3 +25,7 @@ def get_student():
 
 if __name__ == "__main__":
     main()
+
+#concept:
+# name = attributes in a class
+# self.name = instance variable
