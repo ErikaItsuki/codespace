@@ -7,8 +7,11 @@ def main():
     greet_for_money(greet)
 
 def greet_for_money(greet):
-    # if... print() -> not in main
-    
+    print(greet.split())
+
+main()
+
+
 
 
 
