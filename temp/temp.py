@@ -6,7 +6,8 @@ class Student:
         self.house = house
         # the funciton will always be called, by definition of how py classes work
         #
-        # then what is for self ???
+        # then what is for self : gives to access to the obj u have currently created
+        
 
 
 
