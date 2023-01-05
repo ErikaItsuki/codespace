@@ -11,8 +11,5 @@ elif strings[last_index] == "txt":
     print(f"text/{strings[last_index]}")
 
 else:
-    # if one word: append sth for it # or if len(string) != 2: print sth
     print("application/octet-stream")
 
-# normally multiple dots are invalid , but the prog allows multiple dots as delimiters
-# What to do???
