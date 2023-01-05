@@ -1,1 +1,1 @@
-print("string".lstrip())
+print("string".lstrip('s'))
