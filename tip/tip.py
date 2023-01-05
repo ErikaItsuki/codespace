@@ -6,7 +6,8 @@ def main():
 
 
 def dollars_to_float(d):
-    return float(d.lstrip('$'))
+    return float(d.lstrip('$')) # str.lstrip([chars]) it only strips away whitespaces on the L
+                                # if parameter in empty
 
 def percent_to_float(p):
     return float(p.rstrip('%')) * 0.01
