@@ -3,7 +3,7 @@
 
 def convert(string):
     string.replace(":)", "🙂")
-    
+    string.replace(":(", "🙁")
     # only the 2 faces will be converted
 
 def main():
