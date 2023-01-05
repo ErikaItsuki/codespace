@@ -2,7 +2,7 @@ class Student:
     ...# to be impleented later
 
 def main():
-    student = get_student()
+    student = get_student() #student = obj ???
     print(f"{student.name} from {student.house}")
 
 def get_student():
