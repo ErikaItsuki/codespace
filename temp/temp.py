@@ -11,7 +11,10 @@ class Student:
 
         # difference between __init__ and a default constructor
         # called initialization method in py
-        
+        # __new__ to construct an (empty) Obj in memory and
+        # __init__ to initialize -> because py generally does the other part for u,
+        # __init__ is uually the only thing you have to worry 'bout
+
 
 
 def main():
