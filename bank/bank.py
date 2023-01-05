@@ -9,13 +9,13 @@ def main():
 def greet_for_money(greet):
     letters = list(greet)
     if letters[0] == 'h':
-        if letters[1:5] == "ello":
+        if letters[1:4] == "ello":
             print("$0")
         else:
             print("$20")
     else:
         print("$100")
-        
+
 main()
 
 
