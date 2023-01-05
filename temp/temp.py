@@ -1,5 +1,5 @@
 class Student:
-    ...# to be impleented later
+    ...# to be implemented later
 
 def main():
     student = get_student() #student = obj ???
