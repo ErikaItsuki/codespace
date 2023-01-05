@@ -1,9 +1,8 @@
 
 #🙂🙁 from emojipedia
-
+"""
 def convert(string):
-    string.replace(":)", "🙂")
-    string.replace(":(", "🙁")
+    return string.replace(":)", "🙂").replace(":(", "🙁")
     # only the 2 faces will be converted
 
 def main():
@@ -11,3 +10,9 @@ def main():
     print(convert(string))
 
 main()
+"""
+def see_what_is_none(n):
+    n = float(n)
+def main():
+    print(see_what_is_none(3))
+main() # outputs None
