@@ -12,7 +12,7 @@ def main():
 main()
 """
 def see_what_is_none(n):
-    n = float(n)
+    return float(n)
 def main():
     print(see_what_is_none(3))
-main() # outputs None
+main() # outputs 3.0
