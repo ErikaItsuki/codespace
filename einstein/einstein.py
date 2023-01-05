@@ -1,5 +1,6 @@
+# prompt user for mass in kg
+m = int(input("m: "))
 
-m = int(input("m: ")) # in kg
-#signature : int (kg) -> int (joules)
+# print energy in joules using m
 print(f"E: {m * 300000000 ** 2 }")
 
