@@ -5,7 +5,7 @@ def main():
         print(snake, end = "")
 
 def to_snake_case(camels):
-    snake = []
+    snake = [] # .append() is always used after a LIST, never a string
     for camel in camels:
         if (camel.istitle()):
             snake.append("_" + camel.lower())
