@@ -23,7 +23,7 @@ def media_type(strings):
     # text
 
     elif strings[last_index] == "txt":
-        if strings[0] == "plain":
+        if strings[0] == "plain" and len(strings) == 2:
             return "text/plain"
         else:
             return f"text/{strings[last_index]}"
