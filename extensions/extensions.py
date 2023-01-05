@@ -1,7 +1,7 @@
 string = (input("File name: ")).strip().lower().split('.')
 last_index = len(string) - 1
 
-if string[last_index] == "gif":
+if string[last_index] == "gif" or string[last_index] == "jpg" or string[last_index] == "jpg"
     print("image/gif")
 elif string[last_index] == "jpg" or "jpeg":
     print("image/jpeg")
