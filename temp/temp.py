@@ -1,7 +1,8 @@
-# to write inputs to a file all at once:
+name = input("what's your name? ")
 
-with open("names.txt", "a") as file:
-    for _ in range(3):
-        name = input("What's your name? ")
-        file.write(f"{name}\n")
+with open("names.txt", "r") as file:
+    lines = file.readlines()
+
+for line in lines:
+    print("hello, ", line)
 
