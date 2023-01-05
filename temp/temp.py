@@ -9,6 +9,9 @@ class Student:
         # then what is for self : gives to access to the obj u have currently created
         # "self" is the convention: u can call anything
 
+        # difference between __init__ and a default constructor
+        # called initialization method in py
+        
 
 
 def main():
