@@ -1,3 +1,1 @@
-
-#🙂🙁 from emojipedia
-
+print("string".lstrip())

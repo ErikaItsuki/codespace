@@ -6,12 +6,9 @@ def main():
 
 
 def dollars_to_float(d):
-    # $15.00
-    
-
+    return float(d.lstrip())
 
 def percent_to_float(p):
-    # TODO
-
+    return float(p.rstrip()) * 0.01
 
 main()
