@@ -3,6 +3,10 @@ class Student:
                         # if you want to initialize the contents of an obj of a class
                         # you do this :)
         self.name = name
+        self.house = house
+        # the funciton will always be called, by definition of how py classes work
+        #
+        # then what is for self ???
 
 
 
