@@ -8,8 +8,7 @@ def main():
 def math_interpreter(strings):
 
     x, y, z = strings.split(" ")
-    x = float(x)
-    z = float(z)
+    x, z= float(x), float(z) # valid
 
     if y == '+':
         print(f"{x + z:.1f}")
