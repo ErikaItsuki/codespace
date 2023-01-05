@@ -5,19 +5,20 @@ def main():
     expression = input("Expression: ")
     print(math_interpreter(expression))
 
-def math_interpreter(string):
+def math_interpreter(strings):
 
-    x, y, z = string.split(" ")
-    float(x)
-    float(z)
+    x, y, z = strings.split(" ")
+    x = float(x)
+    z = float(z)
 
     if y == '+':
         print(f"{x + z:.1f}")
     elif y == '-':
-        print(f"{x + z:.1f}")
+        print(f"{x - z:.1f}")
     elif y == '*':
-        print(f"{x + z:.1f}")
-    elif y == '/':
-        print(f"{x + z:.1f}")
+        print(f"{x * z:.1f}")
+    elif y == '/' and z != 0:
+        print(f"{x / z:.1f}")
 
 main()
+
