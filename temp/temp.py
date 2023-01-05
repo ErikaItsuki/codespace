@@ -1,6 +1,10 @@
 class Student:
     ...# to be impleented later
 
+def main():
+    student = get_student()
+    print(f"{student.name} from {student.house}")
+
 def get_student():
     student = Student() # looks like creating an obj
                         # student(lowercase) is the obj
@@ -8,3 +12,6 @@ def get_student():
     student.name = input("Name: ")
     student.house = input("house: ")
     return student
+
+if __name__ == "__main__":
+    main()
