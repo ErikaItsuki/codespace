@@ -6,7 +6,7 @@ def main():
     print(f"{student.name} from {student.house}")
 
 def get_student():
-    student = Student() # looks like creating an obj
+    student = Student() # creating an obj
                         # student(lowercase) is the obj
                         # Student() is the  which we can access stuff in the clas
     student.name = input("Name: ")
