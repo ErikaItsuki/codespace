@@ -3,7 +3,7 @@ class Student:
                         # if you want to initialize the contents of an obj of a class
                         # you do this :)
         self.name = name
-        
+
 
 
 def main():
@@ -15,7 +15,7 @@ def get_student():
     # it's more powerful : increase correctness
     name = input("Name: ")
     house =input("House: ")
-    student = Student(name, house) # constructor
+    student = Student(name, house) # constructor call
     return student
 
 if __name__ == "__main__":
