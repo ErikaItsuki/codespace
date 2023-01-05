@@ -3,7 +3,7 @@
 # expression is a str
 def main():
     expression = input("Expression: ")
-    print(math_interpreter(expression))
+    math_interpreter(expression)
 
 def math_interpreter(strings):
 
