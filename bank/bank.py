@@ -10,6 +10,7 @@ def greet_for_money(greet):
     letters = list(greet)
     if letters[0] == 'h':
         if letters[1] == 'e' and letters[2] == 'l' and letters [3] == 'l' and letters[4] == 'o':
+        # SO terribly long!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             print("$0")
         else:
             print("$20")
