@@ -5,8 +5,7 @@
 
 def main():
     word = input("Input: ")
-    for letter in word:
-        print(omit_vowels(letter))
+    print(omit_vowels(word))
 
 def omit_vowels(string):
 
