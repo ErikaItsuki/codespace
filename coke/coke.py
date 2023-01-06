@@ -13,7 +13,7 @@ while (): # continue
     elif amount_due == 0:
         print("Change Owed: 0")
     else:
-        print(f"Change Owed: {insert - amount_due}")
+        print(f"Change Owed: {-amount_due}")
 
 
 
