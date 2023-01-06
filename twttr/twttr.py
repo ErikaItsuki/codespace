@@ -8,18 +8,18 @@ def main():
     words = list(omit_vowels(input("Input: ").strip()))
     for word in words:
         print(word, end = "")
-    print()
+        print()
 
 def omit_vowels(with_vowels):
 
     without_vowels = []
     # loop -> if not vowel -> append string to formatted
     for i in range(len(with_vowels)):
-        if (with_vowels[i] != ('a' or 'A') and # with_vowels[i] != ('a' or 'A') and doesn't work on cap letters
-            with_vowels[i] != ('e' or 'E') and
-            with_vowels[i] != ('i' or 'I') and
-            with_vowels[i] != ('o' or 'O') and
-            with_vowels[i] != ('u' or 'U')):
+        if ((with_vowels[i] != 'a' and with_vowels[i] != 'A') and
+            (with_vowels[i] != 'e' and with_vowels[i] != 'E') and
+            (with_vowels[i] != 'i' and with_vowels[i] != 'I') and
+            (with_vowels[i] != 'o' and with_vowels[i] != 'O') and
+            (with_vowels[i] != 'u' and with_vowels[i] != 'U')):
             # or is put at the end of each condition
             # new line conditions indented by 4, start the count from if (i = 1)
             # use paren if using new lines
