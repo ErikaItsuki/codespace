@@ -4,17 +4,18 @@
 # convert a string  of : to .
 # time <= 24.0
 def main():
-    print(convert(input("What time is it? ")))
+    time = input("What time is it? ")
+    if 7 <= convert(time) <= 8:
+        print("breakfast time")
+    elif 12 <= convert(time) <= 13:
+        print("lunch time")
+    elif 18 <= convert(time) <= 19:
+        print("dinner time")
 
 def convert(time):
     hours, minute = time.split(":")
     number = int(hours) + int(minute)/60
-    if 7 <= number <= 8:
-        return "breakfast time"
-    elif 12 <= number <= 13:
-        return "lunch time"
-    elif 18 <= number <= 19:
-        return "dinner time"
+    return number
 
 
 if __name__ == "__main__":
