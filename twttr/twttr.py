@@ -15,7 +15,7 @@ def omit_vowels(with_vowels):
     without_vowels = []
     # loop -> if not vowel -> append string to formatted
     for i in range(len(with_vowels)):
-        if (with_vowels[i] != ('a' or 'A') and # it works!!
+        if (with_vowels[i] != ('a' or 'A') and # with_vowels[i] != ('a' or 'A') and doesn't work on cap letters
             with_vowels[i] != ('e' or 'E') and
             with_vowels[i] != ('i' or 'I') and
             with_vowels[i] != ('o' or 'O') and
