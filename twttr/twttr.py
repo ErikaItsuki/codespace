@@ -5,7 +5,8 @@
 
 def main():
     word = input("Input: ")
-    print(omit_vowels(word))
+    for letter in words:
+        print(omit_vowels(letter))
 
 def omit_vowels(string):
 
@@ -14,10 +15,10 @@ def omit_vowels(string):
     without_vowels = []
     # loop -> if not vowel -> append string to formatted
     for i in range(len(with_vowels)):
-        if (with_vowels[i] != 'a' or
-            with_vowels[i] != 'e' or
-            with_vowels[i] != 'i' or
-            with_vowels[i] != 'o' or
+        if (with_vowels[i] != 'a' and
+            with_vowels[i] != 'e' and
+            with_vowels[i] != 'i' and
+            with_vowels[i] != 'o' and
             with_vowels[i] != 'u'):
             # or is put at the end of each condition
             # new line conditions indented by 4, start the count from if (i = 1)
@@ -27,5 +28,5 @@ def omit_vowels(string):
             without_vowels.append(with_vowels[i])
 
     return without_vowels
-    
+
 main()
