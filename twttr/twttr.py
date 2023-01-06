@@ -23,10 +23,8 @@ def omit_vowels(string):
             # new line conditions indented by 4, start the count from if (i = 1)
             # use paren if using new lines
             # or simply add a line of comment for distinction (still need to do the above)
-            
+
             without_vowels.append(with_vowels[i])
-
-
-
+            
 
 main()
