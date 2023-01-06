@@ -3,3 +3,6 @@
 # as by omitting vowels,
 # much like Twitter was originally called twttr.
 
+def main():
+    word = input("Input: ")
+    
