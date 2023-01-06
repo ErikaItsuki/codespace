@@ -5,10 +5,15 @@
 amount_due = 50
 
 # pay until >= 50
-while (amount_due > 0): # continue
+while (): # continue
 
     amount_due -= int(input("Insert Coin: "))
-    print(f"Amount Due: {amount_due}")
+    if amount_due > 0:
+        print(f"Amount Due: {amount_due}")
+    elif amount_due == 0:
+        print("Change Owed: 0")
+    else:
+        print(f"Change Owed: {insert - amount_due}")
 
 
 
