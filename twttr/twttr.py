@@ -8,7 +8,7 @@ def main():
     words = list(omit_vowels(input("Input: ").strip()))
     for word in words:
         print(word, end = "")
-        print()
+    print()
 
 def omit_vowels(with_vowels):
 
