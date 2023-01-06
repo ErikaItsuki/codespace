@@ -25,6 +25,7 @@ def omit_vowels(string):
             # or simply add a line of comment for distinction (still need to do the above)
 
             without_vowels.append(with_vowels[i])
-            
 
+    return without_vowels
+    
 main()
