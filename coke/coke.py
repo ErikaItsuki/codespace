@@ -6,12 +6,7 @@ while(amount_due > 0):
     if insert == 25 or insert == 10 or insert == 5:
         amount_due -= insert
 
-if amount_due == 0:
-    print("Change Owed = 0")
-else:
-    print(f"Change Owed = {-amount_due}")
-
-
+print(f"Change Owed = {-amount_due}")
 
 
 
