@@ -2,13 +2,14 @@
 
 # if insert = 25 or insert = 10 or insert = 5: insert -> Amount due = f() -> insert
 # if amount_due - insert <= 0: break
+amount_due = 50
 
-amount_due = 0
+# pay until >= 50
+while (amount_due > 0): # continue
 
-while True:
-    insert = int(input("Insert Coin: "))
-    if 
+    amount_due -= int(input("Insert Coin: "))
+    print(f"Amount Due: {amount_due}")
 
-while(amount_due -)
+
 
 
