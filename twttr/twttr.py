@@ -14,7 +14,16 @@ def omit_vowels(string):
     without_vowels = []
     # loop -> if not vowel -> append string to formatted
     for i in range(len(with_vowels)):
-        if with_vowels[i] != 'a' or with_vowels[i] != 'e' or with_vowels[i] != 'i' or with_vowels[i] != 'o' or with_vowels[i] != 'u':
+        if (with_vowels[i] != 'a' or
+            with_vowels[i] != 'e' or
+            with_vowels[i] != 'i' or
+            with_vowels[i] != 'o' or
+            with_vowels[i] != 'u'):
+            # or is put at the end of each condition
+            # new line conditions indented by 4, start the count from if (i = 1)
+            # use paren if using new lines
+            # or simply add a line of comment for distinction (still need to do the above)
+            
             without_vowels.append(with_vowels[i])
 
 
