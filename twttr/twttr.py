@@ -7,14 +7,15 @@ def main():
 
     words = list(omit_vowels(input("Input: ").strip()))
     for word in words:
-        print(word, end = '')
+        print(word, end = "")
+    print()
 
 def omit_vowels(with_vowels):
 
     without_vowels = []
     # loop -> if not vowel -> append string to formatted
     for i in range(len(with_vowels)):
-        if (with_vowels[i] != ('a' or 'A') and
+        if (with_vowels[i] != ('a' or 'A') and # it works!!
             with_vowels[i] != ('e' or 'E') and
             with_vowels[i] != ('i' or 'I') and
             with_vowels[i] != ('o' or 'O') and
