@@ -1,4 +1,5 @@
 amount_due = 50
+print(f"Amount Due = {amount_due}")
 
 while(amount_due > 0):
     insert = int(input("Insert Coin: "))
