@@ -15,6 +15,9 @@ def convert(time):
         meal = "lunch time"
     elif 18 <= number <= 19:
         meal = "dinner time"
+    else:
+        
+    return meal
 
 
 if __name__ == "__main__":
