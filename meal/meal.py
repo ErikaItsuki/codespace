@@ -10,14 +10,11 @@ def convert(time):
     hours, minute = time.split(":")
     number = int(hours) + int(minute)/60
     if 7 <= number <= 8:
-        meal = "breakfast time"
+        return "breakfast time"
     elif 12 <= number <= 13:
-        meal = "lunch time"
+        return "lunch time"
     elif 18 <= number <= 19:
-        meal = "dinner time"
-    else:
-        
-    return meal
+        return "dinner time"
 
 
 if __name__ == "__main__":
