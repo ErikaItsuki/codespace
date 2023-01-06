@@ -4,8 +4,10 @@
 # much like Twitter was originally called twttr.
 
 def main():
-    word = input("Input: ")
-    print(omit_vowels(word))
+
+    words = omit_vowels(input("Input: ").strip())
+    for word in words:
+        print(word, end = '')
 
 def omit_vowels(string):
 
