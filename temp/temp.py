@@ -2,7 +2,6 @@
 # .upper()
 
 
-print("CS#50P".punctuation)
 # ideas on funcitons:
 # .isdigit()
 
