@@ -7,9 +7,10 @@ def to_snake(chars):
     for char in chars:
         if (char.istitle()):
             char = "_"+ char.lower()
+            print(char, end = "")
         else:
-            char = char
-        print(char, end = "")
+            print(char, end = "")
+
 
 
 
