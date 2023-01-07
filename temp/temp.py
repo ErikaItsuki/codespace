@@ -10,7 +10,7 @@ def is_valid(s):
 
 # ideas on funcitons:
 # .isdigit()
-#
+# 
 
 # corner case:
 # CS5P5 -> two numbers are sep by a letter
