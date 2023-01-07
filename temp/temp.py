@@ -7,3 +7,6 @@ def is_valid(s):
         return True
     else:
         return False
+
+# ideas on funcitons:
+# .isdigit
