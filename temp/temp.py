@@ -1,6 +1,7 @@
 def main():
-    chars = list("firstName")
-    print(to_snake(chars))
+    chars = list(input("camelCase: "))
+    to_snake(chars)
+    print()
 
 def to_snake(chars):
     for char in chars:
@@ -8,8 +9,9 @@ def to_snake(chars):
             char = "_"+ char.lower()
         else:
             char = char
+        print(char, end = "")
 
-    return chars
+
 
 if __name__ == "__main__":
     main()
