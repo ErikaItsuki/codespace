@@ -1,6 +1,3 @@
-names = []
-
-for _ in range(3):
-    names.append(input("What's your name? "))
-
-for name in sorted
+file = open("names.txt", "a")
+file.write(input("What's your name? "))
+file.close()
