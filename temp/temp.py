@@ -1,26 +1,38 @@
 class Student:
-    def __init__(self):
+    def __init__(self, name, house):
+
+        if not name:
+            raise ValueError("missing name")
+        if house not in ["Griffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
+            raise ValueError("Invalid house")
+
         self.name = name
+        self.house = house
+
+    def __str__(self):
+        return f"{self.name} from {self.house}"
+
+    # getter : get some attr
+    def house(self):
+        return self.house
+        
+    # setter -> set some value
+    def house(self, house):
         self.house = house
 
 def main():
     student = get_student()
-    print(f"{student.name} from {student.house}")
+    print(student)
+
 
 def get_student():
-    name = input("Name: ") # what if they just press enter?
-    house = input("House: ") # what if the house name is wrong?
+    name = input("Name: ").title()
+    house = input("House: ").title()
     return Student(name, house)
+
 
 if __name__ == "__main__":
     main()
 
-
-
-# What he doing?!
-# main
-# get_student -> to initalize an obj from main, and return the whole student Obj
-# inside get_student() -> Student(name, house) as a cons
-#
-
-# try to read the class only as type, other keeps the way to read funcitonal codes
+# self -> always pass as a REFERENCE of that Student Obj
+# you give info in the terminal
