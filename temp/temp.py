@@ -17,7 +17,7 @@ class Student:
         return self.house
 
     @house.setter # syntax: @name_of_getter.setter
-    def house(self, house):
+    def house(self, house): # two para
         self.house = house
 
 def main():
