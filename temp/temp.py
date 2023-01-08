@@ -1,9 +1,6 @@
 class Student:
     def __init__(self, name, house):
-
-        if not name:
-            raise ValueError("missing name")
-
+        
         self.name = name
         self.house = house # dont add an underscore here
                            # cuz you want the value to be checked (from get_stu() input)
