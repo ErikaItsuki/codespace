@@ -6,7 +6,7 @@ class Student:
 
         self.name = name
         self.house = house # dont add an underscore here
-                           # cuz you want the 
+                           # cuz you want the value to be checked (from get_stu() input)
 
     def __str__(self):
         return f"{self.name} from {self.house}"
