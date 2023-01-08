@@ -8,8 +8,8 @@ def main():
     print(f"{student.name} from {student.house}")
 
 def get_student():
-    name = input("What's your name? ")
-    house = input("What's your name? ")
+    name = input("Name: ")
+    house = input("House: ")
     student = Student(name, house)
     return student
 
