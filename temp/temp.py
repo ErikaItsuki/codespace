@@ -5,13 +5,12 @@ class Student:
             raise ValueError("missing name")
 
         self.name = name
-        self._house = house
+        self.house = house
 
     def __str__(self):
         return f"{self.name} from {self.house}"
 
-    @property # always for getter # why we need a getter: every code will be passed to setter to check
-                                  # and so this getter, despite its syntax as a property, seems useless
+    @property # always for getter
     def house(self):
         return self._house
 
