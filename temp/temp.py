@@ -15,13 +15,11 @@ class Student:
     def name(self):
         return self._name
 
-    @name.setter
+    @name.setter # usually put right under that property
     def name(self, name):
         if not name: # or if name == ""
             raise ValueError("Missing name")
-        
-
-
+        self._name = name
 
     @property # always for getter
     def house(self):
