@@ -12,11 +12,11 @@ class Student:
     def __str__(self):
         return f"{self.name} from {self.house}"
 
-    # getter : get some attr
+    @property # always for getter
     def house(self):
         return self.house
-        
-    # setter -> set some value
+
+    @house.setter # syntax: @name_of_getter.setter
     def house(self, house):
         self.house = house
 
