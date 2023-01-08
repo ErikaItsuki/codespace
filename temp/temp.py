@@ -5,7 +5,8 @@ class Student:
             raise ValueError("missing name")
 
         self.name = name
-        self.house = house
+        self.house = house # dont add an underscore here
+                           # cuz you want the 
 
     def __str__(self):
         return f"{self.name} from {self.house}"
