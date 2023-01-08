@@ -10,13 +10,14 @@ class Student:
     def __str__(self):
         return f"{self.name} from {self.house}"
 
-    @property # always for getter
+    @property # always for getter # why we need a getter: every code will be passed to setter to check
+                                  # and 
     def house(self):
         return self.house
 
     @house.setter # syntax: @name_of_getter.setter
     def house(self, house): # two para
-        
+
         if house not in ["Griffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
             raise ValueError("Invalid house")
         self.house = house
