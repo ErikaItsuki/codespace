@@ -34,8 +34,6 @@ class Student:
 
 def main():
     student = get_student()
-    student.house = "number hour, Privet Drive" # this will also call the setter (to check as a "requirement")
-                                                # Inside setter: if not 1 of 4 houses --> raise ValueError
     print(student)
 
 
