@@ -3,8 +3,6 @@ class Student:
 
         if not name:
             raise ValueError("missing name")
-        if house not in ["Griffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
-            raise ValueError("Invalid house")
 
         self.name = name
         self.house = house
@@ -18,6 +16,9 @@ class Student:
 
     @house.setter # syntax: @name_of_getter.setter
     def house(self, house): # two para
+        
+        if house not in ["Griffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
+            raise ValueError("Invalid house")
         self.house = house
 
 def main():
