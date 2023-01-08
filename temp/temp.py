@@ -8,11 +8,9 @@ def main():
     print(f"{student.name} from {student.house}")
 
 def get_student():
-    name = input("Name: ")
-    house = input("House: ")
+    name = input("Name: ") # what if they just press enter?
+    house = input("House: ") # what if the house name is wrong?
     return Student(name, house)
-
-
 
 if __name__ == "__main__":
     main()
