@@ -11,7 +11,7 @@ class Student:
         return f"{self.name} from {self.house}"
 
     @property # always for getter # why we need a getter: every code will be passed to setter to check
-                                  # and 
+                                  # and so this getter, despite its syntax as a property, seems useless
     def house(self):
         return self.house
 
