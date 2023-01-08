@@ -1,6 +1,6 @@
 class Student:
     def __init__(self, name, house):
-        
+
         self.name = name
         self.house = house # dont add an underscore here
                            # cuz you want the value to be checked (from get_stu() input)
@@ -25,7 +25,7 @@ class Student:
     @house.setter # syntax: @name_of_getter.setter
     def house(self, house): # two para
 
-        if house not in ["Griffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
+        if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
             raise ValueError("Invalid house")
         self._house = house
 
