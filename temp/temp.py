@@ -34,6 +34,7 @@ class Student:
 
 def main():
     student = get_student()
+    student.house = "Ravenclaw"
     print(student)
 
 
