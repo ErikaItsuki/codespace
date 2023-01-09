@@ -13,3 +13,5 @@ class Hat:
 hat = Hat()
 hat.sort("Harry")
 
+# use class, esp for real world entity
+
