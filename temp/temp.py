@@ -17,10 +17,12 @@ def whole(s):
         for char in s:
             if (char.isspace()) or (char.isnumeric() and not char.isdigit()):
                 return False
-            else:
-                return True
-
+            return True
     return False
+
+def first_two_chars(s[0:2]):
+    
+
 # check front 2 chars
 # check numbers in the middle : if char.isdigit -> loop through till the end to see if isdigit too
 # check if first no. = 0
