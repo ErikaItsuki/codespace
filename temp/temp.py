@@ -22,7 +22,7 @@ def whole(s):
             if not (char.isalpha()):
                 return False
         for char in s[2:]:
-            if not (char.isalpha() and char.isdigit()):
+            if not (char.isalpha() or char.isdigit()):
                 return False
             return True
 
