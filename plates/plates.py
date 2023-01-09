@@ -24,7 +24,8 @@ def whole(s):
         for char in s[2:]:
             if not (char.isalpha() or char.isdigit()):
                 return False
-            return True
+        return True
+
 
 
 # check numbers in the middle
