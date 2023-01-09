@@ -8,6 +8,17 @@ def main():
 
 # def is_valid(s):
 
+# easy to KO:
+"""
+for char in s:
+    if char.isspace():
+        false
+"""
+"""
+if (s.isnumeric() and not s.isdigit()):
+    false
+"""
+
 
 def only_letters_and digits(s):
     s = list(s)
@@ -35,4 +46,4 @@ for char in s[3:]:
 # no spaces
 # 2 < x < 6
 # no no. in the midst
-# at least 2 char
+# at least 2 chars
