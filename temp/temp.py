@@ -47,8 +47,9 @@ for char in s[3:]:
 # 2 < x < 6 -> not = F
 
 # check front 2 chars
-# check numbers in the middle : if char.isdigit -> for char in s[]
+# check numbers in the middle : if char.isdigit -> loop through till the end to see if isdigit too
 # check if first no. = 0
+
 
 #[0-2 are must, :]
 # if it starts to be a digit (if char.isdigit() and char != 0-> do sth)
