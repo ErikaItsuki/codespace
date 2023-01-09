@@ -6,8 +6,7 @@ def main():
         print("Invalid")
 
 def is_valid(s):
-    #
-    ...
+    if (whole(s) and digit_not_in_the_midst(s, counter))
 # check the whole string -> isspace(), (s.isnumeric() and not s.isdigit()) -> F
 # 2 < x < 6 -> not = F
 
@@ -30,6 +29,8 @@ def whole(s):
 
 def digit_not_in_the_midst(s, counter):
     result = True
+    if s[counter] == "0":
+        result = False
     for char in s[counter:]:
         if not (char.isdigit()):
             result = False
