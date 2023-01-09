@@ -23,7 +23,8 @@ def whole(s):
 def first_two_are_letters(s):
 
     for char in s[0:2]:
-        if 
+        if char.isalpha():
+            ...
 
 
 # check front 2 chars
