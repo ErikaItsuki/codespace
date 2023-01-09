@@ -10,14 +10,14 @@ def is_valid(s):
         return True
     else:
         return False
-# check the whole string -> isspace(), (s.isnumeric() and not s.isdigit()) -> F
-# 2 < x < 6 -> not = F
 
+# check the whole string -> isspace(), (s.isnumeric() and not s.isdigit()) -> F
+# 2 < x < 7 -> false
 # check the whole string
 
 def whole(s):
     s = list(s)
-    if 2 < (len(s)) <= 6:
+    if 2 < (len(s)) < 7:
         for char in s[0:2]:
             if not (char.isalpha()):
                 return False
@@ -28,7 +28,7 @@ def whole(s):
 
 
 # check numbers in the middle
-# slice from the first number is much easier
+# slice from the first number by a counter is much easier
 
 def counter(s):
     counter = 0
@@ -37,6 +37,9 @@ def counter(s):
             counter+=1
         else:
             return counter
+
+# : if char.isdigit -> loop through till the end to see if isdigit too
+# check if first no. = 0
 
 def digit_not_in_the_midst(s, counter):
     result = True
@@ -48,11 +51,6 @@ def digit_not_in_the_midst(s, counter):
             break
     return result
 
-# : if char.isdigit -> loop through till the end to see if isdigit too
-# check if first no. = 0
-
-
-# easy to KO:
 
 if __name__ == "__main__":
     main()
