@@ -2,10 +2,13 @@ import random
 
 class Hat: # use class, esp for real world entity
 
-    def __init__(self):
-        self.houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]
+    # don't need a __init__
 
-    def sort(self, name):
+    houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"] # class var
+
+    # and so sort(self)...
+
+    def sort(self, name): # cls by convention : = ref of class
         print(name, "is in", random.choice(self.houses))
 
 hat = Hat()
