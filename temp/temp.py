@@ -24,12 +24,13 @@ def whole(s):
 
 
 # check numbers in the middle
+# slice from the first number is much easier
 
 def digit_not_in_the_midst(s):
-    result = False
+    result = True
     for char in s[2:]:
-        if char.isdigit():
-            result = True
+        if not (char.isdigit()):
+            result = False
             break
     return result
 
