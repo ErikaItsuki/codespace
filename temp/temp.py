@@ -49,3 +49,5 @@ for char in s[3:]:
 # at least 2 chars
 
 #[0-2 are must, :]
+# if it starts to be a digit (if char.isdigit() and char != 0-> do sth)
+# sth = if char = 
