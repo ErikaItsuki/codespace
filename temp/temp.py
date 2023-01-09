@@ -7,3 +7,5 @@
 4. dict
 ...
 """
+# class method != instance method
+# function of a class # function for an obj
