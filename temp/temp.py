@@ -6,7 +6,31 @@ def main():
         print("Invalid")
 
 
-# def is_valid(s):
+# check the whole string -> isspace(), (s.isnumeric() and not s.isdigit()) -> F
+# 2 < x < 6 -> not = F
+
+# check the whole string for spaces, punctuations, and its length
+
+def whole(s):
+    s = list(s)
+    if 2 < (len(s)) < 6:
+        for char in s:
+            if (char.isspace()) or (char.isnumeric() and not char.isdigit()):
+                return False
+            else:
+                return True
+
+    return False
+# check front 2 chars
+# check numbers in the middle : if char.isdigit -> loop through till the end to see if isdigit too
+# check if first no. = 0
+
+
+
+
+
+def is_valid(s):
+    ...
 
 # easy to KO:
 """
@@ -19,7 +43,7 @@ if (s.isnumeric() and not s.isdigit()):
     false
 """
 
-
+"""
 def only_letters_and digits(s):
     s = list(s)
     if 2 < (len(s)) < 6:
@@ -29,7 +53,7 @@ def only_letters_and digits(s):
         return True
     else:
         return False
-
+"""
 if __name__ == "__main__":
     main()
 
@@ -42,14 +66,6 @@ for char in s[3:]:
 
 
 """
-
-# check the whole string -> isspace(), (s.isnumeric() and not s.isdigit()) -> F
-# 2 < x < 6 -> not = F
-
-# check front 2 chars
-# check numbers in the middle : if char.isdigit -> loop through till the end to see if isdigit too
-# check if first no. = 0
-
 
 #[0-2 are must, :]
 # if it starts to be a digit (if char.isdigit() and char != 0-> do sth)
