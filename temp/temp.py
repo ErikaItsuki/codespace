@@ -1,17 +1,14 @@
 import random
 
-class Hat:
-    # sort the name to a house randomly
-    def __init__(self): # remember it takes 1 arg (self) only
+class Hat: # use class, esp for real world entity
+
+    def __init__(self):
         self.houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]
 
     def sort(self, name):
-        print(name, "is in", random.choice(self.houses)) # I guess once the function has (self),
-                                                         # it can have kinda "direct access" to some funcationality
-                                                         # (like self.houses from __init__(self))
+        print(name, "is in", random.choice(self.houses))
 
 hat = Hat()
 hat.sort("Harry")
 
-# use class, esp for real world entity
 
