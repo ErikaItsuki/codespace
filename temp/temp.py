@@ -5,7 +5,9 @@ def main():
     else:
         print("Invalid")
 
-
+def is_valid(s):
+    #
+    ...
 # check the whole string -> isspace(), (s.isnumeric() and not s.isdigit()) -> F
 # 2 < x < 6 -> not = F
 
@@ -54,6 +56,7 @@ def first_number(s):
 
 
 # easy to KO:
+
 """
 for char in s:
     if char.isspace():
