@@ -38,8 +38,9 @@ def counter(s):
     for char in s:
         if char.isalpha():
             counter+=1
-        else:
-            return counter
+            break
+    return counter
+
 
 # : if char.isdigit -> loop through till the end to see if isdigit too
 # check if first no. = 0
