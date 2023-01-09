@@ -14,7 +14,9 @@ def is_valid(s):
             if (char.isnumeric()) or (char.isspace()):
                 return False
         for char in s[3:]:
-            if 
+            if (char.isdigit()):
+                ...
+            else (char.is)
 
 if __name__ == "__main__":
     main()
