@@ -6,7 +6,10 @@ def main():
         print("Invalid")
 
 def is_valid(s):
-    if (whole(s) and digit_not_in_the_midst(s, counter))
+    if (whole(s) and digit_not_in_the_midst(s, counter(s))):
+        return True
+    else:
+        return False
 # check the whole string -> isspace(), (s.isnumeric() and not s.isdigit()) -> F
 # 2 < x < 6 -> not = F
 
@@ -27,6 +30,14 @@ def whole(s):
 # check numbers in the middle
 # slice from the first number is much easier
 
+def counter(s):
+    counter = 0
+    for char in s:
+        if char.isalpha():
+            counter+=1
+        else:
+            return counter
+
 def digit_not_in_the_midst(s, counter):
     result = True
     if s[counter] == "0":
@@ -37,62 +48,11 @@ def digit_not_in_the_midst(s, counter):
             break
     return result
 
-def counter(s):
-    counter = 0
-    for char in s:
-        if char.isalpha():
-            counter+=1
-        else:
-            return counter
-
-
-def first_number(s):
-    for char in s[2:]:
-        if char.isdigit():
-
-
-
 # : if char.isdigit -> loop through till the end to see if isdigit too
 # check if first no. = 0
 
 
 # easy to KO:
 
-"""
-for char in s:
-    if char.isspace():
-        false
-"""
-"""
-if (s.isnumeric() and not s.isdigit()):
-    false
-"""
-
-"""
-def only_letters_and digits(s):
-    s = list(s)
-    if 2 < (len(s)) < 6:
-        for char in s:
-            if (char.isnumeric()) or (char.isspace()):
-                return False
-        return True
-    else:
-        return False
-"""
 if __name__ == "__main__":
     main()
-
-"""cache
-
-for char in s[3:]:
-            if (char.isdigit()):
-                ...
-            else (char.is)
-
-
-"""
-
-#[0-2 are must, :]
-# if it starts to be a digit (if char.isdigit() and char != 0-> do sth)
-# all comers should be digits
-# sth =
