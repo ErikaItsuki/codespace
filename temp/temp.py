@@ -20,8 +20,11 @@ def whole(s):
             return True
     return False
 
-def first_two_chars(s[0:2]):
-    
+def first_two_are_letters(s):
+
+    for char in s[0:2]:
+        if 
+
 
 # check front 2 chars
 # check numbers in the middle : if char.isdigit -> loop through till the end to see if isdigit too
