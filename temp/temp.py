@@ -29,14 +29,17 @@ def digit_not_in_the_midst(s):
     result = False
     for char in s[2:]:
         if char.isdigit():
-            result = True
+            if char == "0":
+                return False
+            else:
+                result = True
             break
     return result
 
 def first_number(s):
     for char in s[2:]:
         if char.isdigit():
-            if 
+
 
 
 
