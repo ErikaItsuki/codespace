@@ -1,1 +1,6 @@
-print(type(50))
+# classes saw in lec
+
+"""
+1. int
+2. str
+3. list
