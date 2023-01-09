@@ -28,9 +28,9 @@ def whole(s):
 # check numbers in the middle
 # slice from the first number is much easier
 
-def digit_not_in_the_midst(s):
+def digit_not_in_the_midst(s, counter):
     result = True
-    for char in s[2:]:
+    for char in s[counter:]:
         if not (char.isdigit()):
             result = False
             break
