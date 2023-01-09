@@ -7,7 +7,9 @@ def main():
 
 
 def is_valid(s):
-    
+    s = list(s)
+    for char in s[:2]:
+        if char not 
 
 
 main()
