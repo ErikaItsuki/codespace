@@ -14,7 +14,7 @@ class Student:
     def name(self, name):
         if not name:
             raise ValueError("Missing name")
-        return self._name
+        self._name = name
 
     @property
     def house(self):
@@ -24,7 +24,7 @@ class Student:
     def house(self, house):
         if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
             raise ValueError("Invalid house")
-        return self._house
+        self._house = house
 
 def get_student():
     name = input("name: ")
