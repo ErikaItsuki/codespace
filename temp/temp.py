@@ -32,4 +32,7 @@ for char in s[3:]:
 
 """
 
-# n
+# no spaces
+# 2 < x < 6
+# no no. in the midst
+# at least 2 char
