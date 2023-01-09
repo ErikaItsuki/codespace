@@ -43,12 +43,14 @@ for char in s[3:]:
 
 """
 
-# no spaces
-# 2 < x < 6
-# no no. in the midst
-# at least 2 chars
+# check the whole string -> isspace(), (s.isnumeric() and not s.isdigit()) -> F
+# 2 < x < 6 -> not = F
+
+# check front 2 chars
+# check numbers in the middle : if char.isdigit -> for char in s[]
+# check if first no. = 0
 
 #[0-2 are must, :]
 # if it starts to be a digit (if char.isdigit() and char != 0-> do sth)
-# all coming should be digits
+# all comers should be digits
 # sth =
