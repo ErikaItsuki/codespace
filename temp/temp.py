@@ -17,7 +17,7 @@ def is_valid(s):
 
 def whole(s):
     s = list(s)
-    if 2 < (len(s)) < 6:
+    if 2 < (len(s)) <= 6:
         for char in s[0:2]:
             if not (char.isalpha()):
                 return False
