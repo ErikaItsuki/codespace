@@ -38,6 +38,7 @@ def counter(s):
     for char in s:
         if char.isalpha():
             counter+=1
+        else:
             break
     return counter
 
