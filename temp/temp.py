@@ -6,17 +6,30 @@ def main():
         print("Invalid")
 
 
-def is_valid(s):
+# def is_valid(s):
 
+
+def only_letters_and digits(s):
     s = list(s)
     if 2 < (len(s)) < 6:
-        for char in s[:2]:
+        for char in s:
             if (char.isnumeric()) or (char.isspace()):
                 return False
-        for char in s[3:]:
+        return True
+    else:
+        return False
+
+if __name__ == "__main__":
+    main()
+
+"""cache
+
+for char in s[3:]:
             if (char.isdigit()):
                 ...
             else (char.is)
 
-if __name__ == "__main__":
-    main()
+
+"""
+
+# n
