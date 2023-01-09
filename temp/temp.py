@@ -9,26 +9,34 @@ def main():
 # check the whole string -> isspace(), (s.isnumeric() and not s.isdigit()) -> F
 # 2 < x < 6 -> not = F
 
-# check the whole string for spaces, punctuations, and its length
+# check the whole string
 
 def whole(s):
     s = list(s)
     if 2 < (len(s)) < 6:
-        for char in s:
-            if (char.isspace()) or (char.isnumeric() and not char.isdigit()):
+        for char in s[0:2]:
+            if not (char.isalpha()):
+                return False
+        for char in s[2:]:
+            if not (char.isalpha() and char.isdigit()):
                 return False
             return True
-    return False
-
-def first_two_are_letters(s):
-
-    for char in s[0:2]:
-        if char.isalpha():
-            ...
 
 
-# check front 2 chars
-# check numbers in the middle : if char.isdigit -> loop through till the end to see if isdigit too
+# check numbers in the middle
+
+def digit_not_in_the_midst(s):
+    result = False
+    for char in s[2:]:
+        if char.isdigit():
+            result = True
+            break
+    return result
+
+
+
+
+# : if char.isdigit -> loop through till the end to see if isdigit too
 # check if first no. = 0
 
 
