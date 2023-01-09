@@ -7,5 +7,6 @@
 4. dict
 ...
 """
-# class method != instance method
+# class method != instance method (by default)
 # function of a class # function for an obj
+# @classmethod
