@@ -47,3 +47,5 @@ for char in s[3:]:
 # 2 < x < 6
 # no no. in the midst
 # at least 2 chars
+
+#[0-2 are must, :]
