@@ -25,6 +25,8 @@ def whole(s):
             if not (char.isalpha() or char.isdigit()):
                 return False
         return True
+    # return None is no else -> is_valid will be false
+    # potential danger??
 
 
 
