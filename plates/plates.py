@@ -48,12 +48,13 @@ def counter(s):
 
 def digit_not_in_the_midst(s, counter):
     result = True
-    if s[counter] == "0":
-        result = False
-    for char in s[counter:]:
-        if not (char.isdigit()):
+    if counter != 6:
+        if s[counter] == "0":
             result = False
-            break
+        for char in s[counter:]:
+            if not (char.isdigit()):
+                result = False
+                break
     return result
 
 
