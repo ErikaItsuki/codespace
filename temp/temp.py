@@ -9,4 +9,4 @@
 """
 # class method != instance method (by default)
 # function of a class # function for an obj
-# @classmethod
+# @classmethod -> e.g. 1 functionality
