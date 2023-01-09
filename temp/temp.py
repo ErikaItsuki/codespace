@@ -34,6 +34,15 @@ def digit_not_in_the_midst(s):
             break
     return result
 
+def counter(s):
+    counter = 0
+    for char in s:
+        if char.isalpha():
+            counter+=1
+        else:
+            return counter
+
+
 def first_number(s):
     for char in s[2:]:
         if char.isdigit():
@@ -44,11 +53,6 @@ def first_number(s):
 # check if first no. = 0
 
 
-
-
-
-def is_valid(s):
-    ...
 # easy to KO:
 """
 for char in s:
