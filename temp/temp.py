@@ -1,5 +1,8 @@
 def main(): # encouraged to be at the top if not in another file
     student = Student.get() # no neeed to create a Student obj to call get
+                            # the prob will be like:
+                            # student.get()
+                            # student = student.get()?????
     print(student)
 
 
