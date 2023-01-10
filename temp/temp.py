@@ -3,8 +3,10 @@ students = []
 with open("student.csv") as file:
     for line in file:
         name, house = line.rstrip().split(",")
-        students.append(f"{name} is in {house}")
+        student = {}
+        student["name"] = name # create a key for dict repr name of students
+        student["house"] = house # same as above
+        students.append()
 
 for student in sorted(students):
     print(student)
-
