@@ -1,43 +1,30 @@
 def main(): # encouraged to be at the top if not in another file
-    student = Student.get() # no neeed to create a Student obj to call get
-                            # the prob will be like:
-                            # student.get()
-                            # student = student.get()?????
-                            # but the student on R needs to be cons first by somehow
-                            # student = Student(name, house)
-                            # then above it, you will need the inputs, which is for the R student only
-                            # ok then, after the R student is constructed through property and stuff,
-                            # you have to construct the L student with the student on R by the get()??
-                            # it is messy and makes you feeling like a chicken and the egg prob
-                            
+
+    student = Student.get()
     print(student)
 
-
+######
 class Student:
     def __init__(self, name, house):
         self.name = name
         self.house = house
 
     def __str__(self):
-        return f"{self.name} from {self.house}" # seems self._name won't call the instance method once more
-                                                # both having the same result
+        return f"{self.name} from {self.house}"
 
     @classmethod
     def get(cls): #by nature
         name = input("name: ").title()
         house = input("house: ").title()
-        return cls(name, house) # an new student obj by class method
-                                # will call __init__ by passing in a reference automatically
-
+        return cls(name, house)
 
     @property
-    def name(self): # see __str__: f"{self.name}..." -> the self.name is taken for this
-                    # why? becaue as we know self, which has self.name = name passed already,
+    def name(self):
 
         return self._name
 
     @name.setter
-    def name(self, name): # self must be taken & name from the R of self.name = name
+    def name(self, name):
         if not name:
             raise ValueError("Missing name")
         self._name = name
@@ -51,6 +38,6 @@ class Student:
         if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
             raise ValueError("Invalid house")
         self._house = house
-
+#######
 if __name__ == "__main__":
     main()
