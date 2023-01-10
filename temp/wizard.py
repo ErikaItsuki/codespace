@@ -28,7 +28,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-# to achieve inheritance
+# to achieve inheritance -> do 2 things
 # tell python they are linked : class Student(Wizard) # (super class)
 # but when a student __init__ will be called for an Student obj, which also needs
 # __init__ from the super class: super()._init_(name) -> access super, call__init__, and
