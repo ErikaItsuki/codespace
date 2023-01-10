@@ -13,7 +13,7 @@ class Student:
                                                 # both having the same result
 
     @classmethod
-    def get(cls):
+    def get(cls): #by nature
         name = input("name: ").title()
         house = input("house: ").title()
         return cls(name, house) # will call __init__
