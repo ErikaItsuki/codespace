@@ -26,8 +26,8 @@ class Student:
         self._house = house
 
 def get_student():
-    name = input("name: ")
-    house = input("house: ")
+    name = input("name: ").title()
+    house = input("house: ").title()
     return Student(name, house)
 
 
@@ -43,6 +43,9 @@ def main():
                             # cuz get_stu itself is not an instance method
                             # (it is outside Student !! )
 
+                            # at the end: student has (on R) self.name = name
+                            #                                self.house = house (directly form __init__ by checked)
+    student.house = "Ravenclaw"
     print(student) # here comes the purpose of __str__
 
 if __name__ == "__main__":
