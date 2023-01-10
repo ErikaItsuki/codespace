@@ -18,7 +18,7 @@ class Student:
         return self._name
 
     @name.setter
-    def name(self, name):
+    def name(self, name): # self must be taken & name from the R of self.name = name
         if not name:
             raise ValueError("Missing name")
         self._name = name
