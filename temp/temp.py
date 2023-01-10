@@ -11,7 +11,7 @@ class Student:
     def get(cls):
         name = input("name: ").title()
         house = input("house: ").title()
-        return cls(name, house) # will call the 
+        return cls(name, house) # will call __init__
 
 
     @property
