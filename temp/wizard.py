@@ -4,12 +4,17 @@ class Wizard:
             raise ValueError("Missing name")
         self.name = name
 
+    def __str__(self):
+        return f"{self.name} says 'I do nothing~'" # saying thiswith self.name is valid
     ...
 
 class Student(Wizard):
     def __init__(self,name,house): # still need the name as arg to be passed into the super/ parent class
         super().__init__(name)
         self.house = house
+
+    def __str__(self):# nothing changed, still(self), by the way
+        return f"{self.name} from {self.house}" # saying self.name with inherited super class
 
     ...
 
@@ -18,18 +23,17 @@ class Professor(Wizard):
         super().__init__(name)
         self.subject = subject
 
+    def __str__(self):
+        return f"{self.name} teaches {self.subject}"
     ...
 
 def main():
     wizard = Wizard("Ablus")
     student = Student("Harry", "Gryffindor")
     professor = Professor("Severus", "Defense Against the Dark Arts")
+    print(student)
+    print(professor)
+    print(wizard)
 
 if __name__ == "__main__":
     main()
-
-# to achieve inheritance -> do 2 things
-# tell python they are linked : class Student(Wizard) # (super class)
-# but when a student __init__ will be called for an Student obj, which also needs
-# __init__ from the super class: super()._init_(name) -> access super, call__init__, and
-# pass the student name arg to the super class as an arg -> very similar to Student.get(arg)
