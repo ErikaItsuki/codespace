@@ -15,7 +15,6 @@ class Student:
         if not name:
             raise ValueError("Missing name")
         self._name = name
-
     @property
     def house(self):
         return self._house
