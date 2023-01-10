@@ -1,3 +1,8 @@
+def main(): # encouraged to be at the top if not in another file
+    student = Student.get()
+    print(student)
+
+
 class Student:
     def __init__(self, name, house):
         self.name = name
@@ -35,10 +40,6 @@ class Student:
         if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]:
             raise ValueError("Invalid house")
         self._house = house
-
-def main():
-    student = Student.get()
-    print(student)
 
 if __name__ == "__main__":
     main()
