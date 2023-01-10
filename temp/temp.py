@@ -13,4 +13,6 @@ for student in sorted(students, key = lambda student : student["name"]):
     print(student)
 
 # lambda -> tell py this function has no name
-# student -> a parameter
+# student -> a parameter : can use anything u want
+# , but as we r calling every student in that list
+# student ["name"]
