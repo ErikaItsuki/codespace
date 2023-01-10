@@ -14,7 +14,9 @@ class Student:
 
 
     @property
-    def name(self): # what is it for???
+    def name(self): # see __str__: f"{self.name}..." -> the self.name is taken for this
+                    # why? becaue as we know self, which has self.name = name passed already,
+                    
         return self._name
 
     @name.setter
