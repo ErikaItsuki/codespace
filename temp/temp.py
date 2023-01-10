@@ -8,8 +8,8 @@ class Student:
 
     @classmethod
     def get(cls):
-        name = input("name: ")
-        house = input("house: ")
+        name = input("name: ").title()
+        house = input("house: ").title()
         return cls(name, house)
 
 
