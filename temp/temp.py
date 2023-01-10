@@ -16,7 +16,8 @@ class Student:
     def get(cls): #by nature
         name = input("name: ").title()
         house = input("house: ").title()
-        return cls(name, house) # will call __init__
+        return cls(name, house) # an new student obj by class method
+                                # will call __init__ by passing in a reference automatically
 
 
     @property
