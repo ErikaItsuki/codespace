@@ -6,7 +6,7 @@ with open("student.csv") as file:
         student = {}
         student["name"] = name # create a key for dict repr name of students
         student["house"] = house # same as above
-        students.append()
+        students.append(student)
 
 for student in sorted(students):
     print(student)
