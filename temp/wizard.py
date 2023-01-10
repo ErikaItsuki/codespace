@@ -18,4 +18,4 @@ class Wizard: # define a class with common features
 # tell python they are linked : class Student(Wizard) # (super class)
 # but when a student __init__ will be called for an Student obj, which also needs
 # __init__ from the super class: super()._init_(name) -> access super, call__init__, and
-# pass the student name arg to the super class as an arg
+# pass the student name arg to the super class as an arg -> very similar to Student.get(arg)
