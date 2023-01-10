@@ -4,7 +4,7 @@ class Student:
         self.house = house
 
     def __str__(self):
-        return f"{self._name} from {self._house}"
+        return f"{self.name} from {self.house}" # seems self._name won't call the instance method once more
 
     @classmethod
     def get(cls):
