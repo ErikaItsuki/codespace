@@ -8,7 +8,3 @@ with open("student.csv") as file:
 for student in sorted(students):
     print(student)
 
-print(students[0])# = "Hermione is in Gryffindor"
-# and so forth
-# combining the name and house into one element by a fstring
-# list students is sorted in alphabetical order
