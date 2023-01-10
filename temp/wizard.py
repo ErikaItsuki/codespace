@@ -1,9 +1,9 @@
+f.name = name
 class Wizard:
     def __init__(self, name):
         if not name:
             raise ValueError("Missing name")
-        self.name = name
-
+        sel
     def __str__(self):
         return f"{self.name} says 'I do nothing~'" # saying thiswith self.name is valid
     ...
