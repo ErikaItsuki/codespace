@@ -4,7 +4,7 @@ class Student:
         self.house = house
 
     def __str__(self):
-        return f"{self.name} from {self.house}"
+        return f"{self._name} from {self._house}"
 
     @classmethod
     def get(cls):
