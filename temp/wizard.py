@@ -12,3 +12,4 @@ class Professor:
 
     ...
 
+class Wizard: # define a class with common features
