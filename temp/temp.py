@@ -3,6 +3,13 @@ def main(): # encouraged to be at the top if not in another file
                             # the prob will be like:
                             # student.get()
                             # student = student.get()?????
+                            # but the student on R needs to be cons first by somehow
+                            # student = Student(name, house)
+                            # then above it, you will need the inputs, which is for the R student only
+                            # ok then, after the R student is constructed through property and stuff,
+                            # you have to construct the L student with the student on R by the get()??
+                            # it is messy and makes you feeling like a chicken and the egg prob
+                            
     print(student)
 
 
