@@ -14,3 +14,4 @@ print(potter) # call __str__
 weasley = Vault(25, 50, 100)
 print(weasley) # call __str__
 
+#other by convention : int + int same as Vault + Vault
