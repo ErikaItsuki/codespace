@@ -6,6 +6,11 @@ class Student:
     def __str__(self):
         return f"{self.name} from {self.house}"
 
+    def get(cls):
+        name = input("name: ")
+        house = input("house: ")
+        
+
     @property
     def name(self): # what is it for???
         return self._name
@@ -26,15 +31,8 @@ class Student:
             raise ValueError("Invalid house")
         self._house = house
 
-def get_student():
-    name = input("name: ").title()
-    house = input("house: ").title()
-    return Student(name, house)
-
-
 def main():
-    student = get_student()
-    student.house = "Ravenclaw"
+    student = ...
     print(student)
 
 if __name__ == "__main__":
