@@ -10,7 +10,7 @@ with open("student.csv") as file:
 
 
 for student in sorted(students, key = lambda student : student["name"]):
-    print(student)
+    print(f"{student['name']} is in {student["house"]}")
 
 # lambda -> tell py this function has no name
 # student -> a parameter : can use anything u want
