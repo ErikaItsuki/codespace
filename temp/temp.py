@@ -5,18 +5,19 @@ class Student:
 
     def __str__(self):
         return f"{self.name} from {self.house}" # seems self._name won't call the instance method once more
+                                                # both having the same result
 
     @classmethod
     def get(cls):
         name = input("name: ").title()
         house = input("house: ").title()
-        return cls(name, house)
+        return cls(name, house) # will call the 
 
 
     @property
     def name(self): # see __str__: f"{self.name}..." -> the self.name is taken for this
                     # why? becaue as we know self, which has self.name = name passed already,
-                    
+
         return self._name
 
     @name.setter
