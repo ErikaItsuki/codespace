@@ -8,7 +8,8 @@ with open("student.csv") as file:
         student["house"] = house # same as above
         students.append(student)
 
+def get_name(student):
+    return student["name"]
 
-
-for student in sorted(students, key = ):
+for student in sorted(students, key = get_name ):
     print(student)
