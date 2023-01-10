@@ -11,3 +11,4 @@ for student in sorted(students):
 # students[0] = "Hermione is in Gryffindor"
 # and so forth
 # combining the name and house into one element by a fstring
+# list students is sorted in alphabetical order
