@@ -9,5 +9,8 @@ with open("student.csv") as file:
         students.append(student)
 
 
-for student in sorted(students, key =):
+for student in sorted(students, key = lambda student : student["name"]):
     print(student)
+
+# lambda -> tell py this function has no name
+# student -> a parameter
