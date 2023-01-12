@@ -8,7 +8,7 @@ while True:
         if time == '':
             break # directly exit loop if enter is pressed
     except ValueError:
-        contine
+        continue
     else:
         total += time
         counter += 1
