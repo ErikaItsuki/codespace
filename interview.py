@@ -4,9 +4,11 @@ counter = 0
 # enter time in loop
 while True:
     try:
-        time = int(input("Time for 10km (press ctrl+d to terminate):").strip())
-        if time == '':
+        time = input("Time for 10km (press Enter for mean): ").strip()
+        if not time:
             break # directly exit loop if enter is pressed
+        time = int(time)
+
     except ValueError:
         continue
     else:
