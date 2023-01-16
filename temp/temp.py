@@ -18,6 +18,7 @@ def counting(i = 1): # call with counter()
     while(i < len(groceries)):
         if groceries[i] == groceries[i-1]:
             counter += 1
+            i+=1
         else:
             counters.append(counter)
             return counter(i+1)
