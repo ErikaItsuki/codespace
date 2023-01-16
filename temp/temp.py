@@ -18,7 +18,7 @@ fruit = {name : number}
 """
 # no need to use list of dict, 1 dict is enough
 
-
+# if name not in list.dict(): append (input("fruit"))
 grocery = {
     input(): number,
     input(): number,
