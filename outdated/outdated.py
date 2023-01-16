@@ -18,3 +18,5 @@ split by spaces, then eliminate any punctuation
 9/8/1636
 9-8-1636
 
+slash/ hyphen- period.
+
