@@ -20,8 +20,7 @@ months = {
 while True:
     try:
         middle_endian = input("Date: ").strip()
-
-        mm,dd,yyyy = middle_endian.split('[ -/.]', maxsplit = 3)
+        mm,dd,yyyy = re.split('[ -/.]', middle_endian)
 
 
 
