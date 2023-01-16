@@ -6,6 +6,7 @@ name = input().strip().upper()
 2 BANANA
 1 TOMATO
 """
+"""
 # create 1 dict and append to list first:
 counter = 0
 number = 1
@@ -14,3 +15,13 @@ name = input("fruit: ")
 fruit = {"name": name, "number": number}
 
 fruit = {name : number}
+"""
+# no need to use list of dict, 1 dict is enough
+
+
+grocery = {
+    input(): number,
+    input(): number,
+    input(): number,
+    input(): number
+}
