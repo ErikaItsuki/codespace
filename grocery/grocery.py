@@ -10,7 +10,7 @@ while True:
         else:
             grocery[name]+=1
     except EOFError:
-        for item in sorted(grocery, key = item):
+        for item in sorted(grocery, key = item): # osrted for both list and dict
             # print(f"{item} {grocery[item]}") {item} = key: names
             print(f"{grocery[item]} {item}")
         break
