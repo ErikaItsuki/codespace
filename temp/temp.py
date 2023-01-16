@@ -29,7 +29,7 @@ grocery = {
     input(): number
 }
 """
-grocery = {}
+grocery = []
 
 while True:
     try:
