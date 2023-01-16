@@ -20,3 +20,23 @@ split by spaces, then eliminate any punctuation
 
 slash/ hyphen- period.
 
+"""
+""" input --> split --> convert --> rearrange
+
+return f"{year}-{month}-{day}"
+"""
+
+months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+]
