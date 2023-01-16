@@ -17,7 +17,9 @@ months = [
 
 while True:
     try:
-        mm,dd,yyyy = input("Date: ").strip().
+        middle_endian = input("Date: ").strip()
+        
+        mm,dd,yyyy = middle_endian.split(, mansplit = 3)
 
 
     except valueError:
