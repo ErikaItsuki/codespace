@@ -14,7 +14,8 @@ months = {
 }
 
 mm = input().strip().title()
-if mm in months:
+if mm in months: # input 4 ->  sys.exit here
+                 # if mm in dict -> consider keys of the dict only
     if mm in months.keys():
         print(f"{mm} as a key")
     else:
