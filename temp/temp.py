@@ -33,3 +33,10 @@ def convert():
             continue
 
 print
+
+################ HOW TO DO PSETS EFFICIENTLY #################
+# read question
+# get familiar with stuff from "hints"
+# think with small, organized pieces and test each step of pieces (40 min)
+# discord for more information
+# final answer probably comes out here
