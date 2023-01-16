@@ -40,6 +40,7 @@ while True:
             grocery[name]+=1
     except EOFError:
         for item in grocery:
-            print(f"{item} {grocery[item]}")
+            # print(f"{item} {grocery[item]}") {item} = key: names
+            print(f"{grocery[item]} {item}")
         break
 
