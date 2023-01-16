@@ -11,8 +11,10 @@ while True:
 #printing the list after sorting
 
 i = 1 # if i != i-1 -> return counter = 1
-counter = 0
-while(i <= len(groceries)):
+counter = 1
+while(i < len(groceries)):
+    if groceries[i] == groceries[i-1]:
+        counter += 1
 
 for i in range(len(groceries)):
 
@@ -21,3 +23,5 @@ for i in range(len(groceries)):
         print(f"{i} {groceries[i-1]}")
         counter = 1
 
+"""ideas"""
+# list.count(target) -> how we know the targets' names?
