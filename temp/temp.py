@@ -9,8 +9,8 @@ name = input().strip().upper()
 # create 1 dict and append to list first:
 counter = 0
 number = 1
-while True:
-    name = input("fruit: ")
-    fruit = {name : number}
+
+name = input("fruit: ")
+fruit = {"name": name, "number": number}
 
 fruit = {name : number}
