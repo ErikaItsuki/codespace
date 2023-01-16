@@ -21,7 +21,10 @@ def counting(i = 1): # call with counter()
             i+=1
         else:
             counters.append(counter)
-            return counter(i+1)
+            return i
+
+def get_counters(i):
+    
 
 
 
