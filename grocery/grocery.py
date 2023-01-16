@@ -1,3 +1,5 @@
+# to-do : debug !!
+
 grocery = {}
 
 while True:
