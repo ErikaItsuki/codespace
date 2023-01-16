@@ -16,7 +16,7 @@ months = {
 }
 while True:
     try:
-        middle_endian = input("Date: ").strip()
+        middle_endian = input("Date: ").strip().title()
         mm,dd,yyyy = re.split('[ -/.]', middle_endian)
         dd, yyyy = int(dd), int(yyyy)
 
