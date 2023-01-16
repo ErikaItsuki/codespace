@@ -24,8 +24,8 @@ while True:
         continue
     else:
         for month in months: # month = key, # months[month] = value
-            if mm == month:
-                mm == months[month]
+            if mm == month: # 'January' == 'January' , for exmaple -> passes to line 28
+                mm = months[month] 
 
         break
 
