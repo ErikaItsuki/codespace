@@ -13,8 +13,11 @@ months = [
     "December"
 ]
 
+
+
 while True:
     try:
+        mm,dd,yyyy = input("Date: ").strip().
 
 
     except valueError:
