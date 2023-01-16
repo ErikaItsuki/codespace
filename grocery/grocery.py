@@ -5,6 +5,8 @@ while True:
         name = input().strip().upper()
         if name not in grocery.keys(): # .keys() for a single dict
             grocery[name] = 1 # append not for dict # the way to "append" a key
+        elif not name:
+            continue
         else:
             grocery[name]+=1
     except EOFError:
