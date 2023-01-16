@@ -12,8 +12,6 @@ while True:
 
 """
 
-
-
 #others
 # Vwhile True: try ... then list.append()except EOFError: print() and break VVV
 # output grocrey list .upper()V sorted by items
