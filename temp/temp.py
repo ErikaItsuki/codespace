@@ -23,8 +23,7 @@ while True:
             for month in months:
                 if month == mm:
                     mm == months[month]
-        elif mm.isdigit() and 0 < mm < 13 :
-            pass
+        
         else:
             raise ValueError("mm is neither numbers or english letters")
     except ValueError: # september(mm) -> 9(dd) included
