@@ -18,6 +18,8 @@ while True:
     try:
         middle_endian = input("Date: ").strip()
         mm,dd,yyyy = re.split('[ -/.]', middle_endian)
+        dd, yyyy = int(dd), int(yyyy)
+
         break
     except ValueError: # september(mm) -> 9(dd) included
         continue
