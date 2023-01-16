@@ -25,5 +25,6 @@ mm,dd,yyyy = re.split('[ -/.]', middle_endian)
 if mm in months:
     for i in range(len(months)):
         if months[i] == mm:
-            mm = i
+            mm = i # no prob
+            
 print(f"{yyyy} {mm} {dd}")
