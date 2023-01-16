@@ -50,36 +50,3 @@ for i in range(len(groceries)):
 # 3 APPLE
 # 7 BANANA
 
-""" failed case 0: very hard to use dict -> look for dict sol (discord)!!
-#for grocery in groceries:
-#   grocery = {"item": grocery, "number" = 1}
-
-
-# get the list sorted beforehand!!
-
-def counter(items):
-    i = 1
-    while (i <= len(groceries)):
-        if groceries[i] == groceries[i-1]:
-            i += 1
-        else:
-            return i
-
-grocery = {"item" : grocery, "number": counter(groceries)}
-
-
-"""
-
-
-""" Failed case 1
-groceries = []
-
-while True:
-    try:
-        item = input().strip().upper()
-        grocery = {"item" : item, "number": 1}
-        if item == # well, separated into different loops and so hard to access the previous' keys
-
-
-"""
-
