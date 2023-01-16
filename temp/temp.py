@@ -15,13 +15,14 @@ months = {
     "December" : "12"
 }
 
+yyyymmdd = []
 def convert():
 
     while True:
         try:
             middle_endian = input("Date: ").strip().title()
             mm,dd,yyyy = re.split('[ -/.]', middle_endian)
-
+            
             for month in months: # month = key, # months[month] = value
                 if mm == month: # 'January' == 'January' , for exmaple -> passes to line 28
                     mm = months[month]
