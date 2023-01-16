@@ -23,7 +23,6 @@ print("##########################################")
 """
 name = input().strip().upper()
  LIST OF DICT: fruit = {"number" = number, "name" = name}
- 
  after number of each type of fruit counted: groceries = groceries.append(fruit)
 1 APPLE
 2 BANANA
