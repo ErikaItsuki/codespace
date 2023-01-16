@@ -12,7 +12,7 @@ while True:
         else:
             grocery[name]+=1
     except EOFError:
-        for item in sorted(grocery, key = lambda grocery: name): # sorted for both list and dict
+        for item in sorted(grocery.keys()): # sorted for both list and dict
         # for item in grocery stays the same: tortilla comes before sweet potato
             # print(f"{item} {grocery[item]}") {item} = key: names
             print(f"{grocery[item]} {item}")
