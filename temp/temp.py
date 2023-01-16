@@ -23,7 +23,7 @@ while True:
     except ValueError: # september(mm) -> 9(dd) included
         continue
     else:
-        for month in months: # month = key, # months[month] = value
+        for month in months.keys(): # month = key, # months[month] = value
             if mm == months:
                 mm == months[month]
 
