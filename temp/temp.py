@@ -19,15 +19,17 @@ while True:
         middle_endian = input("Date: ").strip()
         mm,dd,yyyy = re.split('[ -/.]', middle_endian)
         dd, yyyy = int(dd), int(yyyy)
-
-        break
+        if mm in months.keys():
+            for month in months:
+                if month == mm:
+                    mm == months[month]
+        elif mm.isdigit() and 0 < mm < 13 :
+            pass
+        else:
+            raise ValueError("mm is neither numbers or english letters")
     except ValueError: # september(mm) -> 9(dd) included
         continue
 
-if mm in months.keys():
-    for month in months:
-        if month == mm:
-            mm == months[month]
 
 print(f"{yyyy}-{mm}-{dd}")
 
@@ -42,3 +44,8 @@ if mm in months:
          if months[i] == mm:
              mm = i # no prob
 """
+
+# test cases:
+# September 8 2022 -> ok
+# 8 September 2022 -> ValueError
+# 8 September 2022 -> No ValueError but
