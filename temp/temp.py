@@ -20,7 +20,7 @@ def counting(i = 1): # call with counter()
             counter += 1
         else:
             counters.append(counter)
-            return counter(i)
+            return counter(i+1)
 
 
 
