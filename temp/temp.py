@@ -20,3 +20,7 @@ if mm in months: # input 4 ->  sys.exit here
         print(f"{mm} as a key")
     else:
         print(f"{mm} as a value")
+
+# conclusion:
+# if mm in months: (for key) as english words -> convert into numbers
+# else: unchange (simply put outside of the if)
