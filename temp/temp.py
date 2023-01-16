@@ -1,4 +1,3 @@
-
 """
 name = input().strip().upper()
  LIST OF DICT: fruit = {name : number}
@@ -7,3 +6,11 @@ name = input().strip().upper()
 2 BANANA
 1 TOMATO
 """
+# create 1 dict and append to list first:
+counter = 0
+number = 1
+while True:
+    name = input("fruit: ")
+    fruit = {name : number}
+
+fruit = {name : number}
