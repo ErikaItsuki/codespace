@@ -1,9 +1,26 @@
+months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+]
+
 while True:
     try:
 
 
-    except ...:
+    except valueError:
         continue
+    else:
+        ...
 
 
 """
@@ -26,17 +43,3 @@ slash/ hyphen- period.
 return f"{year}-{month}-{day}"
 """
 
-months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-]
