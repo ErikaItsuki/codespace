@@ -35,7 +35,7 @@ while True:
     try:
         name = input().strip().upper()
         if name not in grocery.keys(): # .keys() for a single dict
-            grocery...({name:1}) # append not for dict
+            grocery[name] = 1 # append not for dict # the way to "append" a key
         else:
             grocery[name]+=1
     except EOFError:
