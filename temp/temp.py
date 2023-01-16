@@ -13,14 +13,14 @@ months = {
     "December" : 12
 }
 
-mm = input().strip().title()
-if mm in months: # input 4 ->  sys.exit here
-                 # if mm in dict -> consider keys of the dict only
-    if mm in months.keys():
-        print(f"{mm} as a key")
-    else:
-        print(f"{mm} as a value")
+while True:
+    try:
+        middle_endian = input("Date: ").strip()
+        mm,dd,yyyy = re.split('[ -/.]', middle_endian)
 
-# conclusion:
-# if mm in months: (for key) as english words -> convert into numbers
-# else: unchange (simply put outside of the if)
+    except valueError:
+        continue
+    else:
+         if mm in months:
+            print(f"{year}-{months[months.keys()]}-{day}")
+            # months[months.keys()] should be valid
