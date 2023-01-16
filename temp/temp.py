@@ -29,13 +29,13 @@ grocery = {
     input(): number
 }
 """
-grocery = []
+grocery = {}
 
 while True:
     try:
         name = input().strip().upper()
         if name not in grocery.keys():
-            grocery.append({name:1})
+            grocery.append({name:1}) # append not for dict
         else:
             grocery[name]+=1
     except EOFError:
