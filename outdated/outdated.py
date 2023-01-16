@@ -100,4 +100,5 @@ if mm in months:
 # September 8 2022 -> ok
 # 8 September 2022 -> ValueError
 # 8 September 2022 -> No ValueError but
+# may 2022 8 -> yyyymmdd XX 8-5-2022
 """
