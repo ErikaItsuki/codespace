@@ -1,4 +1,3 @@
-"""continue here
 groceries = []
 
 while True:
@@ -10,7 +9,7 @@ while True:
             print(item)
         break
 
-"""
+
 
 #others
 # Vwhile True: try ... then list.append()except EOFError: print() and break VVV
