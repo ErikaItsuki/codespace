@@ -28,8 +28,8 @@ while True:
     except valueError:
         continue
     else:
-         if mm in months.keys():
-            print(f"{year}-{months[months.keys]}-{day}")
+         if mm in months:
+            print(f"{year}-{months[months.keys()]}-{day}") # months[months.keys()] should be valid
 
 """
 MM : str/int
