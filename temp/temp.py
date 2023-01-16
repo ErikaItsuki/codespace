@@ -19,9 +19,18 @@ fruit = {name : number}
 # no need to use list of dict, 1 dict is enough
 
 # if name not in list.dict(): append (input("fruit"))
+grocery.append({name : 1})
+# if equals -> grocery[name]+=1
 grocery = {
-    input(): number,
+    {input(): number},
     input(): number,
     input(): number,
     input(): number
 }
+
+grocery = {}
+
+while True:
+    try:
+        name = input().strip().upper()
+        if name not in gro
