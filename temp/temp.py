@@ -10,11 +10,14 @@ while True:
 
 #printing the list after sorting
 
+counters = []
 i = 1 # if i != i-1 -> return counter = 1
 counter = 1
 while(i < len(groceries)):
     if groceries[i] == groceries[i-1]:
         counter += 1
+    else:
+        counters.append(counter)
 
 for i in range(len(groceries)):
 
