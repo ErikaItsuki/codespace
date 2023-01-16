@@ -8,4 +8,6 @@ print(f"{yyyy} {mm} {dd}")
 # day and year accept int
 
 if mm in months:
-    mm = 
+    for i in range(len(months)):
+        if months[i] == mm:
+            mm = i
