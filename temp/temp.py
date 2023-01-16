@@ -20,15 +20,14 @@ while True:
         mm,dd,yyyy = re.split('[ -/.]', middle_endian)
         dd, yyyy = int(dd), int(yyyy)
 
-    except ValueError: # september(mm) -> 9(dd) included
-        continue
-    else:
         for month in months: # month = key, # months[month] = value
             if mm == month: # 'January' == 'January' , for exmaple -> passes to line 28
                 mm = months[month]
                 
 
-        break
+
+    except ValueError: # september(mm) -> 9(dd) included
+        continue
 
 print(f"{yyyy}-{mm}-{dd}")
 
