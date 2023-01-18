@@ -40,3 +40,7 @@ print
 # think with small, organized pieces and test each step of pieces (40 min)
 # discord for more information
 # final answer probably comes out here
+
+
+####### Septembet 8, 1636
+, -> error 
