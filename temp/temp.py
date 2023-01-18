@@ -58,4 +58,6 @@ if mm dd, yyyy
  1 <= dd <= 31
  yyyy >= 0
 
+fstring
+https://realpython.com/python-string-formatting/#2-new-style-string-formatting-strformat
 """
