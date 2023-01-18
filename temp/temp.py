@@ -45,3 +45,14 @@ print
 ####### Septembet 8, 1636
 #, -> IndexError: if dd followed by a comma -> remove(","), then pass
 #                 else continue
+
+#######
+"""
+valid:
+if mm/dd/yyyy
+ -> str.split('/')
+if mm dd, yyyy
+ -> str.split() & dd kinda remove the last char ','
+ 1 <= mm <= 12
+ 1 <= dd <= 31
+ yyyy >= 0
