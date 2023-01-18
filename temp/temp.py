@@ -50,9 +50,10 @@ print
 """
 valid:
 if mm/dd/yyyy
- -> str.split('/')
+ -> str.split('/'), it should have 3 chunks
 if mm dd, yyyy
- -> str.split() & dd kinda remove the last char ','
+ -> str.split() (should have 3chunks)& dd kinda remove the last char ','
+ ==> str.replace() VS list.remove :)
  1 <= mm <= 12
  1 <= dd <= 31
  yyyy >= 0
