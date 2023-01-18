@@ -43,4 +43,5 @@ print
 
 
 ####### Septembet 8, 1636
-#, -> IndexError: if dd followed by a comma -> ge
+#, -> IndexError: if dd followed by a comma -> remove(","), then pass
+#                 else continue
