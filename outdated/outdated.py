@@ -29,7 +29,7 @@ while True:
             if mm in months: # mm = str
                 mm = months.index(mm) + 1
             else:
-                mm = int(mm)
+                mm,dd,yyyy = int(mm), int(dd), int(yyyy)
         else:
             continue
 
