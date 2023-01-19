@@ -22,9 +22,9 @@ while True:
             mm,dd,yyyy = outdated.split("/", maxsplit = 3)
             if mm in months:
                 continue
-        elif ' ' and ',' in outdated: # corner = Sep 8 ,1636
+        elif ' ' in outdated: # corner = Sep 8 ,1636
                                       # to handle the corner at the same time: replace , to nothing then split, not afterwards
-            mm,dd,yyyy = outdated.replace(",", "").split()
+            mm,dd,yyyy = outdated.replace(",", "").split()# what if replace has found no ,?
         else:
             continue
 
