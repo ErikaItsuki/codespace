@@ -59,3 +59,9 @@ else:
 
 """
 if outdated.isalpha
+
+"""
+dd mm yyyy are all int
+
+except ValueError:
+    if 
