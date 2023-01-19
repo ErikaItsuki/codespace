@@ -19,7 +19,7 @@ while True:
     try:
         outdated = input("date: ").strip().title()
         if '/' in outdated:
-            mm,dd,yyyy = outdated.split("/", maxsplit = 3)
+            mm,dd,yyyy = outdated.split("/")
             if mm in months:
                 continue
         elif ' ' in outdated: # corner = Sep 8 ,1636
@@ -40,7 +40,7 @@ while True:
         else:
             continue
 
-    except (ValueError):
+    except ValueError:
         continue
 
     else:
@@ -81,3 +81,4 @@ else:
     else:
         ##continue##
 
+"""
