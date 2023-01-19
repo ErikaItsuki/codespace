@@ -65,6 +65,7 @@ mm, dd, yyyy = input().strip().tilte().split('/') # deal with format /
 int(mm,dd,yyyy) # if ok = mm not in months -> format must be '/' # deal with int
 
 except ValueError:
+    mm,dd,yyyy = outdated.replace(",", "").split()
     if mm in months: # format must be ' ' ', ' # but mm is not defined cuz unpacking failed
         mm = months.index(mm) + 1 ## 8 8, 1936
         int(mm,dd,yyyy)
