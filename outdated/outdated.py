@@ -23,9 +23,9 @@ while True:
             mm,dd,yyyy = int(mm), int(dd), int(yyyy)
 
 
-        elif ' ' in outdated: # corner = Sep 8 ,1636
+        elif ' ' and ',' in outdated : # corner = Sep 8 ,1636
                                       # to handle the corner at the same time: replace , to nothing then split, not afterwards
-            mm,dd,yyyy = outdated.replace(",", "").split()# what if replace has found no ,?
+            mm,dd,yyyy = outdated.replace(",", "").split()# what if replace has found no ,? --> pass :)
             dd, yyyy = int(dd), int(yyyy)
             if mm in months: # mm = str
                 mm = months.index(mm) + 1
