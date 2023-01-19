@@ -1,104 +1,54 @@
-import re
+months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+]
 
-months = {
-    "January" : 1,
-    "February" : 2,
-    "March" : 3,
-    "April" : 4,
-    "May" : 5,
-    "June" : 6,
-    "July" : 7,
-    "August" : 8,
-    "September" : 9,
-    "October" : 10,
-    "November" : 11,
-    "December" : 12
-}
-
-
-# check ValueError:
 while True:
     try:
-        middle_endian = input("Date: ").strip()
-        mm,dd,yyyy = re.split('[ -/.]', middle_endian)
+        outdated = input("date: ").strip().title()
+        if '/' in outdated:
+            mm,dd,yyyy = outdated.split("/", maxsplit = 3)
+        elif ' ' and ',' in outdated: # corner = Sep 8 ,1636
+                                      # to handle the corner at the same time: replace , to nothing then split, not afterwards
+            mm,dd,yyyy = outdated.replace(",", "").split()
 
-    except valueError:
+        dd,yyyy = int(dd), int(yyyy)
+
+        if 1 <= dd <= 31 and  yyyy >= 0:
+
+            if mm in months: # mm = str
+                mm = months.index(mm) + 1
+            elif 1 <= int(mm) <= 12: # mm is int # int(mm) directly returns sth,
+                                     # no need to be stored so a new var not needed
+                mm = int(mm)
+            else:
+                continue
+
+    except (ValueError):
         continue
+    
     else:
-         if mm in months:
-            print(f"{year}-{months[months.keys()]}-{day}") # months[months.keys()] should be valid
-
-"""
-MM : str/int
-DD -> int ->
-YYYY ->
-
-September 8 1636
-September 8, 1636
-split by spaces, then eliminate any punctuation
-
-9/8/1636
-9-8-1636
-
-slash/ hyphen- period.
-
-"""
-""" input --> split --> convert --> rearrange
-
-return f"{year}-{month}-{day}"
-"""
-
-""" from temp
-import re
-
-months = {
-    "January" : "1",
-    "February" : "2",
-    "March" : "3",
-    "April" : "4",
-    "May" : "5",
-    "June" : "6",
-    "July" : "7",
-    "August" : "8",
-    "September" : "9",
-    "October" : "10",
-    "November" : "11",
-    "December" : "12"
-}
-while True:
-    try:
-        middle_endian = input("Date: ").strip()
-        mm,dd,yyyy = re.split('[ -/.]', middle_endian)
-        dd, yyyy = int(dd), int(yyyy)
-        if mm in months.keys():
-            for month in months:
-                if month == mm:
-                    mm == months[month]
+        print(f"{yyyy}-{mm:02}-{dd:02}") # if mm is str, print 0 AFTER mm
         break
 
-    except ValueError: # september(mm) -> 9(dd) included
-        continue
 
-
-print(f"{yyyy}-{mm}-{dd}")
-
-
-
-# month accept str/int
-# day and year accept int
 
 """
-"""
-ok but have another approach
-if mm in months:
-     for i in range(len(months)):
-         if months[i] == mm:
-             mm = i # no prob
-"""
+if all int:
+    unchange
+elif mm == str, and other == int:
+    mm to int
+else:
+    reprompt
 
-# test cases:
-# September 8 2022 -> ok
-# 8 September 2022 -> ValueError
-# 8 September 2022 -> No ValueError but
-# may 2022 8 -> yyyymmdd XX 8-5-2022
 """
