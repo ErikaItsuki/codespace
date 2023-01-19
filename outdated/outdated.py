@@ -37,11 +37,8 @@ while True:
 
     else:
 
-        if 1 <= mm <= 12, 1<= dd <= 31, yyyy >= 0:
-            print(f"{yyyy}-{mm:02}-{dd:02}") # if mm is str, print 0 AFTER mm
-            break
-        else:
-            pass
+        return f"{yyyy}-{mm:02}-{dd:02}" if (1 <= mm <= 12, 1<= dd <= 31, yyyy >= 0) else pass
+
 
 
 
