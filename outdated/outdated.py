@@ -26,6 +26,12 @@ while True:
                                       # to handle the corner at the same time: replace , to nothing then split, not afterwards
             mm,dd,yyyy = outdated.replace(",", "").split()# what if replace has found no ,?
 
+            if mm in months: # mm = str
+                mm = months.index(mm) + 1
+            elif 1 <= int(mm) <= 12: # mm is int # int(mm) directly returns sth,
+                                     # no need to be stored so a new var not needed
+                mm = int(mm)
+
         else:
             continue
 
@@ -33,12 +39,8 @@ while True:
 
         if 1 <= dd <= 31 and  yyyy >= 0:
 
-            if mm in months: # mm = str
-                mm = months.index(mm) + 1
-            elif 1 <= int(mm) <= 12: # mm is int # int(mm) directly returns sth,
-                                     # no need to be stored so a new var not needed
-                mm = int(mm)
-            
+
+
         else:
             continue
 
