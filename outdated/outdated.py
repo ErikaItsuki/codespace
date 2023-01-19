@@ -58,9 +58,9 @@ else:
     reprompt
 
 """
-if outdated.isalpha
+# if outdated.isalpha
 
-"""
+""" not good
 mm, dd, yyyy = input().strip().tilte().split('/') # deal with format /
 if mm.isalpha():
     continue
