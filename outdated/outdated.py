@@ -27,20 +27,8 @@ while True:
             mm,dd,yyyy = outdated.replace(",", "").split()# what if replace has found no ,?
             if mm in months: # mm = str
                 mm = months.index(mm) + 1
-            elif 1 <= int(mm) <= 12: # mm is int # int(mm) directly returns sth,
-                                     # no need to be stored so a new var not needed
-                mm = int(mm)
             else:
-                pass
-        else:
-            continue
-
-        dd,yyyy = int(dd), int(yyyy)
-
-        if 1 <= dd <= 31 and  yyyy >= 0:
-
-
-
+                mm = int(mm)
         else:
             continue
 
