@@ -61,7 +61,10 @@ else:
 if outdated.isalpha
 
 """
-dd mm yyyy are all int
+mm, dd, yyyy = input()
+int(mm,dd,yyyy)
 
 except ValueError:
-    if 
+    if mm in months:
+        mm = months.index(mm) + 1
+        
