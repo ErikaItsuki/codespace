@@ -61,8 +61,8 @@ else:
 if outdated.isalpha
 
 """
-mm, dd, yyyy = input().strip().tilte().split('/')
-int(mm,dd,yyyy) # if ok = mm not in months -> format must be '/'
+mm, dd, yyyy = input().strip().tilte().split('/') # deal with format /
+int(mm,dd,yyyy) # if ok = mm not in months -> format must be '/' # deal with int 
 
 except ValueError:
     if mm in months: # format must be ' ' ', '
