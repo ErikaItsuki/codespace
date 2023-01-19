@@ -18,9 +18,13 @@ while True:
         outdated = input("date: ").strip().title()
         if '/' in outdated:
             mm,dd,yyyy = outdated.split("/", maxsplit = 3)
+            if mm in months:
+                continue
         elif ' ' and ',' in outdated: # corner = Sep 8 ,1636
                                       # to handle the corner at the same time: replace , to nothing then split, not afterwards
             mm,dd,yyyy = outdated.replace(",", "").split()
+        else:
+            continue
 
         dd,yyyy = int(dd), int(yyyy)
 
@@ -31,12 +35,12 @@ while True:
             elif 1 <= int(mm) <= 12: # mm is int # int(mm) directly returns sth,
                                      # no need to be stored so a new var not needed
                 mm = int(mm)
-            else:
-                continue
+        else:
+            continue
 
     except (ValueError):
         continue
-    
+
     else:
         print(f"{yyyy}-{mm:02}-{dd:02}") # if mm is str, print 0 AFTER mm
         break
