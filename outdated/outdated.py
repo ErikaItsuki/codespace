@@ -62,10 +62,10 @@ if outdated.isalpha
 
 """
 mm, dd, yyyy = input()
-int(mm,dd,yyyy)
+int(mm,dd,yyyy) # if ok = mm not in months -> format must be '/'
 
 except ValueError:
-    if mm in months:
+    if mm in months: # format must be ' ' ', '
         mm = months.index(mm) + 1
         int(mm,dd,yyyy)
     else:
