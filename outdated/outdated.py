@@ -28,6 +28,7 @@ while True:
             mm,dd,yyyy = outdated.replace(",", "").split()# what if replace has found no ,?
             if mm in months: # mm = str
                 mm = months.index(mm) + 1
+                dd, yyyy = int(dd), int(yyyy)
             else:
                 mm,dd,yyyy = int(mm), int(dd), int(yyyy)
         else:
