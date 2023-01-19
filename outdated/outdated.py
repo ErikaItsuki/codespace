@@ -63,7 +63,9 @@ if outdated.isalpha
 """
 mm, dd, yyyy = input().strip().tilte().split('/') # deal with format /
 int(mm,dd,yyyy) # if ok = mm not in months -> format must be '/' # deal with int
-# October/7/2022 
+# October/7/2022
+
+if int(mm,dd,yyyy) is valid and mm not in months -> pass; else: continue
 except ValueError:
     mm,dd,yyyy = outdated.replace(",", "").split()
     if mm in months: # format must be ' ' ', ' # but mm is not defined cuz unpacking failed
