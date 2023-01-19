@@ -67,4 +67,9 @@ int(mm,dd,yyyy)
 except ValueError:
     if mm in months:
         mm = months.index(mm) + 1
-        
+        int(mm,dd,yyyy)
+    else:
+        continue
+else:
+    if 
+
