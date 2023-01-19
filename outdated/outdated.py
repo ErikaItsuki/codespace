@@ -71,5 +71,8 @@ except ValueError:
     else:
         continue
 else:
-    if 
+    if 1 <= dd <= 31 and  yyyy >= 0 and 1 <= mm <= 31:
+        return f"{yyyy}-{mm:02}-{dd:02}"
+    else:
+        continue
 
