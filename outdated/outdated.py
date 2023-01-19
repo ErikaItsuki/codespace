@@ -1,3 +1,5 @@
+import re
+
 months = [
     "January",
     "February",
@@ -56,3 +58,4 @@ else:
     reprompt
 
 """
+if outdated.isalpha
