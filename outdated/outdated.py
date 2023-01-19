@@ -26,11 +26,11 @@ while True:
         elif ' ' in outdated: # corner = Sep 8 ,1636
                                       # to handle the corner at the same time: replace , to nothing then split, not afterwards
             mm,dd,yyyy = outdated.replace(",", "").split()# what if replace has found no ,?
+            dd, yyyyy = int(dd), int(yyyy)
             if mm in months: # mm = str
                 mm = months.index(mm) + 1
-                dd, yyyy = int(dd), int(yyyy)
             else:
-                mm,dd,yyyy = int(mm), int(dd), int(yyyy)
+                mm = int(mm)
         else:
             continue
 
