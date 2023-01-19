@@ -67,7 +67,6 @@ if mm.isalpha():
 else:
     int(mm,dd,yyyy)
 
-
 except ValueError:
     mm,dd,yyyy = outdated.replace(",", "").split()
     if mm in months: # format must be ' ' ', ' # but mm is not defined cuz unpacking failed
