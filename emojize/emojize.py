@@ -33,10 +33,12 @@ for char in msg[start + 1:]: # a bit hard to use a for
                                    # in the next loop: None.append(char of i+1) will be invalid
                                    # REASON: python append does not return any value to the user.
     else:
-        inside_colons.append(":")
+        inside_colons.append(":") # keep append alone all the time ;)
         break
 
-print(inside_colons)
+msg = str(msg).replace(inside_colons, emoji.emojize(str(inside_colons)))
+print(msg)
+
 
 # too many var
 # try not to use break
