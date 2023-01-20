@@ -18,3 +18,6 @@ import pyfiglet
 """
 # Draft
 
+# expecting cmd line args
+
+
