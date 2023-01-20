@@ -4,6 +4,7 @@ import random
 
 figlet = Figlet() # create an obj
 
+###### better put sys.argv in the very first part#####
 
 match len(sys.argv):
     case 1:
