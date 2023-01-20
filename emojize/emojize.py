@@ -22,7 +22,7 @@ while (current < len(msg)): # a bit hard to use a for
 
     sub = sub.append(msg[current])
     if msg[current] == ":":
-        sub = sub.append(msg[current])
+        sub = sub + ":"
         break
 print(sub)
 
