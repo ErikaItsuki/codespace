@@ -2,13 +2,13 @@ from pyfiglet import Figlet
 import random
 import sys
 
-figlet = Figlet()
+figlet = Figlet() # has attr font = default font
 
 text = input("Input: ").strip()
 #print(figlet.renderText(text)) # seems to print default font
 
 if len(sys.argv) == 1:
-    figlet = Figlet(font = random.choice(figlet.getFonts()))
-    print(figlet.renderText(text))
+    f = Figlet(font = random.choice(figlet.getFonts()))
+    print(f.renderText(text))
 else:
     print("do sth")
