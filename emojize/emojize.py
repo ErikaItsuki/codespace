@@ -41,8 +41,13 @@ for char in msg[start + 1:]: # a bit hard to use a for
 # that is much easier, but here we've got to change it back
 # and here is where unfamiliar
 
-print(msg.replace(inside_colons, emoji.emojize(inside_colons)))# emojize keeps str unchanged
+if "_" in msg:
+   print(msg.replace(inside_colons, emoji.emojize(inside_colons)))# emojize keeps str unchanged
                                                                              # if the str matches nothing
+
+else:
+    print(msg.replace(inside_colons, emoji.emojize(inside_colons)), language = "alias")
+
 
 
 # too many var
