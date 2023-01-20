@@ -1,39 +1,9 @@
-import sys
-import figlet
-import random
-
 from pyfiglet import Figlet
+import random
+import sys
 
-figlet = Figlet() # create an obj
+figlet = Figlet()
 
-# sys.argv: python figlet.py -f/--font fontName
-
-match len(sys.argv):
-    case 1:
-        print(figlet.renderText(...))
-    case 3:
-        if sys.argv[1] != "-f" or sys.argv[1] != "--font" or sys.argv[2] not in figlet.getFonts():
-            sys.exit("Invalid usage")
-    case _:# do sth if all cmd-line args are correct
-        ...
-
-
-# prompts user input str
-
-
-
-"""
-if len(sys.argv) == 1:
-    print(figlet.renderText(text))
-
-elif len(sys.argv) == 3:
-    if sys.argv[1] != "-f"
-        or sys.argv[1] != "--font"
-        or sys.argv[2] not in fidlet.getFont():
-
-        sys.exit("Invalid usage")
-    else:# do sth if all cmd-line args are correct
-        ...
-
-"""
+text = input("Input: ").strip()
+print(figlet.renderText(text))
 
