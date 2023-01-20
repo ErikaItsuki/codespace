@@ -36,4 +36,4 @@ print(sub)
 # too many var
 # try not to use break
 
-
+"""finally: print(f"output: {hello, fcall()}")"""
