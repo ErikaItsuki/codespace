@@ -5,5 +5,5 @@ import sys
 figlet = Figlet()
 
 text = input("Input: ").strip()
-print(figlet.renderText(text))
+print(figlet.renderText(text)) # seems to print default font
 
