@@ -1,12 +1,10 @@
-from pyfiglet import figlet
+from pyfiglet import Figlet
 import sys
 import random
 
-from pyfiglet import Figlet
-
 figlet = Figlet() # create an obj
 
-# sys.argv: python figlet.py -f/--font fontName
+
 text = input("Input: ").strip()
 match len(sys.argv):
     case 1:
@@ -21,3 +19,5 @@ match len(sys.argv):
 
     case _:# do sth if all cmd-line args are correct
         print("sys.argv should have either 1 or 3 items")
+
+# sys.argv: python figlet.py -f/--font fontName
