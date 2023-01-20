@@ -1,5 +1,6 @@
 import emoji
-"""
+
+""" Draft
 input = input("Input: ").strip()
 
 if "_" in input:
@@ -7,11 +8,17 @@ if "_" in input:
 else:
     print(f"Output: {emoji.emojize(input)}", language = "alias")
 """
-# like whatsapp:
-# read the whole msg
-# if :sth: found -> replace the whole :sth: with emoji.emojize(:sth:)
+
+""" Purpose of the EX: like whatsapp:
+read the whole msg
+if :sth: found -> replace the whole :sth: with emoji.emojize(:sth:)"""
+
+
+""""""""""""""""""""""""""""""""""""""""""
+
 
 ### to find out the substring with ::###
+
 msg = list(input("Input: ").strip())
 
 sub = []
