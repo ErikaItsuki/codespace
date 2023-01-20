@@ -19,6 +19,6 @@ match len(sys.argv):
             print(f.renderText(text))
 
     case _:# do sth if all cmd-line args are correct
-        print("sys.argv should have either 1 or 3 items")
+        
 
 # sys.argv: python figlet.py -f/--font fontName
