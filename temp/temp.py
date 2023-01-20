@@ -11,7 +11,8 @@ match len(sys.argv):
         f = Figlet(font = random.choice(figlet.getFonts()))
         print(f.renderText(text))
     case 3:
-        if sys.argv[1] != "-f" or sys.argv[1] != "--font" or sys.argv[2] not in figlet.getFonts():
+        arg_1 = ["-f", "--font"]
+        if sys.argv[1] not in arg_1 or sys.argv[2] not in figlet.getFonts():
             sys.exit("Invalid usage")
         else:
             f = figlet.setfont(font = sys.argv[2])
