@@ -17,4 +17,4 @@ msg = list(input("Input: ").strip())
 for i in range(len(msg)):
     if msg[i] == ":":
         colons = colons.append[i]
-        
+sub = 
