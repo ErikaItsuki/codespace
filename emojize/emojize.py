@@ -36,9 +36,11 @@ for char in msg[start + 1:]: # a bit hard to use a for
         inside_colons.append(":") # keep append alone all the time ;)
         break
 
-msg = str(msg).replace(str(inside_colons), emoji.emojize(str(inside_colons)))# emojize keeps str unchanged
+
+msg, inside_colons = str(msg), str(inside_colons)
+msg = msg.replace(inside_colons, emoji.emojize(inside_colons))# emojize keeps str unchanged
                                                                              # if the str matches nothing
-print(msg)
+print(str(msg))
 
 
 # too many var
