@@ -5,12 +5,13 @@ import random
 figlet = Figlet() # create an obj
 
 
-text = input("Input: ").strip()
 match len(sys.argv):
     case 1:
+        text = input("Input: ").strip()
         f = Figlet(font = random.choice(figlet.getFonts()))
         print(f.renderText(text))
     case 3:
+        text = input("Input: ").strip()
         arg_1 = ["-f", "--font"]
         if sys.argv[1] not in arg_1 or sys.argv[2] not in figlet.getFonts():
             sys.exit("Invalid usage")
