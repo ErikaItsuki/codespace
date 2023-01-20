@@ -31,6 +31,7 @@ for char in msg[start:]: # a bit hard to use a for
     else:
         inside_colons = inside_colons.append(":")
         break
+    
 print(inside_colons)
 
 # too many var
