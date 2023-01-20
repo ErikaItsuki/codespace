@@ -26,3 +26,7 @@ if len(sys.argv) == 1 or len(sys.argv) == 3:
 
 else:
      sys.exit("Invalid usage")
+
+# setFont
+# figlet (obj) for another obj (f)?
+# def main()
