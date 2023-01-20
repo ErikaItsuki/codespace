@@ -23,3 +23,18 @@ match len(sys.argv):
         sys.exit("Invalid usage")
 
 # sys.argv: python figlet.py -f/--font fontName
+
+
+if len != 1 or 3:
+    sys.exit()
+else:
+    match len(sys.argv):
+        case 1:
+
+        case 3:
+            if sys.argv[1] not in arg_1 or sys.argv[2] not in figlet.getFonts():
+                sys.exit("Invalid usage")
+            else:
+                arg = [...]
+                text = input...
+
