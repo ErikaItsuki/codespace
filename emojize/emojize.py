@@ -47,7 +47,7 @@ if "_" in msg:
 
 else:
     print(msg.replace(inside_colons, (emoji.emojize(inside_colons, language = "alias"))))
-
+    # some in alias actually has _
 
 
 # too many var
