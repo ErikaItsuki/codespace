@@ -36,11 +36,12 @@ for char in msg[start + 1:]: # a bit hard to use a for
         inside_colons.append(":") # keep append alone all the time ;)
         break
 
-msg = str(msg).replace(inside_colons, emoji.emojize(str(inside_colons)))
+msg = str(msg).replace(str(inside_colons), emoji.emojize(str(inside_colons)))# emojize keeps unchanged
 print(msg)
 
 
 # too many var
 # try not to use break
+# why not string till the end?
 
 """finally: print(f"output: {hello, fcall()}")"""
