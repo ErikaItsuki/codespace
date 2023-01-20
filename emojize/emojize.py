@@ -16,4 +16,4 @@ to_emoji = []
 msg = list(input("Input: ").strip())
 for i in range(len(msg)):
     if msg[i] == ":":
-        to_emoji = to_emoji.append(msg[i])
+        to_emoji = to_emoji
