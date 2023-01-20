@@ -19,7 +19,7 @@ if :sth: found -> replace the whole :sth: with emoji.emojize(:sth:)"""
 
 ### to find out the substring with ::###
 
-msg = list(input("Input: ").strip())
+msg = input("Input: ").strip()
 
 sub = []
 start = msg.index(":") # str.find() ; # list.index()
