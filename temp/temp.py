@@ -8,7 +8,7 @@ figlet = Figlet() # create an obj
 text = input("Input: ").strip()
 match len(sys.argv):
     case 1:
-        f = Figlet(font = random.choice(figlet.getFonts()))
+        f = Figlet.setFont(font = random.choice(figlet.getFonts()))
         print(f.renderText(text))
     case 3:
         arg_1 = ["-f", "--font"]
