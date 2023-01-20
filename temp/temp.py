@@ -19,6 +19,6 @@ match len(sys.argv):
             print(f.renderText(text))
 
     case _:# do sth if all cmd-line args are correct
-        
+        sys.exit("Invalid usage")
 
 # sys.argv: python figlet.py -f/--font fontName
