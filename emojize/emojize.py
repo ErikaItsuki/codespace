@@ -19,10 +19,10 @@ if :sth: found -> replace the whole :sth: with emoji.emojize(:sth:)"""
 
 ### to find out the substring with ::###
 
-msg = list(input("Input: ").strip())
-
 inside_colons = [":"]
 start = msg.index(":") # str.find() ; # list.index()
+
+msg = list(input("Input: ").strip())
 
 for char in msg[start + 1:]: # a bit hard to use a for
                             # but if so, msg[start:len(msg)] only gives you a str
