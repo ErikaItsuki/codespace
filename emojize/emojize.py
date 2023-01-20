@@ -36,15 +36,13 @@ for char in msg[start + 1:]: # a bit hard to use a for
         inside_colons = inside_colons + ":" # keep append alone all the time ;)
         break
 
-
-msg, inside_colons = str(msg), str(inside_colons)
 # str(msg) = str([":", ..."]) = "[":", ....]" # simply adding a pair of quotes
 # if you are directly printing out the list elmnts like in camel,
 # that is much easier, but here we've got to change it back
 # and here is where unfamiliar
-msg = msg.replace(inside_colons, emoji.emojize(inside_colons))# emojize keeps str unchanged
+
+print(msg.replace(inside_colons, emoji.emojize(inside_colons)))# emojize keeps str unchanged
                                                                              # if the str matches nothing
-print(str(msg))
 
 
 # too many var
