@@ -11,10 +11,9 @@ else:
 # read the whole msg
 # if :sth: found -> replace the whole :sth: with emoji.emojize(:sth:)
 
-colons = []
+to_emoji = []
 
 msg = list(input("Input: ").strip())
 for i in range(len(msg)):
     if msg[i] == ":":
-        colons = colons.append[i]
-sub = 
+        to_emoji = to_emoji.append(msg[i])
