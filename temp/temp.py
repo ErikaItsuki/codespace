@@ -3,7 +3,7 @@
 """
 figlet.setFond(font = font_name)
 figlet.getFronts()
-print(fidget.renderText(text_u_want_to_print))"""
+print(fidlet.renderText(text_u_want_to_print))"""
 
 import random
 import sys
@@ -20,4 +20,6 @@ import pyfiglet
 
 # expecting cmd line args
 
+if len(sys.argv) == 1:
+    print(figlet.renderText(text))
 
