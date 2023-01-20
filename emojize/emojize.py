@@ -28,12 +28,12 @@ start = msg.find(":") # str.find() ; # list.index()
 for char in msg[start + 1:]: # a bit hard to use a for
                             # but if so, msg[start:len(msg)] only gives you a str
     if char != ":":
-        inside_colons.append(char) # the whole thing if assigned to a var => becomes NoneType:
+        inside_colons = inside_colons + char # the whole thing if assigned to a var => becomes NoneType:
                                    # inside_colons = None
                                    # in the next loop: None.append(char of i+1) will be invalid
                                    # REASON: python append does not return any value to the user.
     else:
-        inside_colons.append(":") # keep append alone all the time ;)
+        inside_colons = inside_colons + ":" # keep append alone all the time ;)
         break
 
 
