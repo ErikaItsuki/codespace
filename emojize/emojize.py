@@ -31,6 +31,7 @@ for char in msg[start + 1:]: # a bit hard to use a for
         inside_colons.append(char) # the whole thing if assigned to a var => becomes NoneType:
                                    # inside_colons = None
                                    # in the next loop: None.append(char of i+1) will be invalid
+                                   # REASON: python append does not return any value to the user.
     else:
         inside_colons.append(":")
         break
