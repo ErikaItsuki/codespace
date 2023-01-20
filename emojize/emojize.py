@@ -21,13 +21,13 @@ if :sth: found -> replace the whole :sth: with emoji.emojize(:sth:)"""
 
 msg = input("Input: ").strip()
 
-sub = []
-start = msg.index(":") # str.find() ; # list.index()
-current = start
-while (current < len(msg)): # a bit hard to use a for
+inside_colons = []
+start = msg.find(":") # str.find() ; # list.index()
+
+for i in range(msg[start:]) # a bit hard to use a for
                             # but if so, msg[start:len(msg)] only gives you a str
-    if msg[current] != ":":
-        sub = sub.append(msg[current])
+    if msg[i] != ":":
+        sub = sub.append(msg[i])
     else:
         sub = str(sub.append(":"))
         break
