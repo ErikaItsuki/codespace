@@ -8,5 +8,5 @@ text = input("Input: ").strip()
 #print(figlet.renderText(text)) # seems to print default font
 
 if len(sys.argv) == 1:
-    print(figlet.renderText(text))
+     = figlet.renderText(text)
 print(random.choice(figlet.getFonts()))
