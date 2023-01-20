@@ -26,10 +26,10 @@ start = msg.index(":") # str.find() ; # list.index()
 current = start
 while (current < len(msg)): # a bit hard to use a for
                             # but if so, msg[start:len(msg)] only gives you a str
-
+    if msg[current]
     sub = sub.append(msg[current])
     if msg[current] == ":":
-        sub = sub + ":"
+        sub = str(sub.append(":"))
         break
 print(sub)
 
