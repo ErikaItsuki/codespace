@@ -15,7 +15,7 @@ match len(sys.argv):
         if sys.argv[1] not in arg_1 or sys.argv[2] not in figlet.getFonts():
             sys.exit("Invalid usage")
         else:
-            f = figlet.setfont(font = sys.argv[2])
+            f = figlet.setFont(font = sys.argv[2])
             print(f.renderText(text))
 
     case _:# do sth if all cmd-line args are correct
