@@ -21,7 +21,7 @@ if :sth: found -> replace the whole :sth: with emoji.emojize(:sth:)"""
 
 msg = input("Input: ").strip()
 
-inside_colons = [":"]
+inside_colons = ":"
 start = msg.find(":") # str.find() ; # list.index()
 
 
