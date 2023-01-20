@@ -16,12 +16,17 @@ msg = list(input("Input: ").strip())
 
 sub = []
 start = msg.index(":") # str.find() ; # list.index()
-for i in range(msg[start:len(msg)]): #msg[start:len(msg)] only gives you a str
-    sub = sub.append(msg[i])
-    if msg[i] == ":":
-        sub = sub.append(msg[i])
+current = start
+while (current < len(msg)): # a bit hard to use a for
+                            # but if so, msg[start:len(msg)] only gives you a str
+
+    sub = sub.append(msg[current])
+    if msg[current] == ":":
+        sub = sub.append(msg[current])
         break
 print(sub)
 
+# too many var
+# try not to use break
 
 
