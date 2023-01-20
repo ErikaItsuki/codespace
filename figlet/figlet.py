@@ -17,29 +17,20 @@ import pyfiglet
 2.
 """
 # Draft
+"""
+1. import libraries
+
+1. create objs and use cons to access methods and attr
+
+1. prompt user input
+2. sys.argv == 1: random font
+3. sys.argv == 3: specific font
+4. sys.argv == some number else: invalid
+"""
 
 # expecting cmd line args
 
-from pyfiglet import figlet
-import sys
-import random
-
-from pyfiglet import Figlet
-
-figlet = Figlet() # create an obj
-
-# sys.argv: python figlet.py -f/--font fontName
-
-match len(sys.argv):
-    case 1:
-        print(figlet.renderText(...))
-    case 3:
-        if sys.argv[1] != "-f" or sys.argv[1] != "--font" or sys.argv[2] not in figlet.getFonts():
-            sys.exit("Invalid usage")
-    case _:# do sth if all cmd-line args are correct
-        ...
 
 
-# prompts user input str
 
 
