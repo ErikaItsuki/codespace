@@ -1,4 +1,5 @@
 import emoji
 
 input = input("Input: ").strip()
-print(f"{}")
+input = input.replace("", ":")
+print(input)
