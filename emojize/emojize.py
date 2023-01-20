@@ -15,7 +15,7 @@ else:
 msg = list(input("Input: ").strip())
 
 sub = []
-start = msg.find(":")
+start = msg.index(":") # str.find() ; # list.index()
 for i in msg[start:len(msg)]:
     sub = sub.append(msg[i])
     if msg[i] == ":":
