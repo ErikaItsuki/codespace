@@ -10,7 +10,7 @@ figlet = Figlet() # create an obj
 
 match len(sys.argv):
     case 1:
-        print(figlet.renderText(text))
+        print(figlet.renderText(...))
     case 3:
         if sys.argv[1] != "-f" or sys.argv[1] != "--font" or sys.argv[2] not in figlet.getFonts():
             sys.exit("Invalid usage")
@@ -18,6 +18,7 @@ match len(sys.argv):
         ...
 
 
+# prompts user input str
 
 
 
