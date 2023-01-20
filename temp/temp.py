@@ -6,10 +6,7 @@ figlet = Figlet() # create an obj
 
 ###### better put sys.argv in the very first part#####
 
-if len(sys.argv) != 1 or len(sys.argv) != 3:
-    sys.exit("Invalid usage")
-
-else:
+if len(sys.argv) == 1 or len(sys.argv) == 3:
     match len(sys.argv):
         case 1:
             text = input("Input: ").strip()
@@ -26,6 +23,9 @@ else:
 
         case _:# do sth if all cmd-line args are correct
             sys.exit("Invalid usage")
+
+else:
+     sys.exit("Invalid usage")
 
 # sys.argv: python figlet.py -f/--font fontName
 
