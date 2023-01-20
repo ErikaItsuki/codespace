@@ -46,7 +46,7 @@ if "_" in msg:
                                                                              # if the str matches nothing
 
 else:
-    print(msg.replace(inside_colons, (emoji.emojize(inside_colons), language = "alias")))
+    print(msg.replace(inside_colons, (emoji.emojize(inside_colons, language = "alias"))))
 
 
 
