@@ -24,12 +24,12 @@ msg = input("Input: ").strip()
 inside_colons = []
 start = msg.find(":") # str.find() ; # list.index()
 
-for i in range(msg[start:]): # a bit hard to use a for
+for char in msg[start:]: # a bit hard to use a for
                             # but if so, msg[start:len(msg)] only gives you a str
-    if msg[i] != ":":
-        inside_colons = inside_colons.append(msg[i])
+    if char != ":":
+        inside_colons = inside_colons.append(char)
     else:
-        inside_colons = str(inside_colons.append(":"))
+        inside_colons = inside_colons.append(":")
         break
 print(inside_colons)
 
