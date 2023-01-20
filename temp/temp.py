@@ -6,10 +6,10 @@ figlet = Figlet() # create an obj
 
 ###### better put sys.argv in the very first part#####
 
-if len != 1 or 3:
-    sys.exit()
-else:
+if len(sys.argv) != 1 or len(sys.argv) != 3:
+    sys.exit("Invalid usage")
 
+else:
     match len(sys.argv):
         case 1:
             text = input("Input: ").strip()
