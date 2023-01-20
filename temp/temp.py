@@ -8,14 +8,14 @@ figlet = Figlet() # create an obj
 text = input("Input: ").strip()
 match len(sys.argv):
     case 1:
-        f = Figlet.setFont(font = random.choice(figlet.getFonts()))
+        f = Figlet(font = random.choice(figlet.getFonts()))
         print(f.renderText(text))
     case 3:
         arg_1 = ["-f", "--font"]
         if sys.argv[1] not in arg_1 or sys.argv[2] not in figlet.getFonts():
             sys.exit("Invalid usage")
         else:
-            f = figlet.setFont(font = sys.argv[2])
+            f = Figlet(font = sys.argv[2]) # try first
             print(f.renderText(text))
 
     case _:# do sth if all cmd-line args are correct
