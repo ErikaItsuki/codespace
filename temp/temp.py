@@ -16,13 +16,13 @@ print("backward convertion succeed")"""
 
 ##### application #####
 names = []
-
-try:
-    name = input("Name: ").strip().title()
-    names.append(name)
-    print(names)
-except EOFError:
-    print("adieu, adieu, to " + p.join(tuple(names)))
-
+while True:
+    try:
+        name = input("Name: ").strip().title()
+        names.append(name)
+    except EOFError:
+        print("adieu, adieu, to " + p.join(tuple(names))) # np connect these two
+                                                        # p.join convert a tuple to a string formatted
+        break
 
 
