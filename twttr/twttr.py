@@ -3,7 +3,7 @@ def main():
     words = omit_vowels(input('Input: ').strip())
     print(words, "\n")
 
-def omit_vowels(with_vowels):
+def shorten(word):
 
     # loop -> if not vowel -> append string to formatted
     omit = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
