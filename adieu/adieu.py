@@ -9,20 +9,19 @@
 
 # draft
 import inflect
+import inflect
 
 p = inflect.engine()
-adieu = []
+names = []
 
 while True:
     try:
         name = input("Name: ").strip().title()
-        # get the input stored here -> if ctrl+d , append and in except
-        # append the tuple with names: ('Fr', 'A', 'B', 'C')...
-
+        if not name:
+            continue
+        else:
+            names.append(name)
     except EOFError:
-        adieu = p.join(adieu, name)
-
-
-    else:
-        adieu = p.join((adieu, name))
-        # append name,_(space)
+        print("adieu, adieu, to " + p.join(tuple(names))) # np connect these two
+                                                        # p.join convert a tuple to a string formatted
+        break
