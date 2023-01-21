@@ -1,6 +1,6 @@
 from twttr import shorten
 
-def test_default(word):
+def test_default():
     assert shorten("") == ""
 
 
