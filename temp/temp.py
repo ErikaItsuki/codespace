@@ -10,8 +10,12 @@ adieu = "adieu, adieu, to "
 while True:
     try:
         # get the input stored here -> if ctrl+d , append and in except
-        # append name,_(space)
+
     except EOFError:
+        
+
+    else:
+        # append name,_(space)
 
 
 
