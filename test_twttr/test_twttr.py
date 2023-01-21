@@ -5,10 +5,11 @@ def test_default(word):
 
 
 def test_with_vowels():
-    ...
+    assert shorten("twitter") == "twttr"
+    assert shorten("aeiou") == ""
 
 def test_without_vowels():
-    ...
+    assert("") == ""
 
 
 def test_numeric_without_vowels():
