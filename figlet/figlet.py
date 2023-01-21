@@ -14,6 +14,7 @@ if len(sys.argv) == 1 or len(sys.argv) == 3:
                                                                     # we already get it stored in the obj so not to return is fine
                                                                     # we use var to store sth that may be lost as the prog progress
                                                                     # but using class takes care of this problem
+                                                                    # this process is called instantiating (i.e.) np ~~
             # figlet = Figlet.setFont(font = random.choice(figlet.getFonts()))
             # -> TypeError: Figlet.setFont()missing 1 required positional argument: 'self'
 
