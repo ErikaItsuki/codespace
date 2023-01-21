@@ -10,7 +10,7 @@ if len(sys.argv) == 1 or len(sys.argv) == 3:
     match len(sys.argv):
         case 1:
             text = input("Input: ").strip()
-            figlet.setFont(font = random.choice(figlet.getFonts()))
+            figlet.setFont(font = random.choice(figlet.getFonts())) # but is it good not to give a var?
             print(figlet.renderText(text))
         case 3:
             arg_1 = ["-f", "--font"]
