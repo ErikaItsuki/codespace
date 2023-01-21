@@ -1,33 +1,20 @@
-"""
+def main():
 
-##### see how to use #####
-names = ("A", "B", "C")
-print(p.join(names)) # must have bracket inside
+    words = omit_vowels(input('Input: ').strip())
+    print(words, "\n")
 
-# ways to modify:
-# 1. get a list -> copy to the list form the tuple -> modify the list -> change the list to a tuple
+def omit_vowels(with_vowels):
 
-names = list(names) # valid
-print("convertion succeed")
+    without_vowels = []
+    # loop -> if not vowel -> append string to formatted
+    omit = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+    for i in range(len(with_vowels)):
+        if with_vowels[i] not in omit:
 
-names = tuple(names) # valid
-print("backward convertion succeed")"""
+            without_vowels.append(with_vowels[i])
 
-import inflect
+    return without_vowels
 
-p = inflect.engine()
-
-names = []
-while True:
-    try:
-        name = input("Name: ").strip().title()
-        if not name:
-            continue
-        else:
-            names.append(name)
-    except EOFError:
-        print("adieu, adieu, to " + p.join(tuple(names))) # np connect these two
-                                                        # p.join convert a tuple to a string formatted
-        break
-
+if __name__ == "__main()__":
+    main()
 
