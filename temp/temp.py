@@ -10,4 +10,7 @@ print("Conditionally: ", word, "is ", p.plural("cat", 1))
 # if not the specified : print input is arg1
 # else print arg1 is arg2
 
-print(p)
+print(p.singular_noun("they")) # print I -> but prob is gender difference: instantiate to fix
+p.gender("f")
+print(p.singular_noun("they"))
+# or raise BadGenderError
