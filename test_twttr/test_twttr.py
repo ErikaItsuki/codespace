@@ -14,6 +14,7 @@ def test_without_vowels():
 
 def test_numeric_without_vowels():
     assert shorten("hmm_1") == "hmm_1"
+    assert shorten("apple, ") == "ppl, "
 
 def test_numeric_with_vowels():
     assert shorten("apple_1") == "ppl_1"
