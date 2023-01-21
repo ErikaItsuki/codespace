@@ -9,4 +9,5 @@ def test_has_numeric():
 def test_with_vowels():
     ...
 
-def test
+def test_without_vowels():
+    ...
