@@ -1,8 +1,7 @@
-import inflect
+"""
 
-p = inflect.engine()
-
-"""names = ("A", "B", "C")
+##### see how to use #####
+names = ("A", "B", "C")
 print(p.join(names)) # must have bracket inside
 
 # ways to modify:
@@ -14,7 +13,10 @@ print("convertion succeed")
 names = tuple(names) # valid
 print("backward convertion succeed")"""
 
-##### application #####
+import inflect
+
+p = inflect.engine()
+
 names = []
 while True:
     try:
