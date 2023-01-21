@@ -6,4 +6,7 @@ def test_default(word):
 def test_has_numeric():
     ...
 
-def
+def test_with_vowels():
+    ...
+
+def test
