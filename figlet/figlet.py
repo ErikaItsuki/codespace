@@ -18,7 +18,7 @@ if len(sys.argv) == 1 or len(sys.argv) == 3:
                 sys.exit("Invalid usage")
             else:
                 text = input("Input: ").strip()
-                f = Figlet(font = sys.argv[2]) # try first
+                f = Figlet.setFont(font = sys.argv[2]) # try first
                 print(f.renderText(text))
 
         case _:# do sth if all cmd-line args are correct
