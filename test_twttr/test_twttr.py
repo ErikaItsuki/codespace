@@ -17,6 +17,7 @@ def test_numeric_without_vowels():
 
 def test_numeric_with_vowels():
     assert shorten("apple_1") == "ppl_1"
+    assert shorten("Apple_1") == "ppl_1"
 
 def with_y():
     assert shorten("hymn") == "hymn"
