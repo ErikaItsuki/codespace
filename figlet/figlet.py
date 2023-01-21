@@ -30,5 +30,7 @@ else:
      sys.exit("Invalid usage")
 
 # setFont
+"""
+is a class method : calling syntax = Class_Name.classmethod(...)"""
 # figlet (obj) for another obj (f)?
 # def main()
