@@ -2,7 +2,7 @@ from pyfiglet import Figlet
 import sys
 import random
 
-figlet = Figlet() # create an obj
+figlet = Figlet() # create an obj of the class before getting "initialized"
 
 ###### better put sys.argv in the very first part#####
 
