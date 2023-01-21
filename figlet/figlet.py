@@ -11,6 +11,9 @@ if len(sys.argv) == 1 or len(sys.argv) == 3:
         case 1:
             text = input("Input: ").strip()
             figlet.setFont(font = random.choice(figlet.getFonts())) # but is it good not to give a var?
+                                                                    # we already get it stored in the obj so not to return is fine
+                                                                    # we use var to store sth that may be lost as the prog progress
+                                                                    # but using class takes care of this problem
             print(figlet.renderText(text))
         case 3:
             arg_1 = ["-f", "--font"]
