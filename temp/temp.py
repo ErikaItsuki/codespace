@@ -19,7 +19,10 @@ names = []
 while True:
     try:
         name = input("Name: ").strip().title()
-        names.append(name)
+        if not name:
+            continue
+        else:
+            names.append(name)
     except EOFError:
         print("adieu, adieu, to " + p.join(tuple(names))) # np connect these two
                                                         # p.join convert a tuple to a string formatted
