@@ -22,6 +22,6 @@ while True:
         else:
             names.append(name)
     except EOFError:
-        print("adieu, adieu, to " + p.join(tuple(names))) # np connect these two
+        print("Adieu, adieu, to " + p.join(tuple(names))) # np connect these two
                                                         # p.join convert a tuple to a string formatted
         break
