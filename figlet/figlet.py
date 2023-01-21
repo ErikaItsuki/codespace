@@ -10,7 +10,7 @@ if len(sys.argv) == 1 or len(sys.argv) == 3:
     match len(sys.argv):
         case 1:
             text = input("Input: ").strip()
-            figlet = figlet.setFont(font = random.choice(figlet.getFonts()))
+            figlet.setFont(font = random.choice(figlet.getFonts()))
             print(figlet.renderText(text))
         case 3:
             arg_1 = ["-f", "--font"]
@@ -20,7 +20,7 @@ if len(sys.argv) == 1 or len(sys.argv) == 3:
                 text = input("Input: ").strip()
                 """f = figlet(font = sys.argv[2]) # try first
                 print(f.renderText(text))"""
-                figlet = figlet.setFont(font = sys.argv[2])
+                figlet.setFont(font = sys.argv[2])
                 print(figlet.renderText(text))
 
         case _:# do sth if all cmd-line args are correct
