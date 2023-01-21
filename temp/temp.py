@@ -14,3 +14,4 @@ print(p.singular_noun("they")) # print it -> but prob is gender difference: inst
 p.gender("f")
 print(p.singular_noun("they"))
 # or raise BadGenderError
+
