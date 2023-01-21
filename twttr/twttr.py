@@ -1,17 +1,17 @@
 def main():
 
-    words = omit_vowels(input('Input: ').strip())
-    print(words, "\n")
+    word = shorten(input('Input: ').strip())
+    print(word, "\n")
 
 def shorten(word):
 
     # loop -> if not vowel -> append string to formatted
     omit = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
-    for char in with_vowels:
+    for char in word:
         if char in omit:
-            with_vowels = with_vowels.replace(char, "")
+            word = word.replace(char, "")
 
-    return with_vowels
+    return word
 
 if __name__ == "__main__":
     main()
