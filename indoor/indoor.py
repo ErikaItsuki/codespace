@@ -5,5 +5,4 @@ def main():
 def to_lower(string):
     return string.lower()
 
-if __name__ == "__main__":
-    main()
+main()
