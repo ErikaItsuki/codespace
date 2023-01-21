@@ -1,3 +1,4 @@
+
 # purpose:
 """1. train to have library + exception handling
 2. use inflect: p.join(a tuple of elmnts)
@@ -7,8 +8,10 @@
 """
 
 # draft
+import inflect
 
-adieu = ()
+p = inflect.engine()
+adieu = []
 
 while True:
     try:
@@ -17,8 +20,9 @@ while True:
         # append the tuple with names: ('Fr', 'A', 'B', 'C')...
 
     except EOFError:
+        adieu = p.join(adieu, name)
 
 
     else:
-        adieu = adieu.append()
+        adieu = p.join((adieu, name))
         # append name,_(space)
