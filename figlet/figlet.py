@@ -2,10 +2,12 @@ from pyfiglet import Figlet
 import sys
 import random
 
-figlet = Figlet() # create an obj of the class before getting "initialized"
+def main():
+    figlet = Figlet() # create an obj of the class before getting "initialized"
 
 ###### better put sys.argv in the very first part#####
 
+def which_font():
 if len(sys.argv) == 1 or len(sys.argv) == 3:
     match len(sys.argv):
         case 1:
@@ -18,7 +20,7 @@ if len(sys.argv) == 1 or len(sys.argv) == 3:
             # figlet = Figlet.setFont(font = random.choice(figlet.getFonts()))
             # -> TypeError: Figlet.setFont()missing 1 required positional argument: 'self'
 
-            print(figlet.renderText(text))
+            return figlet.renderText(text)
         case 3:
             arg_1 = ["-f", "--font"]
             if sys.argv[1] not in arg_1 or sys.argv[2] not in figlet.getFonts():
@@ -28,7 +30,7 @@ if len(sys.argv) == 1 or len(sys.argv) == 3:
                 """f = figlet(font = sys.argv[2]) # try first
                 print(f.renderText(text))"""
                 figlet.setFont(font = sys.argv[2])
-                print(figlet.renderText(text))
+                return figlet.renderText(text)
 
         case _:# do sth if all cmd-line args are correct
             sys.exit("Invalid usage")
