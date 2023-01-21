@@ -1,7 +1,7 @@
 def main():
 
     word = shorten(input('Input: ').strip())
-    print(word, "\n")
+    print(word, end = "\n")
 
 def shorten(word):
 
