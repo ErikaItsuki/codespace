@@ -14,7 +14,7 @@ try:
         file_name = str(sys.argv[0]).replace('.py', '.txt')
         with open(file_name) as file:
             for line in file:
-                if line.rstrip().startswith("#") == False:
+                if line.startswith("#") == False:
                  # check if the i-1 line ends with "\n"
                     counter += 1
                 else:
