@@ -14,21 +14,9 @@ for student in sorted(students, key = lambda student: name):
 students = []
 
 with open("student.csv") as file:
-    # step 1: read the file and handle potential cases for you
-    reader = csv.reader(file) # .reader() -> read what's inside the arg as a csv file
-                              # and handle subtle danger
-# iterate
+    reader = csv.reader(file)
     for name, house in reader:
-        students.append({"name": name, "home": house})
-    """ unpacking:
-    for name, home in reader: # row contains 2 var: name and house
-        students.append
-
-
-    """
-
-
-
-
+        students.append({"name": name, "house": house})
+   =
 for student in sorted(students, key = lambda student : student["name"]):
     print(f"{student['name']} is in {student['house']}")
