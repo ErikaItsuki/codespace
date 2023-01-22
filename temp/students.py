@@ -23,8 +23,7 @@ students = {}
 with open("student.csv") as file:
     for line in file:
         name, house = line.rstrip().split(",")
-        student = {name : house}
-        students = student
+        students[name] = house
 
 for student in sorted(students.keys()):
     print(f"{student} is in {students[name]}")
