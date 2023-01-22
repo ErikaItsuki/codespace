@@ -1,5 +1,7 @@
-name = 
+with open("names.txt", "r") as file:
+    lines = file.readlines()
 
-for i in range(3):
-    with open("names.txt", "a") as file:
-        file.write(f"{}\n")
+for line in lines:
+    print(line.rstrip())
+
+
