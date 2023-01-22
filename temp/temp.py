@@ -9,6 +9,9 @@ elif len(sys.argv) < 1:
     sys.exit("Too few command-line arguments")
 elif sys.argv[0].endswith(".py") :
     print("it's good")
+
+else:
+    print("Not a Python file")
     """sys.argv
     with open("")"""
 
