@@ -1,7 +1,6 @@
-with open("names.txt", "r") as file:
-    lines = file.readlines()
+names = []
 
-for line in lines:
-    print(line.rstrip())
-
+with open("names.txt") as file:
+    for line in file:
+        names.append(line.rstrip()) # 
 
