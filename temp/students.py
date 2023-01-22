@@ -1,5 +1,5 @@
 # recreate a dict for sorted()
-"""
+
 students = []
 
 with open("student.csv", "r") as file:
@@ -17,7 +17,7 @@ for student in sorted(students, key = lambda student: student["house"]): # for e
 # 2. use '' in an fstring with keys
 # 3. sorted is for list
 # 4. can sort a dict, so students = [] is not a must
-"""
+
 students = {}
 
 with open("student.csv") as file:
