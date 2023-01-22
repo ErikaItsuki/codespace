@@ -13,7 +13,7 @@ try:
     else:
         print("not yet done")
 
-except FileNotFoundError: # no use too XD
+except OSError: # no use too XD, neither OSError nor FileNotFoundError
     print("Not a Python file")
 
 
