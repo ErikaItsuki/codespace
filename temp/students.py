@@ -10,7 +10,20 @@ with open("student.csv") as file:
 for student in sorted(students, key = lambda student: name):
     print(f"{name}, {house}")
 
-print("@@@@@")
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""print("@@@@@")
 
 students = []
 
@@ -20,4 +33,4 @@ with open("student.csv") as file:
         students.append({"name": name, "house": house})
 
 for student in sorted(students, key = lambda student : student["name"]):
-    print(f"{student['name']} is in {student['house']}")
+    print(f"{student['name']} is in {student['house']}")"""
