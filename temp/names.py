@@ -1,8 +1,5 @@
-names = []
-
-with open("names.txt") as file:
-    for line in file:
-        names.append(line.rstrip())
-
-for name in sorted(names):
-    print(f"Hello, {name}")
+with open("stuent.csv", "a") as file:
+    for i in range(4):
+        name = input("Name: ")
+        house = input("house: ")
+        file.write(f"{name}, {house}")
