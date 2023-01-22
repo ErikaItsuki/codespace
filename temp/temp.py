@@ -7,8 +7,8 @@ if len(sys.argv) > 1:
 #    sys.exit("")
 elif len(sys.argv) < 1:
     sys.exit("Too few command-line arguments")
-elif sys.argv[0] :
-    print("it's good, but needs .py")
+elif sys.argv[0].endswith(".py") :
+    print("it's good")
     """sys.argv
     with open("")"""
 
