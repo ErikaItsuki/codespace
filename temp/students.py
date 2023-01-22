@@ -1,4 +1,8 @@
-with open("students.csv", "r") as file:
+students = []
+
+with open("student.csv", "r") as file:
     for line in file:
-        name, house = line.split(",")
-        print(f"{name} is in {house}")
+        name, house = line.rstrip().split(",")
+        students.append(f"{name} is in {house}")
+
+for student in sorted(students)
