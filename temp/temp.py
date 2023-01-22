@@ -1,17 +1,23 @@
 import sys
 
-# check if exactly 1 CLA:
-if len(sys.argv) > 1:
-    sys.exit("Too many command-line arguments")
-#else:
-#    sys.exit("")
-elif len(sys.argv) < 1:
-    sys.exit("Too few command-line arguments")
-elif sys.argv[0].endswith(".py") :
-    print("it's good")
+try:
+    # check if exactly 1 CLA:
+    if len(sys.argv) > 1:
+        sys.exit("Too many command-line arguments")
+    #else:
+    #    sys.exit("")
+    elif len(sys.argv) < 1:
+        sys.exit("Too few command-line arguments")
+    elif sys.argv[0].endswith(".py") :
+        print("it's good")
+    else:
+        print("not yet done")
 
-else:
+except FileNotFoundError: # no use too XD
     print("Not a Python file")
+
+
+    #print("Not a Python file") # no use on Errno2
     """sys.argv
     with open("")"""
 
