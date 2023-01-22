@@ -18,8 +18,8 @@ with open("student.csv") as file:
     reader = csv.reader(file) # .reader() -> read what's inside the arg as a csv file
                               # and handle subtle danger
 # iterate
-    for row in reader:
-        students.append({"name": row[0], "home": row[1]})
+    for name, house in reader:
+        students.append({"name": name, "home": house})
     """ unpacking:
     for name, home in reader: # row contains 2 var: name and house
         students.append
