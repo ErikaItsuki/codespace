@@ -22,7 +22,7 @@ try:
                     pass
         print(counter)
     else:
-        raise FileNotFoundError("Not a Python file")
+        raise FileNotFoundError("Not a Python file") # how to raise with open ???
 
 except OSError: # no use too XD, neither OSError nor FileNotFoundError
     print("Not a Python file")
@@ -31,9 +31,3 @@ except OSError: # no use too XD, neither OSError nor FileNotFoundError
     #print("Not a Python file") # no use on Errno2
     """sys.argv
     with open("")"""
-
-
-# if python names.py: with open("names.txt", "r") as file:
-# for line in file:
-# global counter++ (init = 0)
-# out of with: print counter
