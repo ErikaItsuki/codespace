@@ -1,5 +1,5 @@
 # recreate a dict for sorted()
-
+"""
 students = []
 
 with open("student.csv", "r") as file:
@@ -28,4 +28,3 @@ with open("student.csv") as file:
 
 for student in sorted(students.keys()):
     print(f"{student} is in {students[name]}")
-"""
