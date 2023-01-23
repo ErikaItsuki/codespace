@@ -15,8 +15,6 @@ try:
         else:
             sys.exit("Not a python file")
 
-
-
     elif len(sys.argv) > 2:
         sys.exit("Too many command-line arguments")
 
@@ -24,11 +22,6 @@ try:
         sys.exit("Too few command-line arguments")
 except FileNotFoundError:
     sys.exit("File does not exist")
-
-
-
-
-
 
 
 
