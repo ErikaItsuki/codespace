@@ -12,6 +12,7 @@ try:
         sys.exit("Too few command-line arguments")
     elif sys.argv[0] == "lines.py" :
         file_name = str(sys.argv[0]).replace('.py', '.txt')
+        print(file_name)
         with open(file_name) as file:
             for line in file:
                 # line.lstrip() # why cant i strip ?
