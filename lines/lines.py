@@ -2,7 +2,6 @@ import sys
 
 counter = 0
 
-
 # check if exactly 1 CLA:
 if len(sys.argv) > 1:
     sys.exit("Too many command-line arguments")
@@ -19,8 +18,10 @@ elif sys.argv[0] == "lines.py" :
                 counter += 1
             else:
                 pass"""
-            if line.lstrip().startswith("#") == False:
+            if line.lstrip().startswith("#") == False and line.isspace() == False:
+                # strings/char/as a chunk.isspace(): syntax valid
                 counter += 1
+
     print(counter)
 else:
     raise FileNotFoundError("Not a Python file") # no use too XD, neither OSError nor FileNotFoundError
