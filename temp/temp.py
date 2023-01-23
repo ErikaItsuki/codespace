@@ -24,10 +24,8 @@ except FileNotFoundError:
     sys.exit("File does not exist")
 
 
+"""EXCEPT the Q sys.argv[1] was misunderstood, the idea is ok"""
 
-
-
-"""
 
 # check if exactly 1 CLA:
 if len(sys.argv) > 1: # ass one more: if sys.argv.replace(".py", "") != "lines" -> File does not exist
@@ -54,4 +52,3 @@ if sys.argv[0] == "lines.py" :
 else:
     raise FileNotFoundError("Not a Python file") # no use too XD, neither OSError nor FileNotFoundError
 
-"""
