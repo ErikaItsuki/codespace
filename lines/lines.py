@@ -1,3 +1,5 @@
+### better check discord before submission ###
+
 
 """  a correct draft
 len == 1:
