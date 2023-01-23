@@ -24,4 +24,3 @@ elif sys.argv[0] == "lines.py" :
     print(counter)
 else:
     raise FileNotFoundError("Not a Python file") # no use too XD, neither OSError nor FileNotFoundError
-
