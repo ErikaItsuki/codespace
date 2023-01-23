@@ -3,7 +3,7 @@ import sys
 counter = 0
 
 # check if exactly 1 CLA:
-if len(sys.argv) > 1:
+if len(sys.argv) > 1: # ass one more: if sys.argv.replace(".py", "") != "lines" -> File does not exist
     sys.exit("Too many command-line arguments")
 #else:
 #    sys.exit("")
