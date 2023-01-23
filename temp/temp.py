@@ -3,10 +3,15 @@ import sys
 counter = 0
 
 if len(sys.argv) == 2:
-    match sys.argv[1]:
-        case "lines.py":
-        case "lines.txt":
-        case _:
+    if sys.argv[1].endswith(".py"):
+        if sys.argv[1].replace(".py", "") in ...:
+            #print the number of lines
+        else: not in
+
+    else:
+        raise FileNotFoundError("Not a python file")
+
+
 
 elif len(sys.argv) > 2:
 
