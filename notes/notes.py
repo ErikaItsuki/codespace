@@ -1,3 +1,12 @@
+"""
+Redo to learn more:
+P6 Q1: not too many if-else
+
+"""
+
+
+
+
 # Pset6 Q1
 
 """EXCEPT the Q sys.argv[1] was misunderstood, the idea is ok"""
