@@ -6,7 +6,12 @@ if len(sys.argv) == 2:
     if sys.argv[1].endswith(".py"):
         if sys.argv[1].replace(".py", "") not in  ...:
             raise FileNotFoundError("File does not exist")
-        # print number
+        with open("lines.py") as file:
+            for line in file:
+                if line.lstrip().startswith("#") == False and line.isspace() == False:
+                    # strings/char/as a chunk.isspace(): syntax valid
+                    counter += 1
+        print(counter)
     else:
         raise FileNotFoundError("Not a python file")
 
@@ -27,7 +32,7 @@ else: # <2
 
 
 
-
+"""
 
 # check if exactly 1 CLA:
 if len(sys.argv) > 1: # ass one more: if sys.argv.replace(".py", "") != "lines" -> File does not exist
@@ -53,3 +58,5 @@ if sys.argv[0] == "lines.py" :
 
 else:
     raise FileNotFoundError("Not a Python file") # no use too XD, neither OSError nor FileNotFoundError
+
+"""
