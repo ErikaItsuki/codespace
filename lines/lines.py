@@ -25,7 +25,9 @@ try:
         print("do sth") # how to raise with open ???
 
 except FileNotFoundError: # no use too XD, neither OSError nor FileNotFoundError
+    print(sys.argv[0])
     sys.exit("Not a Python file")
+
 
 
     #print("Not a Python file") # no use on Errno2
