@@ -2,15 +2,15 @@ import sys
 
 counter = 0
 
-if len(sys.argv) == 1:
-    match sys.argv:
+if len(sys.argv) == 2:
+    match sys.argv[1]:
         case "lines.py":
         case "lines.txt":
         case _:
 
-elif len(sys.argv) > 1:
+elif len(sys.argv) > 2:
 
-else: # <1
+else: # <2
 
 
 
