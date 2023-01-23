@@ -4,10 +4,9 @@ counter = 0
 
 if len(sys.argv) == 2:
     if sys.argv[1].endswith(".py"):
-        if sys.argv[1].replace(".py", "") in ...:
-            #print the number of lines
-        else: not in
-
+        if sys.argv[1].replace(".py", "") not in  ...:
+            raise FileNotFoundError("File does not exist")
+        # print number
     else:
         raise FileNotFoundError("Not a python file")
 
