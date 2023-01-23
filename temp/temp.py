@@ -3,19 +3,16 @@ import sys
 counter = 0
 
 if len(sys.argv) == 2:
-    # has .gif, .py, .csv
-    # if in  these 3: starting from the fullstop, strip away all
+
     if sys.argv[1].endswith(".py"):
-        if sys.argv[1].replace(".py", "") not in  ...:
-            raise FileNotFoundError("File does not exist")
-        with open("lines.py") as file:
+        with open(sys.argv[1]) as file: # raise filenotfounderror with except
             for line in file:
                 if line.lstrip().startswith("#") == False and line.isspace() == False:
                     # strings/char/as a chunk.isspace(): syntax valid
                     counter += 1
         print(counter)
     else:
-        raise FileNotFoundError("Not a python file")
+        sys.exit("Not a python file")
 
 
 
