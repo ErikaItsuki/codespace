@@ -22,10 +22,10 @@ try:
                     pass
         print(counter)
     else:
-        raise FileNotFoundError("Not a Python file") # how to raise with open ???
+        print("do sth") # how to raise with open ???
 
-except OSError: # no use too XD, neither OSError nor FileNotFoundError
-    print("Not a Python file")
+except FileNotFOundError: # no use too XD, neither OSError nor FileNotFoundError
+    sys.exit("Not a Python file")
 
 
     #print("Not a Python file") # no use on Errno2
