@@ -11,13 +11,17 @@ if len(sys.argv) > 1: # ass one more: if sys.argv.replace(".py", "") != "lines" 
 elif len(sys.argv) < 1:
     sys.exit("Too few command-line arguments")
 
-elif sys.argv[0] == "lines.py" :
-    with open("lines.py") as file:
-        for line in file:
-            if line.lstrip().startswith("#") == False and line.isspace() == False:
-                # strings/char/as a chunk.isspace(): syntax valid
-                counter += 1
-    print(counter)
-    
+if sys.argv[0] == "lines.py" :
+    if len(sys.argv) == 1:
+        with open("lines.py") as file:
+            for line in file:
+                if line.lstrip().startswith("#") == False and line.isspace() == False:
+                    # strings/char/as a chunk.isspace(): syntax valid
+                    counter += 1
+        print(counter)
+    elif sys.argv[0].endswith(".py") == True:
+        raise("File does not exitst")
+    elif sys.argv[0]
+
 else:
     raise FileNotFoundError("Not a Python file") # no use too XD, neither OSError nor FileNotFoundError
