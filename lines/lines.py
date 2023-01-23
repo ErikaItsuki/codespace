@@ -15,12 +15,14 @@ try:
         print(file_name)
         with open(file_name, "r") as file:
             for line in file:
-                # line.lstrip() # why cant i strip ?
+                """# line.lstrip() # why cant i strip ?
                 if line.startswith("#") == False:
                  # check if the i-1 line ends with "\n"
                     counter += 1
                 else:
-                    pass
+                    pass"""
+                if line.lstrip().startswith("#") == False:
+                    counter += 1
         print(counter)
     else:
         print("do sth") # how to raise with open ???
