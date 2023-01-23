@@ -1,5 +1,3 @@
-### better check discord before submission ###
-
 
 """  a correct draft
 len == 1:
@@ -10,6 +8,7 @@ len > 1
 1. [0].py, [1]or... not with .py -> not a py file
 2. [0].py, [1]DNE -> file NDE
 3. [0].py, [1]have no .py/txt... -> too many"""
+
 
 import sys
 
@@ -22,7 +21,6 @@ try:
             with open(sys.argv[1]) as file: # raise filenotfounderror with except
                 for line in file:
                     if line.lstrip().startswith("#") == False and line.isspace() == False:
-                        # strings/char/as a chunk.isspace(): syntax valid
                         counter += 1
             print(counter)
         else:
