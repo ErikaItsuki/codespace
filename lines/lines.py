@@ -8,8 +8,7 @@ if len(sys.argv) > 1: # ass one more: if sys.argv.replace(".py", "") != "lines" 
 #else:
 #    sys.exit("")
 
-elif len(sys.argv) < 1:
-    sys.exit("Too few command-line arguments")
+
 
 if sys.argv[0] == "lines.py" :
     if len(sys.argv) == 1:
@@ -21,7 +20,13 @@ if sys.argv[0] == "lines.py" :
         print(counter)
     elif sys.argv[0].endswith(".py") == True:
         raise("File does not exitst")
-    elif sys.argv[0]
+    elif len(sys.argv) < 1:
+        sys.exit("Too few command-line arguments")
+
 
 else:
     raise FileNotFoundError("Not a Python file") # no use too XD, neither OSError nor FileNotFoundError
+
+
+len == 1:
+1. endswith.py
