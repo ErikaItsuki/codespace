@@ -78,3 +78,84 @@ try:
         sys.exit("Too few command-line arguments")
 except FileNotFoundError:
     sys.exit("File does not exist")
+
+
+#########################_Questions_#####################################
+#  (Pset6 Q2) why can't simply do import tabulate, but from ...         #
+#                                                                       #
+#########################################################################
+
+# trying out tabulate for Pset6, Q2
+from tabulate import tabulate # must have from...
+
+# all optional args as default:
+table = [["apple", 1], ["orange,", 2]]
+dictionary = {"name" : ["A", "B"], "number" : ["1","2"]}
+
+print(tabulate(table))
+print(tabulate(dictionary))
+
+print("#################")
+
+# headers
+print(tabulate(table, headers = ["items", "number"]))
+print(tabulate(dictionary, headers = "firstrow"))
+print(tabulate(dictionary, headers = "keys"))
+
+print("#################")
+
+"""
+headers=["Planet","R (km)", "mass (x 10^29 kg)"]))
+headers="firstrow"
+headers="keys"
+"""
+
+
+# row indices
+"""showindex="always" or showindex=True"""
+
+# table format
+print(tabulate(dictionary, headers = ["name", "number"], tablefmt = "pretty"))
+# -> look at pypi.org for all the tablefmt available
+
+### execute to look at the outputs ###
+
+#Pset6 Q2 answer
+
+# what is wget?
+
+import sys
+import csv
+from tabulate import tabulate # tabulate(table), where table = [[], [], []...]
+
+try:
+    if len(sys.argv) == 2:
+        if sys.argv[1].endswith(".csv"):
+             with open(sys.argv[1]) as file: # file is now a var to sys.argv[1]
+                # reader = csv.reader(sys.argv[1]) # no! It prints out regular.csv all letters vertically
+                # for line in reader: # here line is a list
+                """reader = csv.reader(file)
+                print(tabulate(reader, headers = "firstrow", tablefmt = "grid"))"""
+                dictreader = csv.DictReader(file)
+                # print(dictreader) # no __str__ ????? : it gives a memory address
+                print(tabulate(dictreader, headers = "keys", tablefmt = "grid")) # keys are Regular Pizza, Small, and Large
+                """
+                #print(tabulate(dictreader, headers = "firstrow", tablefmt = "grid")) # firstrows = Cheese, 13.50, 18.95
+                # I guess this is because keys are not counted as a row , so the original second row becomes the first, the
+                # keys are gone (not printed)
+                # csv.DictReader() seems to turn the first row to keys-> but better relearn everytime you use it"""
+
+        else:
+            sys.exit("Not a CSV file")
+
+    elif len(sys.argv) > 2:
+        sys.exit("Too many command-line arguments")
+
+    else:
+        sys.exit("Too few command-line arguments")
+
+except FileNotFoundError:
+    sys.exit("File does not exist")
+
+# left to do:
+# try raise FileNotFoundError (recommended)
