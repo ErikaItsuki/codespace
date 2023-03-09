@@ -1,24 +1,26 @@
 import random
 
 def main():
-    # prompt user for input (+ve, from 1 to n, int, )
-    #
+    validate()
+    answer = random.randint(1, n)
+    guess = int(input("Guess: "))
+    if guess > answer:
+        print("Too large")
+    elif guess < answer:
+        print("Too small")
+    else:
+        print("Just right")
+        # quit
 
-def level():
-    #return Level if 1 < level < 10
+def validate():
 
-def guess():
-    # loop
-
-"""
-def check():
-
-while True:
-    try:
-        guess = int(input("Level: ")).strip()
-    except (ValueError, NameError):
+    while True:
+        try:
+            n = int(input("Level: ")).strip()
+            break
+        except (ValueError, NameError):
+            continue
 
 
 
-guess = random.randint(1, n)
-"""
+main()
