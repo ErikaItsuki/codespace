@@ -13,8 +13,10 @@ def main():
     while True:
         if guess > answer:
             print("Too large")
+            guess = int(input("Guess: "))
         elif guess < answer:
             print("Too small")
+            guess = int(input("Guess: "))
         else:
             print("Just right")
             break
