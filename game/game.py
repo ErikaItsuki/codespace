@@ -9,3 +9,16 @@ def level():
 
 def guess():
     # loop
+
+"""
+def check():
+
+while True:
+    try:
+        guess = int(input("Level: ")).strip()
+    except (ValueError, NameError):
+
+
+
+guess = random.randint(1, n)
+"""
