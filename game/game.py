@@ -1,7 +1,13 @@
 import random
 
 def main():
-    validate()
+
+    while True:
+        try:
+            n = int(input("Level: ")).strip()
+            break
+        except (ValueError, NameError):
+            continue
     answer = random.randint(1, n)
     guess = int(input("Guess: "))
     if guess > answer:
@@ -11,16 +17,5 @@ def main():
     else:
         print("Just right")
         # quit
-
-def validate():
-
-    while True:
-        try:
-            n = int(input("Level: ")).strip()
-            break
-        except (ValueError, NameError):
-            continue
-
-
-
+        
 main()
