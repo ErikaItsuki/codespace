@@ -10,7 +10,7 @@ def main():
             continue
     answer = random.randint(1, n)
     guess = int(input("Guess: "))
-    while True:
+    while True: # if guessing put outside try or the same loop of check, error and quit
         if guess > answer:
             print("Too large")
             guess = int(input("Guess: "))
