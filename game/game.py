@@ -8,7 +8,7 @@ def main():
             print("Too Large!")
         elif guess == n:
             print("Just right!")
-            break
+            break # why timed out??? 
         else:
             print("Too small!")
 
