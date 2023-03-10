@@ -4,9 +4,11 @@
 # if counter >= 3: print correct answer
 import random # generate total 10 Q (fixed), X + Y = ..., X and Y use randint
 levels = [1,2,3]
+score = 0
 
 def main():
-    validate_level(True)
+    level = validate_level(True)
+
 
 
 
