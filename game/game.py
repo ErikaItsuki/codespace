@@ -2,7 +2,7 @@ import random
 
 def main():
 
-    n = random.randint(1, validate_level())
+    n = random.randint(1, validate_level(True))
     while guess:= validate_guess(): # not necessarily := input(..)
         if guess > n :
             print("Too Large!")
@@ -16,12 +16,12 @@ def main():
     # prompt guess
 
 
-def validate_level():
-    while True:
+def validate_level(check):
+    while check:
         try:
             # prompt level
             level = int((input("Level: ").strip()))
-            return level if level >= 0 else validate_level()
+            return level if level >= 0 else validate_level(check)
         except (ValueError, NameError):
             continue
 
