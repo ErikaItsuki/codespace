@@ -13,11 +13,11 @@ def main():
 
 
 
-def validate_level(check):
+def get_level(check): # for n digits
     while check:
         try:
-            level = int(input("Level: "))
-            return level if level in levels else validate_level(True)
+            n = int(input("Level: "))
+            return n if level in levels else validate_level(True)
         except ValueError:
             pass
 
