@@ -14,7 +14,6 @@ def main():
 
     # prompt guess
 
-main()
 
 def validate_level():
     while True:
@@ -31,8 +30,9 @@ def validate_guess():
     while True:
         try:
             #prompt guess
-            guess = int(input("level: ").strip())
+            guess = int(input("Guess: ").strip())
             return guess
         except (ValueError, NameError):
             pass
 
+main()
