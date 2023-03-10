@@ -24,7 +24,7 @@ def validate_level():
             if 1 <= level <= 10:
                 return level # main: n = randint(1, level)
             else:
-                
+
         except (ValueError, NameError):
             pass
 
