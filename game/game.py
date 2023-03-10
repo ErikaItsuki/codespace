@@ -7,7 +7,7 @@ def main():
         if guess > n :
             print("Too Large!")
         elif guess == n:
-            print("just right!")
+            print("Just right!")
             break
         else:
             print("Too small!")
