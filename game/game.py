@@ -24,7 +24,10 @@ def validate_level():
         except (ValueError, NameError):
             continue
         else:
-            return level if level >= 0 else pass
+            if level >= 0:
+                return level
+            else:
+                pass
 
 
 def validate_guess():
