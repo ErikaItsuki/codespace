@@ -13,9 +13,6 @@ def main():
             print("Too small!")
 
 
-    # prompt guess
-
-
 def validate_level(check):
     while check:
         try:
