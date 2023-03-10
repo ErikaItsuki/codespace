@@ -3,13 +3,14 @@ import random
 def main():
 
     n = random.randint(1, validate_level())
-    #guess = validate_guess()
-    if validate_guess() > n :
-        print("Too Large")
-    elif validate_guess() == n:
-        print("just right")
-    else:
-        print("Too small")
+    While guess:= validate_guess():
+        if guess > n :
+            print("Too Large")
+        elif guess == n:
+            print("just right")
+            break
+        else:
+            print("Too small")
 
 
     # prompt guess
