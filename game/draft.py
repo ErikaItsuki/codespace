@@ -1,22 +1,15 @@
 import random
 
 def main():
-#while True:
-    while True:
-        try:
-    # prompt level
-            level = int((input("Level: ").strip()))
-        except (ValueError, NameError):
-            continue
-        else:
-            n = random.randint(1, level)
-            guess = int(input("Guess: ").strip())
-            if guess > n :
-                return f"Too Large"
-            elif guess == n:
-                return f"just right"
-            else:
-                return f"Too small"
+
+    n = random.randint(1, validate_level())
+
+    if validate_guess() > n :
+        print("Too Large")
+    elif validate_guess() == n:
+        print("just right")
+    else:
+        print("Too small")
 
 
     # prompt guess
@@ -25,6 +18,21 @@ main()
 
 def validate_level():
     while True:
-        try: 
+        try:
+            # prompt level
+            level = int((input("Level: ").strip()))
+            return level # main: n = randint(1, level)
+        except (ValueError, NameError):
+            pass
+
+
 
 def validate_guess():
+    while True:
+        try:
+            #prompt guess
+            guess = int(input("level: ").strip())
+            return guess
+        except (ValueError, NameError):
+            pass
+
