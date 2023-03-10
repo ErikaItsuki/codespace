@@ -21,13 +21,14 @@ def validate_level():
         try:
             # prompt level
             level = int((input("Level: ").strip()))
-            if 1 <= level <= 10:
-                return level # main: n = randint(1, level)
+            if level < 0:
+                 # main: n = randint(1, level)
             else:
 
         except (ValueError, NameError):
-            pass
-
+            continue
+        else:
+            return level if level <= 0 else pass
 
 
 def validate_guess():
