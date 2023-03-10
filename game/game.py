@@ -21,7 +21,10 @@ def validate_level():
         try:
             # prompt level
             level = int((input("Level: ").strip()))
-            return level # main: n = randint(1, level)
+            if 1 <= level <= 10:
+                return level # main: n = randint(1, level)
+            else:
+                
         except (ValueError, NameError):
             pass
 
