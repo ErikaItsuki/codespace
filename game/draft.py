@@ -10,7 +10,7 @@ def main():
             continue
         else:
             n = random.randint(1, level)
-            guess = int(input("Guess: ").strip)
+            guess = int(input("Guess: ").strip())
             if guess > n :
                 return f"Too Large"
             elif guess == n:
@@ -22,3 +22,9 @@ def main():
     # prompt guess
 
 main()
+
+def validate_level():
+    while True:
+        try: 
+
+def validate_guess():
