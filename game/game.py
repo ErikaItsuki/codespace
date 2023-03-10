@@ -3,7 +3,7 @@ import random
 def main():
 
     n = random.randint(1, validate_level(True))
-    while guess:= validate_guess(): # not necessarily := input(..)
+    while guess:= validate_guess(True): # not necessarily := input(..)
         if guess > n :
             print("Too Large!")
         elif guess == n:
@@ -21,17 +21,17 @@ def validate_level(check):
         try:
             # prompt level
             level = int((input("Level: ").strip()))
-            return level if level >= 0 else validate_level(check)
+            return level if level > 0 else validate_level(check)
         except (ValueError, NameError):
             continue
 
 
-def validate_guess():
-    while True:
+def validate_guess(check):
+    while check:
         try:
             #prompt guess
             guess = int(input("Guess: ").strip())
-            return guess
+            return guess if guess > 0 else validate_guess(check)
         except (ValueError, NameError):
             pass
 
