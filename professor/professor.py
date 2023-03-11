@@ -5,15 +5,11 @@ def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
     # level
     level = get_level()
 
-    """
-    answer = input("") # try and except: counter++ :wrong EEE, or print answer if counter == 3
-    """
     # 10 questions
     score = 0
     for i in range(10):
         x, y = generate_integer(level)
         print(f"{x} + {y} = ", end = "")
-
 
         # check each question
         question_chances = 0
@@ -57,6 +53,19 @@ def generate_integer(level): # returns a randomly geneated non-ve integer with l
 
     return x, y
 
+def three_chances():
+    chances = 0
+    while chances < 3:
+        try:
+            answer = int(input(""))
+        except ValueError:
+            print("EEE")
+            chances += 1
+        else:
+            if answer != x + y:
+                continue
+            else:
+                return ...
 
 if __name__ == "__main__":
     main()
