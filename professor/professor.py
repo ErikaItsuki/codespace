@@ -9,9 +9,8 @@ questions = 0
 
 def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
     # level = validate_level(True)
-    for i in range(3):
-        x, y = generate_integer(get_level())
-        print(x, y)
+    x, y = generate_integer(get_level())
+    print(x, y)
 """    while questions < 10:
         # do 10 questions
         questions += 1
