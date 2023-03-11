@@ -1,11 +1,6 @@
-# prompt math question
-# if right: prompt nxt Q
-# else: print EEE (counter of ame problem++)
-# if counter >= 3: print correct answer
-import random # generate total 10 Q (fixed), X + Y = ..., X and Y use randint
+import random
 levels = [1,2,3]
-
-
+score = 0
 
 def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
     # level = validate_level(True)
@@ -14,7 +9,7 @@ def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
     answer = input("") # try and except: counter++ :wrong EEE, or print answer if counter == 3
     """
     # 10 questions
-    score = 0
+    
     for i in range(10):
         x, y = generate_integer(get_level())
         question_chances = 0
@@ -35,11 +30,8 @@ def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
 
 
 
-
-
-
-
 def get_level(): # DONE
+
     while True:
         try:
             level = int(input("Level: "))
