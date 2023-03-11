@@ -12,18 +12,11 @@ def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
         print(f"{x} + {y} = ", end = "")
 
         # check each question
-        question_chances = 0
-        while question_chances < 3:
-            answer = int(input(""))
-            if answer != (x + y):
-                question_chances += 1
-                if question_chances > 2:
-                    print(f"{x} + {y} = {x + y}")
-                else:
-                    print("EEE")
-            else:
-                score += 1
-                break
+        if check_answer_in_three(x, y):
+            score += 1
+        else:
+            print(f"{x} + {y} = {x + y}")
+
     print(f"Score: {score}")
 
 
@@ -53,7 +46,7 @@ def generate_integer(level): # returns a randomly geneated non-ve integer with l
 
     return x, y
 
-def check_answer_in_three():
+def check_answer_in_three(x, y):
     chances = 0
     while chances < 3:
         try:
@@ -68,7 +61,7 @@ def check_answer_in_three():
                 continue
             else:
                 return True
-    return false
+    return False
 
 if __name__ == "__main__":
     main()
