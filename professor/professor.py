@@ -61,6 +61,7 @@ def check_answer_in_three():
         except ValueError:
             print("EEE")
             chances += 1
+            # continue # if not -> not checked in while condition and ... may wait forever
         else:
             if answer != x + y:
                 chances += 1
