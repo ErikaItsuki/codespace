@@ -2,7 +2,8 @@ import random
 levels = [1,2,3]
 
 def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
-    # level = validate_level(True)
+    # level
+    level = get_level()
 
     """
     answer = input("") # try and except: counter++ :wrong EEE, or print answer if counter == 3
@@ -10,7 +11,7 @@ def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
     # 10 questions
     score = 0
     for i in range(10):
-        x, y = generate_integer(get_level())
+        x, y = generate_integer(level)
         question_chances = 0
         print(f"{x} + {y} = ", end = "")
 
@@ -22,7 +23,7 @@ def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
                 if question_chances > 2:
                     print(f"{x} + {y} = {x + y}")
                 else:
-                    raise ValueError("EEE")
+                    print("EEE")
             else:
                 score += 1
                 break
