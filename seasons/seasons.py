@@ -10,3 +10,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# taking date.today() by packaging:
+# 1. str().split then convert to int
+# 2. MORE EFFICIENT
