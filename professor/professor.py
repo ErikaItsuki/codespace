@@ -1,6 +1,5 @@
 import random
 levels = [1,2,3]
-score = 0
 
 def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
     # level = validate_level(True)
@@ -9,7 +8,7 @@ def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
     answer = input("") # try and except: counter++ :wrong EEE, or print answer if counter == 3
     """
     # 10 questions
-    
+    score = 0
     for i in range(10):
         x, y = generate_integer(get_level())
         question_chances = 0
@@ -26,7 +25,7 @@ def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
                     raise ValueError("EEE")
             else:
                 score += 1
-                continue
+                break
 
 
 
