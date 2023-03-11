@@ -49,11 +49,11 @@ def check_answer_in_three(x, y):
     chances = 0
     while chances < 3:
         try:
-            answer = int(input(f"{x} + {y} =")) # can?
+            answer = int(input(f"{x} + {y} = ")) # valid XD
         except ValueError:
             print("EEE")
             chances += 1
-            # continue # if not -> not checked in while condition and ... may wait forever
+            # continue # not wait forever if not checked in while condition due to natural flow of python
         else:
             if answer != x + y:
                 chances += 1
