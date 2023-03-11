@@ -28,7 +28,7 @@ def get_level(): # DONE
 
 def generate_integer(level): # returns a randomly geneated non-ve integer with level digits # ValueError if not 1, 2, 3
 
-    lower = digit = 10 ** (level - 1)
+    lower = 10 ** (level - 1)
     upper = 10 * level - 1
     if level == 1:
         x = random.randint(0, upper)
