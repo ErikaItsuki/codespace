@@ -11,7 +11,7 @@ def main():
     # prompt their birthday:
     year , month, day = int(input("Date of birth: ").split('-'))
     year_in_minutes = year - int(yyyy) * 24 * 60 * 365 # or 366?
-    
+
 
 
 if __name__ == "__main__":
