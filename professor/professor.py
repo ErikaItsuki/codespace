@@ -6,19 +6,25 @@ import random # generate total 10 Q (fixed), X + Y = ..., X and Y use randint
 levels = [1,2,3]
 score = 0
 
-def main():
+def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
     level = validate_level(True)
-
-
 
 
 
 def get_level(check): # for n digits
     while check:
         try:
-            n = int(input("Level: "))
-            return n if level in levels else validate_level(True)
+            level = int(input("Level: "))
+            return level if level in levels else get_level(True)
         except ValueError:
             pass
 
-main()
+def generate_integer(level):
+    # 1 -> 1 - 9
+    # 2 -> tens
+    # 3 -> hundreds
+
+
+
+if __name__ == "__main__":
+    main()
