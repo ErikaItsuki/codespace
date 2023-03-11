@@ -5,9 +5,17 @@
 import random # generate total 10 Q (fixed), X + Y = ..., X and Y use randint
 levels = [1,2,3]
 score = 0
+questions = 0
 
 def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
-    level = validate_level(True)
+    # level = validate_level(True)
+    while questions < 10:
+        # do 10 questions
+        question += 1
+    ...
+
+
+
 
 
 
@@ -23,8 +31,7 @@ def generate_integer(level):
     # 1 -> 1 - 9
     # 2 -> tens
     # 3 -> hundreds
-
-
+    ...
 
 if __name__ == "__main__":
     main()
