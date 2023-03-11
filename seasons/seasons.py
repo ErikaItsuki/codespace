@@ -5,7 +5,8 @@ import sys
 
 def main():
     print(date.today())
-    yyyy, mm, dd = date.today().split('-')
+    yyyy, mm, dd = str(date.today()).split("-")
+    print(yyyy, " ", mm, " ",  dd)
 
 if __name__ == "__main__":
     main()
