@@ -11,7 +11,7 @@ def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
     # level = validate_level(True)
     while questions < 10:
         # do 10 questions
-        question += 1
+        questions += 1
     ...
 
 
