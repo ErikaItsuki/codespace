@@ -20,7 +20,7 @@ def get_level(): # prompt and reprompt and return 1, 2, or 3
     while True:
         try:
             level = int(input("Level: "))
-            return level if level in levels else get_level(True)
+            return level if level in levels else get_level()
         except ValueError:
             pass
 
