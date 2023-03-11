@@ -9,7 +9,6 @@ def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
     score = 0
     for i in range(10):
         x, y = generate_integer(level)
-        print(f"{x} + {y} = ", end = "")
 
         # check each question
         if check_answer_in_three(x, y):
@@ -50,7 +49,7 @@ def check_answer_in_three(x, y):
     chances = 0
     while chances < 3:
         try:
-            answer = int(input(""))
+            answer = int(input(f"{x} + {y} =")) # can?
         except ValueError:
             print("EEE")
             chances += 1
