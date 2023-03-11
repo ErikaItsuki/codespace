@@ -1,11 +1,11 @@
 import bank
 
 def main():
+    test_value()
 
 
-
-def value(greeting):
-    ...
+def test_value():
+    assert 
 
 
 if __name__ == "__main__":

@@ -1,9 +1,9 @@
 def main():
-    greet = input("Greeting: ").strip().lower()
-    greet_for_money(greet)
+    greeting = input("Greeting: ").strip().lower()
+    value(greeting)
 
-def greet_for_money(greet):
-    letters = list(greet)
+def value(greeting):
+    letters = list(greeting)
     if letters[0] == 'h':
         if letters[1:5] == ['e', 'l', 'l', 'o']:
             print("$0")
@@ -12,7 +12,8 @@ def greet_for_money(greet):
     else:
         print("$100")
 
-main()
+if __name__ =="__main__":
+    main()
 
 
 
