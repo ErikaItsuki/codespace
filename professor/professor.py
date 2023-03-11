@@ -5,16 +5,32 @@
 import random # generate total 10 Q (fixed), X + Y = ..., X and Y use randint
 levels = [1,2,3]
 score = 0
-questions = 0
+
 
 def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
     # level = validate_level(True)
-    x, y = generate_integer(get_level())
-    
-"""    while questions < 10:
-        # do 10 questions
-        questions += 1
-    ..."""
+
+    """
+    answer = input("") # try and except: counter++ :wrong EEE, or print answer if counter == 3
+    """
+    # 10 questions
+    for i in range(10):
+        x, y = generate_integer(get_level())
+        question_chances = 0
+        printf("{x} + {y} = ")
+
+        # check each question
+        while question_chances < 3:
+
+            answer = input("")
+            if answer == x + y:
+                ...
+            else:
+                question_chances += 1
+
+
+
+
 
 
 def get_level(): # DONE
@@ -40,11 +56,6 @@ def generate_integer(level): # returns a randomly geneated non-ve integer with l
         raise ValueError("level should be 1, 2, or 3")
 
     return x, y
-    # 1 -> 1 - 9
-    # 2 -> tens
-    # 3 -> hundreds
-    ...
-
 
 
 if __name__ == "__main__":
