@@ -1,8 +1,10 @@
 from datetime import date
 import sys
 
+# use classes
+
 def main():
-    print(type(date.today()))
+    print(date.today())
 
 if __name__ == "__main__":
     main()
