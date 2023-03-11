@@ -21,12 +21,13 @@ def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
 
         # check each question
         while question_chances < 3:
-
             answer = input("")
-            if answer == x + y:
-                ...
-            else:
+            if answer != x + y:
                 question_chances += 1
+                raise ValueError("EEE")
+            else:
+                score += 1
+                continue
 
 
 
