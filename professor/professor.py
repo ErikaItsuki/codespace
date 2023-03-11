@@ -26,6 +26,9 @@ def get_level(): # DONE
 
 
 def generate_integer(level): # returns a randomly geneated non-ve integer with level digits # ValueError if not 1, 2, 3
+    digit = 10 ** (level - 1)
+    x, y = random.randint()
+    return digit
     # 1 -> 1 - 9
     # 2 -> tens
     # 3 -> hundreds
