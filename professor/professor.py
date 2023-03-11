@@ -63,6 +63,7 @@ def three_chances():
             chances += 1
         else:
             if answer != x + y:
+                chances += 1
                 continue
             else:
                 return ...
