@@ -7,13 +7,14 @@ levels = [1,2,3]
 score = 0
 questions = 0
 
-"""def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
+def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
     # level = validate_level(True)
+    get_level()
     while questions < 10:
         # do 10 questions
         questions += 1
     ...
-"""
+
 
 def get_level(): # prompt and reprompt and return 1, 2, or 3
     while True:
@@ -31,7 +32,7 @@ def generate_integer(level): # returns a randomly geneated non-ve integer with l
     ...
 
 """
-"""
+
 if __name__ == "__main__":
     main()
-"""
+
