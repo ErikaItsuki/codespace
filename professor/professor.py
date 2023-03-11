@@ -9,11 +9,11 @@ questions = 0
 
 def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
     # level = validate_level(True)
-    get_level()
-    while questions < 10:
+    generate_integer(get_level())
+"""    while questions < 10:
         # do 10 questions
         questions += 1
-    ...
+    ..."""
 
 
 def get_level(): # DONE
@@ -34,9 +34,9 @@ def generate_integer(level): # returns a randomly geneated non-ve integer with l
     elif level == 2 or level == 3:
         x, y = random.randint(lower, upper)
     else:
-        raise ValueError
+        raise ValueError("level should be 1, 2, or 3")
 
-    return digit
+    return x, y
     # 1 -> 1 - 9
     # 2 -> tens
     # 3 -> hundreds
