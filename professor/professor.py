@@ -27,7 +27,7 @@ def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
             else:
                 score += 1
                 break
-    print(f"score)
+    print(f"Score: {score}")
 
 
 
