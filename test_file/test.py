@@ -1,4 +1,4 @@
-import square
+import squared
 
 def main():
     test_squared()
