@@ -17,12 +17,12 @@ def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
     for i in range(10):
         x, y = generate_integer(get_level())
         question_chances = 0
-        print(f"{x} + {y} = ")
+        print(f"{x} + {y} = ", end = "")
 
         # check each question
         while question_chances < 3:
             answer = input("")
-            if answer != x + y:
+            if answer != (x + y):
                 question_chances += 1
                 if question_chances > 2:
                     print(f"{x} + {y} = {x + y}")
