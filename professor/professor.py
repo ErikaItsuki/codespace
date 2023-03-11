@@ -53,7 +53,7 @@ def generate_integer(level): # returns a randomly geneated non-ve integer with l
 
     return x, y
 
-def three_chances():
+def check_answer():
     chances = 0
     while chances < 3:
         try:
@@ -66,7 +66,7 @@ def three_chances():
                 chances += 1
                 continue
             else:
-                return ...
+                return True
 
 if __name__ == "__main__":
     main()
