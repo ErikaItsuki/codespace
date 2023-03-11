@@ -1,7 +1,7 @@
 def main():
     ...
 
-def square(n):
+def squared(n):
     return n * n
 
 if __name__ == "__main__":
