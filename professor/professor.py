@@ -15,11 +15,7 @@ def main(): # if EEE x 3 --> display corr ans and prompt the nxt Q right away
     ...
 
 
-
-
-
-
-def get_level(check): # for n digits
+def get_level(check): # prompt and reprompt and return 1, 2, or 3
     while check:
         try:
             level = int(input("Level: "))
@@ -27,7 +23,8 @@ def get_level(check): # for n digits
         except ValueError:
             pass
 
-def generate_integer(level):
+
+def generate_integer(level): # returns a randomly geneated non-ve integer with level digits # ValueError if not 1, 2, 3
     # 1 -> 1 - 9
     # 2 -> tens
     # 3 -> hundreds
