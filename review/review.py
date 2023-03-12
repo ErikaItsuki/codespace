@@ -1,20 +1,6 @@
 def main():
 
-    students = {
-        "Gryff":{
-            "Harry":{"number" : 1,"year" : 1},
-            "Ron":{"number" : 2,"year" : 1}
-        }
-    }
-
-    for house in students:
-        print(house) # Griff
-        # go to key = "Harry"
-        for key in house["Harry"]:
-            print(key)
-        # print(students(stu)) # Harry, Ron # TypeError: dict obj not callable
-
-"""    bitcoin = {
+    bitcoin = {
         "bpi": {
             "USD": {
             "code": "USD",
@@ -26,7 +12,14 @@ def main():
         }
     }
 
+    # METHOD_1
     for item in bitcoin["bpi"]["USD"]:
-        """
+        if item == "rate":
+            print(bitcoin["bpi"]["USD"][item])
+
+    #METHOD_2
+    #for item in bitcoin["bpi"]:
+        # inner = list(bitcoin["bpi"]) # list(key) -> 'USD'
+
 
 main()
