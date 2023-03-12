@@ -1,12 +1,9 @@
 import json
 import requests
-import sys
 
 def main():
     o = get_rate_USD()
     amount = o["bpi"]["USD"]["rate"]
-
-
 
 
 def get_rate_USD():
