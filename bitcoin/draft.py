@@ -4,8 +4,8 @@ import sys
 
 def main():
     o = get_rate_USD()
-    # print(o) # OK
-    print(o[2])
+    for key in o:
+        print(key)
 
 
 def get_rate_USD():
