@@ -4,9 +4,11 @@ import sys
 
 def main():
     o = get_rate_USD()
+    print(o)
+"""
     for item in o["bpi"]["USD"]:
         if item == "rate":
-            print(o["bpi"]["USD"][item])
+            print(o["bpi"]["USD"][item])"""
 
 
 def get_rate_USD():
