@@ -4,8 +4,8 @@ import sys
 
 def main():
     o = get_rate_USD()
-    for key in o:
-        print(key, end = "") # prints the whole dict # but not a prob
+    amount = o["bpi"]["USD"]["rate"]
+
 
 
 
@@ -14,3 +14,6 @@ def get_rate_USD():
     return json.dumps(response.json(), indent = 2)
 
 main()
+
+"""for key in o:
+    print(key, end = "") # prints the whole dict # but not a prob"""
