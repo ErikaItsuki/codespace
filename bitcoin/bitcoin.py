@@ -1,7 +1,15 @@
 import requests
 import sys
 
-try:
-    ...
-except requests.RequestException:
-    ...
+def main():
+    while True:
+        try:
+            if sys.argv < 2:
+                sys.exit("")
+
+            float(sys.argv[1])
+        except requests.RequestException: # ambiguous exception that occured while handling your request
+            sys.exit("")
+
+if __name__ == "__main__":
+    main()
