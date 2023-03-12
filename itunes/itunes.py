@@ -1,6 +1,6 @@
 import requests
 import sys
-import json # more cleanly format the python dict
+import json # more cleanl y format the python dict
 
 
 if len(sys.argv) != 2:
