@@ -7,8 +7,8 @@ def main():
             if sys.argv < 2:
                 sys.exit("Missing command-line argument")
             else:
-                float(sys.argv[1])
-        except requests.RequestException: # ambiguous exception that occured while handling your request
+                requests.get(float(sys.argv[1]))
+        except (ValueError, requests.RequestException): # ambiguous exception that occured while handling your request
             sys.exit("")
 
 if __name__ == "__main__":
