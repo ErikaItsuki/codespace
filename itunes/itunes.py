@@ -8,6 +8,21 @@ if len(sys.argv) != 2:
 
 # requests.get(link) -> return sth from the server
 response = requests.get("https://itunes.apple.com/search?entity=song&limit=1&term=" + sys.argv[1])
-print(json.dumps(response.json(), indent=2)) #json() to format --> but only in python dictionary
 
 # print 1 song name only:
+#1 the whole json code
+# print(json.dumps(response.json(), indent=2)) #json() to format --> but only in python dictionary
+
+#2 only the trackName in results (the only 1 dict in the list)
+o = response.json()
+for result in o["results"]: # documentation has key with dict values called results inside
+    print(result["trackName"])
+
+"""
+for student in students:
+    print(student, students['name']) => print key then the corresponding value
+
+so here:
+o["results"] access the R-value, i.e. the inner dictionary
+with result, each meaning a bunch of data of that 1 search result, result["trackname"] gives the R of the song's name
+"""
