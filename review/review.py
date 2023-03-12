@@ -12,15 +12,10 @@ def main():
         }
     }
 
-    # METHOD_1
+    # METHOD_1 : almost the most elegant :D
     for item in bitcoin["bpi"]["USD"]:
         if item == "rate":
             print(bitcoin["bpi"]["USD"][item])
 
-    #METHOD_2
-    #for item in bitcoin["bpi"]:
-        # inner = list(bitcoin["bpi"]) # list(key) -> 'USD'
-    bpi = list(bitcoin["bpi"])
-    print(bpi)
 
 main()
