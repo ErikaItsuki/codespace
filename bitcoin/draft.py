@@ -5,7 +5,7 @@ import sys
 def main():
     o = get_rate_USD()
     for key in o:
-        print(key)
+        print(key, end = "")
 
 
 def get_rate_USD():
