@@ -4,6 +4,8 @@ import sys
 
 def main():
     o = get_rate_USD()
+    for rate in o["bpi"]:
+        print(rate)
 
 
 def get_rate_USD():
