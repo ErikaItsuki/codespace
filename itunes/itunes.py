@@ -7,7 +7,7 @@ if len(sys.argv) != 2:
     sys.exit()
 
 # requests.get(link) -> return sth from the server
-response = requests.get("https://www.apple.com/jp/itunes/search?entity=song&limit=50&term=" + sys.argv[1])
+response = requests.get("https://itunes.apple.com/search?entity=song&limit=1&term=" + sys.argv[1])
 
 # print 1 song name only:
 #1 the whole json code
