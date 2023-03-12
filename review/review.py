@@ -12,6 +12,6 @@ def main():
     }
 
     for bpi in bitcoin["bpi"]:
-        print(bpi)
+        
         print(bitcoin["bpi"][bpi])
 main()
