@@ -3,7 +3,8 @@ import requests
 
 def main():
     o = get_rate_USD()
-    amount = o["bpi"]["USD"]["rate"]
+    for value in o.values():
+        print(value)
 
 
 def get_rate_USD():
