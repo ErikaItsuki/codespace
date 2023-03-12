@@ -5,7 +5,7 @@ import sys
 def main():
     o = get_rate_USD()
     # print(o) # OK
-    print(o[1])
+    print(o[2])
 
 
 def get_rate_USD():
