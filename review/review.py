@@ -9,7 +9,7 @@ def main():
 
     for stu in students:
         print(stu) # Griff
-        print(students(stu)) # Harry, Ron
+        print(students(stu)) # Harry, Ron # TypeError: dict obj not callable
 
 """    bitcoin = {
         "bpi": {
