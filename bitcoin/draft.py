@@ -7,9 +7,9 @@ def main():
 
 
 def get_rate_USD():
-    response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+    response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json").json()
     print(response)
-    return json.dumps(response.json(), indent = 2)
+    return json.dumps(response, indent = 2)
 
 main()
 
