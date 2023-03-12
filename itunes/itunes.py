@@ -15,6 +15,7 @@ response = requests.get("https://itunes.apple.com/search?entity=song&limit=1&ter
 
 #2 only the trackName in results (the only 1 dict in the list) # change limit=1 to 50 if need to find more songs
 o = response.json()
+print(type(o))
 for result in o["results"]: # documentation has key with dict values called results inside
     print(result["trackName"])
 
