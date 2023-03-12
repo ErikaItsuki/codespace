@@ -7,11 +7,11 @@ if len(sys.argv) != 2:
     sys.exit()
 
 # requests.get(link) -> return sth from the server
-response = requests.get("https://itunes.apple.com/search?entity=song&limit=50&term=" + sys.argv[1])
+response = requests.get("https://itunes.apple.com/search?entity=song&limit=1&term=" + sys.argv[1])
 
 # print 1 song name only:
 #1 the whole json code
-# print(json.dumps(response.json(), indent=2)) #json() to format --> but only in python dictionary
+print(json.dumps(response.json(), indent=2)) #json() to format --> but only in python dictionary
 
 #2 only the trackName in results (the only 1 dict in the list) # change limit=1 to 50 if need to find more songs
 o = response.json()

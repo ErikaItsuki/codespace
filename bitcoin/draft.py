@@ -3,7 +3,7 @@ import requests
 import sys
 
 def main():
-    print(get_rate_USD())
+    o = get_rate_USD()
 
 
 def get_rate_USD():
