@@ -12,5 +12,6 @@ def main():
     }
 
     for bpi in bitcoin["bpi"]:
-        print(bpi) # is a key
+        for USD in bpi:
+            print(USD[])
 main()
