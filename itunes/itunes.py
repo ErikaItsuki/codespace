@@ -16,7 +16,8 @@ print(json.dumps(response.json(), indent=2)) #json() to format --> but only in p
 #2 only the trackName in results (the only 1 dict in the list) # change limit=1 to 50 if need to find more songs
 o = response.json()
 for result in o["results"]: # documentation has key with dict values called results inside
-    print(result["trackName"])
+    print(result, result["trackName"])
+
 
 """
 for student in students:
