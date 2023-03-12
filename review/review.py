@@ -1,5 +1,20 @@
 def main():
-    bitcoin = {
+
+    students = {
+        "Gryff":{
+            "Harry":{
+                "number" = 1,
+                "year" = 1
+            },
+            "Ron":{
+                "number" = 2,
+                "year" = 1
+            }
+        }
+    }
+main()
+
+"""    bitcoin = {
         "bpi": {
             "USD": {
             "code": "USD",
@@ -12,7 +27,4 @@ def main():
     }
 
     for item in bitcoin["bpi"]["USD"]:
-        
-
-
-main()
+        """
