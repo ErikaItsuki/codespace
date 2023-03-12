@@ -20,6 +20,7 @@ def main():
     #METHOD_2
     #for item in bitcoin["bpi"]:
         # inner = list(bitcoin["bpi"]) # list(key) -> 'USD'
-
+    bpi = list(bitcoin["bpi"])
+    print(bpi)
 
 main()
