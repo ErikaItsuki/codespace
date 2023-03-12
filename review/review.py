@@ -2,17 +2,14 @@ def main():
 
     students = {
         "Gryff":{
-            "Harry":{
-                "number" = 1,
-                "year" = 1
-            },
-            "Ron":{
-                "number" = 2,
-                "year" = 1
-            }
+            "Harry":{"number" : 1,"year" : 1},
+            "Ron":{"number" : 2,"year" : 1}
         }
     }
-main()
+
+    for stu in students:
+        print(stu) # Griff
+        print(students(stu)) # Harry, Ron
 
 """    bitcoin = {
         "bpi": {
@@ -28,3 +25,5 @@ main()
 
     for item in bitcoin["bpi"]["USD"]:
         """
+
+main()
