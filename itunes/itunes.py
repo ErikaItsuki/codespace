@@ -11,12 +11,12 @@ response = requests.get("https://itunes.apple.com/search?entity=song&limit=1&ter
 
 # print 1 bunch only:
 #1 the whole json code
-print(json.dumps(response.json(), indent=2)) #json() to format --> but only in python dictionary
+# print(json.dumps(response.json(), indent=2)) #json() to format --> but only in python dictionary
 
 #2 only the trackName in results (the only 1 dict in the list) # change limit=1 to 50 if need to find more songs
 o = response.json()
 for result in o["results"]: # documentation has key with dict values called results inside
-    print(result, result["trackName"])
+    print(result["trackName"])
 
 
 """
