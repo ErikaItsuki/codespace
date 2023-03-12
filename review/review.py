@@ -12,7 +12,7 @@ def main():
     }
 
     for item in bitcoin["bpi"]["USD"]:
-        print(item["rate"])
+        
 
 
 main()
