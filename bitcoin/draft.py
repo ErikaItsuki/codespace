@@ -5,7 +5,10 @@ import sys
 def main():
     o = get_rate_USD()
     for key in o:
-        print(key, end = "") # prints the whole dict
+        print(key, end = "") # prints the whole dict # but not a prob
+    for key in list(o["bpi"]):
+        print(key)
+
 
 
 def get_rate_USD():
