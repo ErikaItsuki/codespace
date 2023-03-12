@@ -5,7 +5,8 @@ import sys
 def main():
     o = get_rate_USD()
     for rate in o["bpi"]:
-        print(rate)
+        for USD in rate["USD"]:
+            print(USD["rate"])
 
 
 def get_rate_USD():
