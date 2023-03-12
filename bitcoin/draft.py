@@ -1,8 +1,13 @@
+import json
 import requests
 import sys
 
 def main():
+    print(get_rate_USD())
 
 
 def get_rate_USD():
-    requests.get("")
+    response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json").json()
+    return response
+
+main()
