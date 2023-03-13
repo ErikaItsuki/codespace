@@ -1,5 +1,5 @@
 def main():
-    ...
+    is_valid("CS50")
 
 
 def is_valid(s):
