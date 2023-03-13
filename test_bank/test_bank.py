@@ -5,13 +5,14 @@ def main():
 
 
 def test_value_str():
-    assert value("hello") = 0
-    assert value()
+    # test 'h'
+    assert bank.value("hello") == 0
+    assert bank.value("gello") == 20
 
 def test_value_non_str():
-    ...
+    # non-str type
+    assert bank.value(123) == 
 
-def test_value_
 
 
 if __name__ == "__main__":
