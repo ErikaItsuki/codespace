@@ -8,7 +8,7 @@ def is_valid(s):
     if s[0].isalpha() and s[1].isalpha():
         for i, char in enumerate(s[2:]):
             if char.isdigit():
-                return check_digits([].append(s[i+2:]))
+                return check_digits("".join(s[i+2:]))
 
         return True
     else:
@@ -30,7 +30,7 @@ def general_rules(s): #DONE :)
         valid = False
     return valid
 
-def check_digits(l):
+def check_digits(s):
     try:
         int(s)
         return True
