@@ -8,7 +8,7 @@ def is_valid(s):
     if s[0].isalpha() and s[1].isalpha():
         for i, char in enumerate(s[2:]):
             if char.isdigit():
-                return check_digits(str(s), i + 1)
+                return check_digits(str(s), i + 2)
 
         return True
     else:
