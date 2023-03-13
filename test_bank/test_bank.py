@@ -1,6 +1,7 @@
 import bank
 
 def main():
+    test_value_upper()
     test_value_h()
     test_value_str()
     test_value_non_str()

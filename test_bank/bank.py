@@ -1,16 +1,18 @@
 def main():
     greeting = input("Greeting: ").strip().lower()
-    value(greeting)
+    print(value(greeting))
 
 def value(greeting):
+    amount = 0
     letters = list(greeting)
     if letters[0] == 'h':
         if letters[1:5] == ['e', 'l', 'l', 'o']:
-            print(0)
+            return amount
         else:
-            print(20)
+            amount = 20
     else:
-        print(100)
+        amount = 100
+    return amount
 
 if __name__ =="__main__":
     main()
