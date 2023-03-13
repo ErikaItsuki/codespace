@@ -2,7 +2,8 @@ import requests
 
 def main():
     #print(f'{:,}'.format(123456)) # PROB: expected expression (:)
-    print(f"{123456789.12345:,}")
+    print(f"{123456789.12345:,}") # WHAT IF 123,456.12345 : with decimal?
+    print(f"{:,}".format(123456))
 
 main()
 """for key in o:
