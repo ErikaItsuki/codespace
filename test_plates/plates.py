@@ -9,9 +9,9 @@ def is_valid(s):
         for i, char in enumerate(s[2:]):
             if char.isdigit():
                 for j, digit in enumerate(s[i:]):
-                    if not s[i].isdigit():
+                    if not s[i+1].isdigit():
                         return False
-                
+        return True
     else:
         return False
 
