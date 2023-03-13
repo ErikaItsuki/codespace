@@ -6,7 +6,10 @@ def is_valid(s):
     #check first 2 = alpha
     s = list(s)
     if s[0].isalpha() and s[1].isalpha():
-        
+        for i, char in enumerate(s[2:]):
+            if
+    else:
+        return False
 
 def general_rules(s): #DONE :)
     valid = True
