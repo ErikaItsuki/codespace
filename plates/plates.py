@@ -1,6 +1,6 @@
 def main():
     plate = input("Plate: ")
-    if is_valid(plate):
+    if general_rules(plate) and is_valid(plate):
         print("Valid")
     else:
         print("Invalid")
