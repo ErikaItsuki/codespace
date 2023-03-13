@@ -10,7 +10,9 @@ def main():
 
     # access args' items
 
-    # 
-
+    #
+    name = "Erika"
+    print(str(name))
+    print(repr(name))
 
 main()
