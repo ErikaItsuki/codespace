@@ -5,6 +5,10 @@ def main():
     test_value_str()
     test_value_non_str()
 
+def test_value_upper():
+    assert bank.value("HELLO") == 0
+    assert bank.value("GEllo") == 20
+
 
 def test_value_h():
     # test 'h'
