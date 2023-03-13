@@ -1,17 +1,11 @@
+import datetime
+
 def main():
 
-    # align
-
-    # thousand operate
-    e = f'{12345:,}'
-    print(e) # 12,345 (type == str)
-
-    # expressing a %
-    f = 1/10 # 0.1
-    f = "{:.3%}".format(f) # 3 means how many d.p
-    print(f) # 10.000%
-
     # type-specific formatting
-
+    d = datetime.datetime(2010, 7, 4, 12, 15, 58)
+    """is equivalent to"""'{:%Y-%m-%d %H:%M:%S}'.format(d)
+    #'{:%-%-% %:%:%}'.format(d) still good, neither affected by % nor :
+    print(d)
 
 main()
