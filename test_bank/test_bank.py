@@ -8,13 +8,14 @@ def main():
 
 def test_value_upper():
     assert bank.value("HELLO") == 0
-    assert bank.value("GEllo") == 20
+    assert bank.value("GEllo") == 100
 
 
 def test_value_h():
     # test 'h'
     assert bank.value("hello") == 0
-    assert bank.value("gello") == 20
+    assert bank.value("hey") == 20
+    assert bank.value("gello") == 100
 
 def test_value_str():
     assert bank.value("ello") == 100
