@@ -1,5 +1,5 @@
 def main():
-    is_valid("CS50")
+    print(is_valid("CS50"))
 
 
 def is_valid(s):
@@ -8,7 +8,7 @@ def is_valid(s):
     if s[0].isalpha() and s[1].isalpha():
         for i, char in enumerate(s[1:]):
             if char.isdigit():
-                return check_digits(s, i + 1)
+                return check_digits(str(s), i + 1)
 
         return True
     else:
