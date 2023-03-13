@@ -11,10 +11,11 @@ def general_rules(s):
     s = list(s)
     if 1 < len(s) < 7:
         i = 0
-        while i < len(s)
-            if char != (s.isalpha() or s.isdigit()):
+        while i < len(s):
+            if s[i] != (s.isalpha() or s.isdigit()):
                 return False
             else:
+                i += 1
 
     else:
         valid = False
