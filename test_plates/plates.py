@@ -5,7 +5,8 @@ def main():
 def is_valid(s):
     #check first 2 = alpha
     s = list(s)
-    for i in range(len())
+    for i, char in enumerate(s):
+        if 
 
 def general_rules(s): #DONE :)
     valid = True
