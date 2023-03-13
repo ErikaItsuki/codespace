@@ -1,3 +1,5 @@
+import datetime
+
 def main():
 
     """access arguments means using args from like sth.format('a', 'b', 'c')"""
@@ -11,8 +13,7 @@ def main():
     # access args' items
 
     #
-    name = "Erika"
-    print(str(name))
-    print(repr(name))
+    
+
 
 main()
