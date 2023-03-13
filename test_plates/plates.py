@@ -12,7 +12,7 @@ def general_rules(s):
     if 2 <= len(s) <= 6:
         i = 0
         while i < len(s):
-            if s[i] != (s[i].isalpha() or s.isdigit()):
+            if s[i] != (s[i].isalpha() or s[i].isdigit()):
                 return False
             else:
                 i += 1
