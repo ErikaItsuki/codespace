@@ -12,7 +12,13 @@ def main():
 
     # access args' items
 
-    #align
+    # align
+
+    # thousand operate
+
+    # expressing a %
+
+    # type-specific formatting
 
 
 main()
