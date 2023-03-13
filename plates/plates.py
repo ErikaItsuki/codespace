@@ -10,7 +10,7 @@ def is_valid(s):
     s = list(s)
     if s[0].isalpha() and s[1].isalpha():
         for i, char in enumerate(s[2:]):
-            if char.isdigit():
+            if char.isdigit() and char != 0:
                 return check_digits("".join(s[i+2:]))
 
         return True
