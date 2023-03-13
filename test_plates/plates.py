@@ -7,7 +7,11 @@ def is_valid(s):
     s = list(s)
     if s[0].isalpha() and s[1].isalpha():
         for i, char in enumerate(s[2:]):
-            if
+            if char.isdigit():
+                for j, digit in enumerate(s[i:]):
+                    if not s[i].isdigit():
+                        return False
+                
     else:
         return False
 
