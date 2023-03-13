@@ -32,7 +32,8 @@ def general_rules(s): #DONE :)
 
 def check_digits(slice, start):
     try:
-        s = int(slice[start:])
+        s = slice[start:]
+        int(s)
         return True
     except ValueError:
         return False
