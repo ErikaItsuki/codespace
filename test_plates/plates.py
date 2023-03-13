@@ -30,17 +30,15 @@ def general_rules(s): #DONE :)
         valid = False
     return valid
 
-def check_digits(s, start):
+def check_digits(slice, start):
     try:
-        int(s[start:])
+        s = int(slice[start:])
         return True
     except ValueError:
         return False
 
 if __name__ == "__main__":
     main()
-
-
 
 
 """for j, digit in enumerate(s[i+1:]):
