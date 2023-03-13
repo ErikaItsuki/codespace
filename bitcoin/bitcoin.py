@@ -14,7 +14,7 @@ def main():
 
     o = get_rate_USD()
     rate = round(o["bpi"]["USD"]["rate_float"] * n, 4)
-    print(f"{rate:,}" + "\n")
+    print(f"{rate:,}\n")
 
 
 def get_rate_USD():
