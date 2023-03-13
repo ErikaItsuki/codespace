@@ -8,9 +8,8 @@ def is_valid(s):
     if s[0].isalpha() and s[1].isalpha():
         for i, char in enumerate(s[1:]):
             if char.isdigit():
-                for j, digit in enumerate(s[i:]):
-                    if not s[i+1].isdigit():
-                        return False
+                return check_digits(s, i + 1)
+
         return True
     else:
         return False
@@ -31,5 +30,19 @@ def general_rules(s): #DONE :)
         valid = False
     return valid
 
+def check_digits(s, start):
+    try:
+        int(s[start:])
+        return True
+    except ValueError:
+        return False
+
 if __name__ == "__main__":
     main()
+
+
+
+
+"""for j, digit in enumerate(s[i+1:]):
+        if not s[i+1].isdigit():
+            return False"""
