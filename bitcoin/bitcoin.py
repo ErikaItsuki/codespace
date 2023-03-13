@@ -13,7 +13,7 @@ def main():
             sys.exit("Command-line argument is not a number")
 
     o = get_rate_USD()
-    rate = "{:,}".format(o["bpi"]["USD"]["rate_float"] * n)
+    rate = round(o["bpi"]["USD"]["rate_float"] * n, 4)
     print(f"{rate:.4f}")
 
 

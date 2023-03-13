@@ -8,10 +8,12 @@ def main():
     # PROB2 once a number is formatted by 1 formate code, it becomes a str so the
         # second formate code cuz error
 
+    ### SOL ### first round(number, ndigit = None), then format :)
+
     """2"""
     #print(f'{:,}'.format(123456)) # PROB: expected expression (:)
-    value = '{:,}'.format(1234567890) # BUT not out of printf :)
-    print(type(value))
+    value = round(123456789.12345, 4) # BUT not out of printf :)
+    print('{:,}'.format(value))
 
 
 
