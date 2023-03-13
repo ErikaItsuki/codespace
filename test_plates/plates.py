@@ -6,7 +6,7 @@ def is_valid(s):
     #check first 2 = alpha
     s = list(s)
     if s[0].isalpha() and s[1].isalpha():
-        for i, char in enumerate(s[2:]):
+        for i, char in enumerate(s[1:]):
             if char.isdigit():
                 for j, digit in enumerate(s[i:]):
                     if not s[i+1].isdigit():
