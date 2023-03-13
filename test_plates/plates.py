@@ -4,7 +4,8 @@ def main():
 
 def is_valid(s):
     #check first 2 = alpha
-    # if
+    s = list(s)
+    for i in range(len())
 
 def general_rules(s): #DONE :)
     valid = True
