@@ -2,10 +2,9 @@ import datetime
 
 def main():
 
-    # type-specific formatting
+    # type-specific formatting # Not know how to do with the types yet 
     d = datetime.datetime(2010, 7, 4, 12, 15, 58)
-    """is equivalent to"""
     d = '{:%-%m-%d %H:%M:%S}'.format(d)
-    print(d)
+    print(d) # %m-04 12:15:58 # missing %- for %Y which as a placeholder
 
 main()
