@@ -1,9 +1,10 @@
 def main():
     ...
-    
+
 
 def is_valid(s):
-    ...
+    #check first 2 = alpha
+    # if
 
 def general_rules(s): #DONE :)
     valid = True
