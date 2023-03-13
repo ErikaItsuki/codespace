@@ -7,7 +7,7 @@ def value(greeting):
     letters = list(greeting)
     if letters[0] == 'h':
         if letters[1:5] == ['e', 'l', 'l', 'o']:
-            return amount
+            amount = 0
         else:
             amount = 20
     else:
