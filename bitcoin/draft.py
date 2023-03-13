@@ -11,7 +11,7 @@ def main():
     """2"""
     #print(f'{:,}'.format(123456)) # PROB: expected expression (:)
     value = '{:,}'.format(1234567890) # BUT not out of printf :)
-    print()
+    print(type(value))
 
 
 
