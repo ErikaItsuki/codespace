@@ -1,4 +1,4 @@
-from datetime import date
+import datetime
 
 def main():
 
@@ -14,7 +14,9 @@ def main():
 
     #align
 
-    print(date.fromisoformat('20230313')) #2023-03-13
+    #these two seems not capable to be in the same .py: first date is not def when import datatime but from...
+    #print(date.fromisoformat('20230313')) #from YYYYMMDD or YYYY-MM-DD to2023-03-13
+    print(datetime.date(2019, 12, 4))
 
 
 
