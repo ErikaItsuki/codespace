@@ -24,6 +24,5 @@ def test_value_upper():
     assert bank.value("HELLO") == 0
     assert bank.value("GEllo") == 100
 
-
 if __name__ == "__main__":
     main()
