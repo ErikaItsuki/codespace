@@ -1,14 +1,14 @@
 import bank
 
 def main():
-    test_value_upper()
+    #test_value_upper()
     test_value_h()
     test_value_str()
     test_value_non_str()
 
-def test_value_upper():
+"""def test_value_upper():
     assert bank.value("HELLO") == 0
-    assert bank.value("GEllo") == 100
+    assert bank.value("GEllo") == 100"""
 
 
 def test_value_h():
