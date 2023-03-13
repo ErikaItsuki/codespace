@@ -1,4 +1,4 @@
-import datetime
+from datetime import date
 
 def main():
 
@@ -12,8 +12,10 @@ def main():
 
     # access args' items
 
-    #
-    
+    #align
+
+    print(date.fromisoformat('20230313')) #2023-03-13
+
 
 
 main()
