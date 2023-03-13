@@ -1,6 +1,9 @@
 def main():
-    print(is_valid("CS50"))
-
+    plate = input("Plate: ")
+    if general_rules(plate) and is_valid(plate):
+        print("Valid")
+    else:
+        print("Invalid")
 
 def is_valid(s):
     #check first 2 = alpha
@@ -8,7 +11,7 @@ def is_valid(s):
     if s[0].isalpha() and s[1].isalpha():
         for i, char in enumerate(s[2:]):
             if char.isdigit():
-                return check_digits("".join(s[i+2:]))
+                return check_digits("".join(s[i+2:])) if char != '0' else False
 
         return True
     else:
@@ -39,8 +42,3 @@ def check_digits(s):
 
 if __name__ == "__main__":
     main()
-
-
-"""for j, digit in enumerate(s[i+1:]):
-        if not s[i+1].isdigit():
-            return False"""
