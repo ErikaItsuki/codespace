@@ -5,14 +5,14 @@ def main():
 def is_valid(s):
     ...
 
-def general_rules(s):
+def general_rules(s): #DONE :)
     valid = True
     #check length
     s = list(s)
     if 2 <= len(s) <= 6:
         i = 0
         while i < len(s):
-            if !(s[i].isalpha() or s[i].isdigit()):
+            if not (s[i].isalpha() or s[i].isdigit()):
                 return False
             else:
                 i += 1
