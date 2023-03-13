@@ -9,18 +9,17 @@ def general_rules(s):
     valid = True
     #check length
     s = list(s)
-    if 1 < len(s) < 7:
+    if 2 <= len(s) <= 6:
         i = 0
         while i < len(s):
-            if s[i] != (s.isalpha() or s.isdigit()):
+            if s[i] != (s[i].isalpha() or s.isdigit()):
                 return False
             else:
                 i += 1
 
     else:
         valid = False
-        return valid
-
+    return valid
 
 if __name__ == "__main__":
     main()
