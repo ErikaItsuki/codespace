@@ -1,5 +1,5 @@
 def main():
-    plate = input("Plate: ")
+    plate = list(input("Plate: "))
     if general_rules(plate) and is_valid(plate):
         print("Valid")
     else:
@@ -7,7 +7,6 @@ def main():
 
 def is_valid(s):
     #check first 2 = alpha
-    s = list(s)
     if s[0].isalpha() and s[1].isalpha():
         for i, char in enumerate(s[2:]):
             if char.isdigit():
@@ -20,7 +19,6 @@ def is_valid(s):
 def general_rules(s): #DONE :)
     valid = True
     #check length
-    s = list(s)
     if 2 <= len(s) <= 6:
         i = 0
         while i < len(s):
