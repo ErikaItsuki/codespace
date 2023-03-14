@@ -4,7 +4,7 @@ def main():
         print("Valid")
     else:
         print("Invalid")
-        
+
 def is_valid(s):
     if (whole(s) and digit_not_in_the_midst(s, counter(s))):
         return True
@@ -26,11 +26,11 @@ def whole(s):
 
 
 # check numbers in the middle
-	def counter(s):
-        if char.isalpha():
-            counter+=1
-        else:
-            return counter
+def counter(s):
+    if char.isalpha():
+        counter+=1
+    else:
+        return counter
 
 # : if char.isdigit -> loop through till the end to see if isdigit too
 # check if first no. = 0
