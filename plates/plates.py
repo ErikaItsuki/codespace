@@ -26,7 +26,6 @@ def general_rules(s): #DONE :)
                 return False
             else:
                 i += 1
-
     else:
         valid = False
     return valid
