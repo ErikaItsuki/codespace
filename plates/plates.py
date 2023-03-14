@@ -1,48 +1,42 @@
-#changed
-
 def main():
-    plate = input("Plate: ")
-    if is_valid(plate):
+    plate = list(input("Plate: "))
+    if general_rules(plate) and is_valid(plate):
         print("Valid")
     else:
         print("Invalid")
 
 def is_valid(s):
-    if (whole(s) and digit_not_in_the_midst(s, counter(s))):
+    #check first 2 = alpha
+    if s[0].isalpha() and s[1].isalpha():
+        for i, char in enumerate(s[2:]):
+            if char.isdigit():
+                return check_digits("".join(s[i+2:])) if char != '0' else False
+
         return True
     else:
         return False
-# check the whole string -> isspace(), (s.isnumeric() and not s.isdigit()) -> F
-# 2 < x < 7 -> false
-# check the whole string
-def whole(s):
-    s = list(s)
-    if 2 < (len(s)) < 7:
-        for char in s[0:2]:
-            if not (char.isalpha()):
-                return False
-        for char in s[2:]:
-            if not (char.isalpha() or char.isdigit()):
-                return False
-            return True
 
+def general_rules(s): #DONE :)
+    valid = True
+    #check length
+    if 2 <= len(s) <= 6:
+        i = 0
+        while i < len(s):
+            if not (s[i].isalpha() or s[i].isdigit()):
+                return False
+            else:
+                i += 1
 
-# check numbers in the middle
-def counter(s):
-    if char.isalpha():
-        counter+=1
     else:
-        return counter
+        valid = False
+    return valid
 
-# : if char.isdigit -> loop through till the end to see if isdigit too
-# check if first no. = 0
+def check_digits(s):
+    try:
+        int(s)
+        return True
+    except ValueError:
+        return False
 
-def digit_not_in_the_midst(s, counter):
-    result = True
-    if s[counter] == "0":
-        result = False
-    for char in s[counter:]:
-        if not (char.isdigit()):
-            result = False
-            break
-    return result
+if __name__ == "__main__":
+    main()
