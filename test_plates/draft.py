@@ -19,6 +19,7 @@ def is_valid(s):
                     # take the string to int from i
                     digits = "".join(s[i + 2:])
                     int(digits)
+                    break
                 except ValueError:
                     raise ValueError("has digit(s) in the middle")
             else:
