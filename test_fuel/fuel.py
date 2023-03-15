@@ -8,10 +8,14 @@ def convert(fraction):
 
      try:
           x, y = fraction.split("/")
-          percentage = int(x)/int(y) * 100
-          if 0 < percentage < 100:
-               return round(percentage) # 4/3 return None != False: reprompt
-     except(ValueError, ZeroDivisionError):
+          if y == '0':
+               raise ZeroDivisionError("Divided by 0")
+          else:
+               percentage = int(x)/int(y) * 100
+               if 0 < percentage < 100:
+                    return round(percentage) # 4/3 return None != False: reprompt
+
+     except ValueError:
           raise ValueError("expected int/int not zero")
 
 def gauge(percentage):
