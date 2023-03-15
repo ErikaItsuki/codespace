@@ -1,8 +1,10 @@
 import pytest
 
-def test_set_comparison():
-    set1 = set("1308")
-    set2 = set("8035")
-    assert set1 == set2
 
-test_set_comparison()
+def myfunc():
+    raise ValueError("Exception 123 raised")
+
+
+def test_match():
+    with pytest.raises(ValueError, match=r".* 123 .*"):
+        myfunc()
