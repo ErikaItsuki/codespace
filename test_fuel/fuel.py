@@ -10,14 +10,11 @@ def convert(fraction):
 
           try:
                x, y = fraction.split("/")
-               fraction = int(x)/int(y)
-               if 0 < fraction < 1 and x < y:
-                    result = round(fraction)
-               else:
-                    result = False
+               fraction = int(x)/int(y) * 100
+               if 0 < fraction < 100:
+                    return round(fraction)
           except(ValueError, ZeroDivisionError, NameError):
                return False
-          return result
 
 def gauge(percentage):
      if  percentage <= 1:
