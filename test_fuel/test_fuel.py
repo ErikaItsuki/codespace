@@ -24,10 +24,13 @@ def test_convert_divide_zero():
         convert("1/0")
 
 def test_gauge():
+    #test boundaries
     assert gauge(0.99) == "E"
     assert gauge(1) == "E"
     assert gauge(99) == "F"
     assert gauge(100) == "F"
+
+    #test valid input
     assert gauge(50) == "50%"
 
 
