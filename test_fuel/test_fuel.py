@@ -23,4 +23,11 @@ def test_convert_divide_zero():
     with pytest.raises(ZeroDivisionError):
         convert("1/0")
 
+def test_gauge():
+    assert gauge(0.99) == "E"
+    assert gauge(1) == "E"
+    assert gauge(101) == "F"
+    assert gauge(100) == "F"
+    assert gauge(50) == "50%"
+
 
