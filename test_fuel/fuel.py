@@ -14,7 +14,8 @@ def convert(fraction):
                x, y = fraction.split("/")
                fraction = int(x)/int(y) * 100
                if 0 < fraction < 100:
-                    return "{:.%}".format(fraction)
+                    f = "{:.%}".format(fraction)
+                    return f
           except(ValueError, ZeroDivisionError, NameError):
                return False
 def gauge(percentage):
