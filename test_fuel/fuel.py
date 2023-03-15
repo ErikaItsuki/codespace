@@ -1,12 +1,13 @@
 def main():
 
-     fraction = input("Fuel: ").strip()
+     while fraction := input("Fuel: ").strip()
+          convert(fraction)
+
      convert(fraction)
      print(gauge(percentage))
 
 def convert(fraction):
 
-     while True:
           try:
                x, y = fraction.split("/")
                fraction = int(x)/int(y) * 100
