@@ -1,7 +1,7 @@
 import pytest
 
-def test_zero_division():
-    with pytest.raises(ZeroDivisionError) as excinfo:
+def test_recursion_depth():
+    with pytest.raises(RuntimeError) as excinfo:
 
         def f():
             f()
@@ -11,3 +11,6 @@ def test_zero_division():
 
 def main():
     try:
+        main()
+    except RunTimeError:
+        test_recursion_depth()
