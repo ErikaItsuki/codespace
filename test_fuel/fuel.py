@@ -4,7 +4,7 @@ def main():
           if convert(fraction) != True:
                pass # as long as while sees "break", not "no code to execute here", it continues
           else:
-               percentage =
+               percentage = ...
      #print(gauge(percentage))
 
 def convert(fraction):

@@ -3,8 +3,9 @@ def main():
      while fraction := input("Fuel: ").strip():
         try:
             percentage = convert(fraction)
+            break
         except ValueError:
-            return ValueError
+            pass
 
 def convert(fraction):
 
