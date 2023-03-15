@@ -15,7 +15,7 @@ def convert(fraction):
                if 0 <= percentage <= 100:
                     return round(percentage) # 4/3 return None != False: reprompt
                else:
-                    return False
+                    raise ValueError("X is greater than Y or negative fraction")
 
      except ValueError:
           raise ValueError("expected int/int not zero")

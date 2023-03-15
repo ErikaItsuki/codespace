@@ -5,10 +5,8 @@ import pytest
 # calling in main() is not the case
 
 def test_convert():
-    #assert convert("cat/dog") == test_convert_raises()
+    # good input
     assert convert("3/4") == round(3/4 * 100)
-    assert convert("2/1") == False
-    assert convert("-1/2") == False
 
     # test boundaries
     assert convert("1/1") == 100
@@ -18,6 +16,8 @@ def test_convert():
 def test_convert_non_str():
     with pytest.raises(ValueError):
         convert("cat/dog")
+        convert("2/1")
+        convert("-1/2")
 
 def test_convert_divide_zero():
     with pytest.raises(ZeroDivisionError):
