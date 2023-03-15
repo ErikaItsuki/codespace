@@ -12,10 +12,9 @@ def convert(fraction):
 
           try:
                x, y = fraction.split("/")
-               fraction = int(x)/int(y) * 100
+               fraction = int(x)/int(y)
                if 0 < fraction < 100:
-                    f = "{:.%}".format(fraction)
-                    return f
+                    return round(fraction)
           except(ValueError, ZeroDivisionError, NameError):
                return False
 def gauge(percentage):
