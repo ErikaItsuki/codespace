@@ -1,9 +1,10 @@
 def main():
 
      while fraction := input("Fuel: ").strip():
-          if convert(fraction) == False:
-               continue
-
+          if convert(fraction) != True:
+               pass # as long as while sees "break", not "no code to execute here", it continues
+          else:
+               percentage =
      #print(gauge(percentage))
 
 def convert(fraction):
