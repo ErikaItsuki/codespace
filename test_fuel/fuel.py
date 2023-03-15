@@ -1,11 +1,12 @@
 def main():
-    x, y = input("Fraction: ").split("/")
-    convert(x, y)
+    fraction = input("Fraction: ").strip()
+    convert(fraction)
 
-def convert(x, y):
+def convert(fraction):
 
      while True:
           try:
+               x, y = fraction.split("/")
                fraction = int(x)/int(y) * 100
                if 0 < fraction < 100:
                     return fraction
@@ -14,4 +15,4 @@ def convert(x, y):
                pass
 
 def gauge(percentage):
-     
+     ...
