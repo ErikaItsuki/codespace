@@ -9,6 +9,11 @@ def test_convert():
     assert convert("3/4") == round(3/4 * 100)
     assert convert("2/1") == None
     assert convert("-1/2") == None
+
+    # test boundaries
+    assert convert("1/1") == 100
+    assert convert("0/1") == 0
+
 # To see whether a case has raised an err:
 def test_convert_non_str():
     with pytest.raises(ValueError):
