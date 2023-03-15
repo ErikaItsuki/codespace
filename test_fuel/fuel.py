@@ -1,4 +1,5 @@
 def main():
+    
     fraction = input("Fraction: ").strip()
     convert(fraction)
 
