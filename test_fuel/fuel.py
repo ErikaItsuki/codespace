@@ -1,7 +1,7 @@
 def main():
 
      fraction = input("Fuel: ").strip()
-     convert()
+     convert(fraction)
      print(gauge(percentage))
 
 def convert(fraction):
