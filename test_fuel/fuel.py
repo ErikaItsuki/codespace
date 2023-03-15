@@ -1,6 +1,6 @@
 def main():
 
-     fraction = input("Fuel: ").strip():
+     fraction = input("Fuel: ").strip()
      percentage = convert(fraction)
      print(gauge(percentage))
 
