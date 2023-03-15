@@ -11,7 +11,7 @@ def is_valid(s):
         for i, char in enumerate(s[0:2]): # when i = 2 quit (same as)
             if not char.isalpha():
                 valid = False
-        for i, char in enumerate(s[2:]):
+        for i, char in enumerate(s[2:]): # if nothing ("CS"), skip
             if char.isalpha():
                 pass
             elif char.isdigit() and char != '0':
