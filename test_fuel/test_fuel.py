@@ -11,5 +11,5 @@ def test_convert():
     assert convert("2/1") == None
 
 def test_convert_raises():
-    with pytest.raises(RuntimeError):
+    with pytest.raises(ValueError):
         "expected int/int not zero"
