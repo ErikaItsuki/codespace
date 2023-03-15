@@ -21,7 +21,7 @@ def is_valid(s):
                     int(digits)
                     break
                 except ValueError:
-                    raise ValueError("has digit(s) in the middle or invalid character(s)")
+                    return False
             else:
                 valid = False
     else:
