@@ -1,7 +1,8 @@
 def main():
 
-    while fraction := input("Fuel: ").strip():
+    while True:
         try:
+            fraction := input("Fuel: ").strip()
             percentage = convert(fraction)
         except ValueError:
             continue
@@ -17,7 +18,7 @@ def convert(fraction):
         if 0 < percentage < 100:
             return round(percentage) # 4/3 return None != False: reprompt
     except (ValueError, ZeroDivisionError):
-        pass
+        
 
 if __name__ == "__main__":
      main()
