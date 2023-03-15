@@ -1,20 +1,24 @@
-import plates
+from plates import is_valid
 
-def main():
-    test_is_valid()
-
-def test_is_valid():
-    """valid"""
-    assert plates.is_valid("CS50") == True
-    """invalid"""
-    # len out of range
-    # min 2 alphas
-    # not accept char except alpha or digits
-    # no numbers in the mid
+def test_CS50():
+    assert is_valid("CS50") == True
 
 def test_is_valid_length():
-    # valid
-    assert is_valid()
 
-if __name__ == "__main__":
-    main()
+    assert is_valid("CSSSSS") == True
+    assert is_valid("CSSSSSC") == False
+    assert is_valid("C") == False
+
+def test_is_valid_min_2_alphas():
+
+    assert is_valid("CS") == True
+    assert is_valid("CSS") == True
+    assert is_valid("C22222") == False
+
+def test_is_valid_mid_nums():
+
+    assert is_valid("CS05") == False
+    assert is_valid("CS50P") == False
+
+def test_is_valid_numeric():
+    assert is_valid("CS.50") == False
