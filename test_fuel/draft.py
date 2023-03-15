@@ -12,5 +12,7 @@ def test_recursion_depth():
 def main():
     try:
         main()
-    except RunTimeError:
+    except RuntimeError:
         test_recursion_depth()
+
+main()
