@@ -14,7 +14,7 @@ def is_valid(s):
         for i, char in enumerate(s[2:]):
             if char.isalpha():
                 pass
-            elif char.isdigit():
+            elif char.isdigit() and char != '0':
                 try:
                     # take the string to int from i
                     digits = s[i:]
