@@ -11,5 +11,5 @@ def test_convert():
     assert convert("2/1") == False
 
 def test_convert_raises():
-    with pytest.raises(ValueError):
+    with pytest.raises(ValueError, match = r""):
         test_convert()
