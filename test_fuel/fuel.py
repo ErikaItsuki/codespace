@@ -1,23 +1,22 @@
 def main():
 
-     while fraction := input("Fuel: ").strip()
-          try:
-               percentage = convert(fraction)
-               break
-          except(ValueError, ZeroDivisionError, NameError):
-               True
+     while fraction := input("Fuel: ").strip():
+          if convert(fraction) == False:
+               pass
 
-     convert(fraction)
-     print(gauge(percentage))
+
+
+     #print(gauge(percentage))
 
 def convert(fraction):
 
-     x, y = fraction.split("/")
-     fraction = int(x)/int(y) * 100
-     if 0 < fraction < 100:
-          return "{:.%}".format(fraction)
-
-
+          try:
+               x, y = fraction.split("/")
+               fraction = int(x)/int(y) * 100
+               if 0 < fraction < 100:
+                    return "{:.%}".format(fraction)
+          except(ValueError, ZeroDivisionError, NameError):
+               return False
 def gauge(percentage):
      if  percentage <= 1:
          result = "E"
@@ -25,7 +24,7 @@ def gauge(percentage):
           result = "F"
      else:
           result = f"{round(percentage)}%"
-     return restult
+     return result
 
 if __name__ == "__main__":
      main()
