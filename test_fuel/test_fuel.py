@@ -6,10 +6,10 @@ def main():
     # test_gauge()
 
 def test_convert():
-    assert convert("cat/dog") == False
+    assert convert("cat/dog") == test_convert_raises()
     assert convert("3/4") == round(3/4)
-    assert convert("2/1") == False
+    assert convert("2/1") == None
 
 def test_convert_raises():
-    with pytest.raises(ValueError, match = r""):
-        test_convert()
+    with pytest.raises(RuntimeError):
+        "expected int/int not zero"
