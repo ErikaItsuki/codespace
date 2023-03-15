@@ -10,10 +10,9 @@ def convert(fraction):
                x, y = fraction.split("/")
                fraction = int(x)/int(y) * 100
                if 0 < fraction < 100:
-                    return f"{:.%}".format(fraction)
-
+                    return "{:.%}".format(fraction)
           except(ValueError, ZeroDivisionError, NameError):
-               pass
+               continue
 
 def gauge(percentage):
      if  percentage <= 1:
@@ -21,4 +20,7 @@ def gauge(percentage):
      elif percentage >= 99:
           print("F")
      else:
-          print(f"{round(fraction)}%")
+          print(f"{round(percentage)}%")
+
+if __name__ == "__main__":
+     main()
