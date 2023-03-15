@@ -17,8 +17,7 @@ def is_valid(s):
             elif char.isdigit() and char != '0':
                 try:
                     # take the string to int from i
-                    digits = s[i:]
-                    int(digits)
+                    int("".join(s[i:]))
                 except ValueError:
                     raise ValueError("has digit(s) in the middle")
             else:
