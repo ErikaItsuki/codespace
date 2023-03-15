@@ -3,8 +3,9 @@ def main():
      while fraction := input("Fuel: ").strip()
           try:
                percentage = convert(fraction)
+               break
           except(ValueError, ZeroDivisionError, NameError):
-               continue
+               True
 
      convert(fraction)
      print(gauge(percentage))
