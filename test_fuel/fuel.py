@@ -4,8 +4,6 @@ def main():
           if convert(fraction) == False:
                pass
 
-
-
      #print(gauge(percentage))
 
 def convert(fraction):
@@ -13,10 +11,14 @@ def convert(fraction):
           try:
                x, y = fraction.split("/")
                fraction = int(x)/int(y)
-               if 0 < fraction < 100:
-                    return round(fraction)
+               if 0 < fraction < 1 and x < y:
+                    result = round(fraction)
+               else:
+                    result = False
           except(ValueError, ZeroDivisionError, NameError):
                return False
+          return result
+
 def gauge(percentage):
      if  percentage <= 1:
          result = "E"
