@@ -1,5 +1,4 @@
 from fuel import convert, gauge
-import pytest
 
 def main():
     test_convert()
