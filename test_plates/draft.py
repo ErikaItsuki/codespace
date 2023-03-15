@@ -8,7 +8,7 @@ def main():
 def is_valid(s):
     valid = True
     if 2 <= len(s) <= 6:
-        for i, char in enumerate(s[0:2]):
+        for i, char in enumerate(s[0:2]): # when i = 2 quit (same as)
             if not char.isalpha():
                 valid = False
         for i, char in enumerate(s[2:]):
@@ -17,6 +17,7 @@ def is_valid(s):
             elif char.isdigit() and char != '0':
                 try:
                     # take the string to int from i
+                    digits = 
                     int("".join(s[i:]))
                 except ValueError:
                     raise ValueError("has digit(s) in the middle")
