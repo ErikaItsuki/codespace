@@ -1,6 +1,16 @@
 def main():
-    string = "CS50"
-    s = string[2:]
-    print(s) # 50 (str)
+    plate = list(input("Plate: "))
+    if is_valid(plate):
+        print("Valid")
+    else:
+        print("Invalid")
 
-main()
+def is_valid(s):
+    valid True
+    if 2 <= len(s) <= 6:
+        ...
+    else:
+        return False
+
+if __name__ == "__main__":
+    main()
